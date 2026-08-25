@@ -154,7 +154,7 @@ Mutate active fleet characteristics in-memory and re-score the entire 100-shipme
 
 ### 1. Clone & Environment Setup
 ```bash
-git clone https://github.com/YOUR_USERNAME/ORCA-Supply-Chain-Delay-Intelligence.git
+git clone https://github.com/ahmedzogly/ORCA-Supply-Chain-Delay-Intelligence.git
 cd ORCA-Supply-Chain-Delay-Intelligence
 
 # Create and activate virtual environment
