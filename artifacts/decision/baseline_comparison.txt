@@ -1,0 +1,5 @@
+--- 10% Review Budget Benchmarking ---
+Total Delay Days in Population: 25076.0
+VALUE_ONLY captured delay days: 2683.0
+RISK_ONLY captured delay days: 17199.0
+PRESCRIPTIVE_ENGINE captured delay days: 15146.0

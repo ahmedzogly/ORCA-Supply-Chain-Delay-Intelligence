@@ -1,0 +1,456 @@
+{
+  "status": "COMPLETED_SINGLE_PASS",
+  "holdout_sample_size": 1013,
+  "min_pred_date": "2014-08-25",
+  "max_pred_date": "2015-08-24",
+  "artifacts_generated": [
+    "artifacts\\phase2\\e10\\e10_holdout_evaluation_results.parquet"
+  ],
+  "policy_metrics_by_scenario": {
+    "low": {
+      "P0": {
+        "policy_name": "P0_NO_ACTION",
+        "mean_expected_cost_usd": 54.895583194616414,
+        "total_expected_cost_usd": 55609.22577614643,
+        "mean_net_benefit_usd": 0.0,
+        "total_net_benefit_usd": 0.0,
+        "oracle_gap_usd": 295.22142642636027,
+        "mean_regret_usd": 0.2914328000260267,
+        "intervention_rate_pct": 0.0,
+        "hysteresis_stability_pct": 100.0,
+        "action_distribution": {
+          "NO_ACTION": 1013
+        }
+      },
+      "P1": {
+        "policy_name": "P1_E8_COST_SENSITIVE",
+        "mean_expected_cost_usd": 73.96286191196825,
+        "total_expected_cost_usd": 74924.37911682384,
+        "mean_net_benefit_usd": -19.067278717351826,
+        "total_net_benefit_usd": -19315.1533406774,
+        "oracle_gap_usd": 19610.37476710377,
+        "mean_regret_usd": 19.358711517377856,
+        "intervention_rate_pct": 8.983218163869694,
+        "hysteresis_stability_pct": 83.90918065153011,
+        "action_distribution": {
+          "NO_ACTION": 922,
+          "EXPEDITE": 91
+        }
+      },
+      "P2": {
+        "policy_name": "P2_EXPEDITE",
+        "mean_expected_cost_usd": 54.895583194616414,
+        "total_expected_cost_usd": 55609.22577614643,
+        "mean_net_benefit_usd": 0.0,
+        "total_net_benefit_usd": 0.0,
+        "oracle_gap_usd": 295.22142642636027,
+        "mean_regret_usd": 0.2914328000260267,
+        "intervention_rate_pct": 0.0,
+        "hysteresis_stability_pct": 100.0,
+        "action_distribution": {
+          "NO_ACTION": 1013
+        }
+      },
+      "P3": {
+        "policy_name": "P3_TRANSPORT_MODE_REVIEW",
+        "mean_expected_cost_usd": 54.895583194616414,
+        "total_expected_cost_usd": 55609.22577614643,
+        "mean_net_benefit_usd": 0.0,
+        "total_net_benefit_usd": 0.0,
+        "oracle_gap_usd": 295.22142642636027,
+        "mean_regret_usd": 0.2914328000260267,
+        "intervention_rate_pct": 0.0,
+        "hysteresis_stability_pct": 100.0,
+        "action_distribution": {
+          "NO_ACTION": 1013
+        }
+      },
+      "P4": {
+        "policy_name": "P4_SUPPLIER_ESCALATION",
+        "mean_expected_cost_usd": 54.88241948280535,
+        "total_expected_cost_usd": 55595.89093608182,
+        "mean_net_benefit_usd": 0.01316371181106247,
+        "total_net_benefit_usd": 13.334840064606283,
+        "oracle_gap_usd": 281.88658636175387,
+        "mean_regret_usd": 0.2782690882149642,
+        "intervention_rate_pct": 0.09871668311944717,
+        "hysteresis_stability_pct": 100.0,
+        "action_distribution": {
+          "NO_ACTION": 1012,
+          "SUPPLIER_ESCALATION": 1
+        }
+      },
+      "P5": {
+        "policy_name": "P5_HUMAN_REVIEW",
+        "mean_expected_cost_usd": 55.12046161854422,
+        "total_expected_cost_usd": 55837.02761958529,
+        "mean_net_benefit_usd": -0.22487842392780158,
+        "total_net_benefit_usd": -227.801843438863,
+        "oracle_gap_usd": 523.0232698652253,
+        "mean_regret_usd": 0.5163112239538282,
+        "intervention_rate_pct": 0.5923000987166831,
+        "hysteresis_stability_pct": 100.0,
+        "action_distribution": {
+          "NO_ACTION": 1007,
+          "HUMAN_REVIEW": 6
+        }
+      },
+      "Oracle": {
+        "policy_name": "Offline_Oracle_Benchmark",
+        "mean_expected_cost_usd": 54.60415039459039,
+        "total_expected_cost_usd": 55314.00434972007,
+        "mean_net_benefit_usd": 0.2914328000260267,
+        "total_net_benefit_usd": 295.22142642636504,
+        "oracle_gap_usd": 0.0,
+        "mean_regret_usd": 0.0,
+        "intervention_rate_pct": 0.8884501480750246,
+        "hysteresis_stability_pct": 100.0,
+        "action_distribution": {
+          "NO_ACTION": 1004,
+          "SUPPLIER_ESCALATION": 9
+        }
+      }
+    },
+    "base": {
+      "P0": {
+        "policy_name": "P0_NO_ACTION",
+        "mean_expected_cost_usd": 159.05856399751406,
+        "total_expected_cost_usd": 161126.32532948174,
+        "mean_net_benefit_usd": 0.0,
+        "total_net_benefit_usd": 0.0,
+        "oracle_gap_usd": 2194.7778436823864,
+        "mean_regret_usd": 2.166611889123752,
+        "intervention_rate_pct": 0.0,
+        "hysteresis_stability_pct": 100.0,
+        "action_distribution": {
+          "NO_ACTION": 1013
+        }
+      },
+      "P1": {
+        "policy_name": "P1_E8_COST_SENSITIVE",
+        "mean_expected_cost_usd": 259.59082359441067,
+        "total_expected_cost_usd": 262965.504301138,
+        "mean_net_benefit_usd": -100.53225959689661,
+        "total_net_benefit_usd": -101839.17897165626,
+        "oracle_gap_usd": 104033.95681533864,
+        "mean_regret_usd": 102.69887148602034,
+        "intervention_rate_pct": 23.297137216189537,
+        "hysteresis_stability_pct": 41.559723593287266,
+        "action_distribution": {
+          "NO_ACTION": 777,
+          "EXPEDITE": 236
+        }
+      },
+      "P2": {
+        "policy_name": "P2_EXPEDITE",
+        "mean_expected_cost_usd": 159.05856399751406,
+        "total_expected_cost_usd": 161126.32532948174,
+        "mean_net_benefit_usd": 0.0,
+        "total_net_benefit_usd": 0.0,
+        "oracle_gap_usd": 2194.7778436823864,
+        "mean_regret_usd": 2.166611889123752,
+        "intervention_rate_pct": 0.0,
+        "hysteresis_stability_pct": 100.0,
+        "action_distribution": {
+          "NO_ACTION": 1013
+        }
+      },
+      "P3": {
+        "policy_name": "P3_TRANSPORT_MODE_REVIEW",
+        "mean_expected_cost_usd": 159.0352778739505,
+        "total_expected_cost_usd": 161102.73648631186,
+        "mean_net_benefit_usd": 0.023286123563540748,
+        "total_net_benefit_usd": 23.588843169866777,
+        "oracle_gap_usd": 2171.1890005125024,
+        "mean_regret_usd": 2.1433257655602116,
+        "intervention_rate_pct": 0.19743336623889435,
+        "hysteresis_stability_pct": 100.0,
+        "action_distribution": {
+          "NO_ACTION": 1011,
+          "TRANSPORT_MODE_REVIEW": 2
+        }
+      },
+      "P4": {
+        "policy_name": "P4_SUPPLIER_ESCALATION",
+        "mean_expected_cost_usd": 158.5946335434592,
+        "total_expected_cost_usd": 160656.36377952417,
+        "mean_net_benefit_usd": 0.46393045405484207,
+        "total_net_benefit_usd": 469.961549957555,
+        "oracle_gap_usd": 1724.8162937248126,
+        "mean_regret_usd": 1.7026814350689103,
+        "intervention_rate_pct": 0.7897334649555774,
+        "hysteresis_stability_pct": 100.0,
+        "action_distribution": {
+          "NO_ACTION": 1005,
+          "SUPPLIER_ESCALATION": 8
+        }
+      },
+      "P5": {
+        "policy_name": "P5_HUMAN_REVIEW",
+        "mean_expected_cost_usd": 159.50832084536964,
+        "total_expected_cost_usd": 161581.92901635944,
+        "mean_net_benefit_usd": -0.4497568478556034,
+        "total_net_benefit_usd": -455.6036868777262,
+        "oracle_gap_usd": 2650.3815305600874,
+        "mean_regret_usd": 2.616368736979356,
+        "intervention_rate_pct": 0.5923000987166831,
+        "hysteresis_stability_pct": 100.0,
+        "action_distribution": {
+          "NO_ACTION": 1007,
+          "HUMAN_REVIEW": 6
+        }
+      },
+      "Oracle": {
+        "policy_name": "Offline_Oracle_Benchmark",
+        "mean_expected_cost_usd": 156.89195210839029,
+        "total_expected_cost_usd": 158931.54748579935,
+        "mean_net_benefit_usd": 2.166611889123752,
+        "total_net_benefit_usd": 2194.777843682361,
+        "oracle_gap_usd": 0.0,
+        "mean_regret_usd": 0.0,
+        "intervention_rate_pct": 2.7640671273445214,
+        "hysteresis_stability_pct": 100.0,
+        "action_distribution": {
+          "NO_ACTION": 985,
+          "SUPPLIER_ESCALATION": 28
+        }
+      }
+    },
+    "high": {
+      "P0": {
+        "policy_name": "P0_NO_ACTION",
+        "mean_expected_cost_usd": 403.09546965662423,
+        "total_expected_cost_usd": 408335.71076216036,
+        "mean_net_benefit_usd": 0.0,
+        "total_net_benefit_usd": 0.0,
+        "oracle_gap_usd": 8318.28888126585,
+        "mean_regret_usd": 8.2115388758794,
+        "intervention_rate_pct": 0.0,
+        "hysteresis_stability_pct": 100.0,
+        "action_distribution": {
+          "NO_ACTION": 1013
+        }
+      },
+      "P1": {
+        "policy_name": "P1_E8_COST_SENSITIVE",
+        "mean_expected_cost_usd": 751.7083562718124,
+        "total_expected_cost_usd": 761480.5649033459,
+        "mean_net_benefit_usd": -348.612886615188,
+        "total_net_benefit_usd": -353144.85414118547,
+        "oracle_gap_usd": 361463.1430224514,
+        "mean_regret_usd": 356.8244254910674,
+        "intervention_rate_pct": 39.486673247778874,
+        "hysteresis_stability_pct": 17.374136229022703,
+        "action_distribution": {
+          "NO_ACTION": 613,
+          "EXPEDITE": 400
+        }
+      },
+      "P2": {
+        "policy_name": "P2_EXPEDITE",
+        "mean_expected_cost_usd": 403.09546965662423,
+        "total_expected_cost_usd": 408335.71076216036,
+        "mean_net_benefit_usd": 0.0,
+        "total_net_benefit_usd": 0.0,
+        "oracle_gap_usd": 8318.28888126585,
+        "mean_regret_usd": 8.2115388758794,
+        "intervention_rate_pct": 0.0,
+        "hysteresis_stability_pct": 100.0,
+        "action_distribution": {
+          "NO_ACTION": 1013
+        }
+      },
+      "P3": {
+        "policy_name": "P3_TRANSPORT_MODE_REVIEW",
+        "mean_expected_cost_usd": 402.8087370707775,
+        "total_expected_cost_usd": 408045.25065269764,
+        "mean_net_benefit_usd": 0.28673258584670247,
+        "total_net_benefit_usd": 290.4601094627096,
+        "oracle_gap_usd": 8027.828771803121,
+        "mean_regret_usd": 7.924806290032699,
+        "intervention_rate_pct": 0.29615004935834155,
+        "hysteresis_stability_pct": 100.0,
+        "action_distribution": {
+          "NO_ACTION": 1010,
+          "TRANSPORT_MODE_REVIEW": 3
+        }
+      },
+      "P4": {
+        "policy_name": "P4_SUPPLIER_ESCALATION",
+        "mean_expected_cost_usd": 401.03042081768564,
+        "total_expected_cost_usd": 406243.8162883156,
+        "mean_net_benefit_usd": 2.065048838938602,
+        "total_net_benefit_usd": 2091.894473844804,
+        "oracle_gap_usd": 6226.394407421059,
+        "mean_regret_usd": 6.146490036940799,
+        "intervention_rate_pct": 1.2833168805528135,
+        "hysteresis_stability_pct": 100.0,
+        "action_distribution": {
+          "NO_ACTION": 1000,
+          "SUPPLIER_ESCALATION": 13
+        }
+      },
+      "P5": {
+        "policy_name": "P5_HUMAN_REVIEW",
+        "mean_expected_cost_usd": 403.99498335233545,
+        "total_expected_cost_usd": 409246.9181359158,
+        "mean_net_benefit_usd": -0.8995136957112063,
+        "total_net_benefit_usd": -911.207373755452,
+        "oracle_gap_usd": 9229.49625502131,
+        "mean_regret_usd": 9.111052571590609,
+        "intervention_rate_pct": 0.5923000987166831,
+        "hysteresis_stability_pct": 100.0,
+        "action_distribution": {
+          "NO_ACTION": 1007,
+          "HUMAN_REVIEW": 6
+        }
+      },
+      "Oracle": {
+        "policy_name": "Offline_Oracle_Benchmark",
+        "mean_expected_cost_usd": 394.88393078074483,
+        "total_expected_cost_usd": 400017.4218808945,
+        "mean_net_benefit_usd": 8.2115388758794,
+        "total_net_benefit_usd": 8318.288881265833,
+        "oracle_gap_usd": 0.0,
+        "mean_regret_usd": 0.0,
+        "intervention_rate_pct": 3.948667324777887,
+        "hysteresis_stability_pct": 100.0,
+        "action_distribution": {
+          "NO_ACTION": 973,
+          "SUPPLIER_ESCALATION": 40
+        }
+      }
+    }
+  },
+  "budget_summary": {
+    "low": {
+      "k_5pct": {
+        "allocated_count": 9,
+        "capacity_limit_count": 50,
+        "total_realized_cost_usd": 55314.00434972006,
+        "total_no_action_cost_usd": 55609.225776146435,
+        "total_net_benefit_usd": 295.2214264263748,
+        "utilization_pct": 18.0,
+        "mean_cost_per_shipment_usd": 54.604150394590384,
+        "mean_benefit_per_shipment_usd": 0.29143280002603633
+      },
+      "k_10pct": {
+        "allocated_count": 9,
+        "capacity_limit_count": 101,
+        "total_realized_cost_usd": 55314.00434972006,
+        "total_no_action_cost_usd": 55609.225776146435,
+        "total_net_benefit_usd": 295.2214264263748,
+        "utilization_pct": 8.91089108910891,
+        "mean_cost_per_shipment_usd": 54.604150394590384,
+        "mean_benefit_per_shipment_usd": 0.29143280002603633
+      },
+      "k_20pct": {
+        "allocated_count": 9,
+        "capacity_limit_count": 202,
+        "total_realized_cost_usd": 55314.00434972006,
+        "total_no_action_cost_usd": 55609.225776146435,
+        "total_net_benefit_usd": 295.2214264263748,
+        "utilization_pct": 4.455445544554455,
+        "mean_cost_per_shipment_usd": 54.604150394590384,
+        "mean_benefit_per_shipment_usd": 0.29143280002603633
+      }
+    },
+    "base": {
+      "k_5pct": {
+        "allocated_count": 28,
+        "capacity_limit_count": 50,
+        "total_realized_cost_usd": 158931.5474857995,
+        "total_no_action_cost_usd": 161126.32532948186,
+        "total_net_benefit_usd": 2194.7778436823573,
+        "utilization_pct": 56.00000000000001,
+        "mean_cost_per_shipment_usd": 156.89195210839043,
+        "mean_benefit_per_shipment_usd": 2.1666118891237485
+      },
+      "k_10pct": {
+        "allocated_count": 28,
+        "capacity_limit_count": 101,
+        "total_realized_cost_usd": 158931.5474857995,
+        "total_no_action_cost_usd": 161126.32532948186,
+        "total_net_benefit_usd": 2194.7778436823573,
+        "utilization_pct": 27.722772277227726,
+        "mean_cost_per_shipment_usd": 156.89195210839043,
+        "mean_benefit_per_shipment_usd": 2.1666118891237485
+      },
+      "k_20pct": {
+        "allocated_count": 28,
+        "capacity_limit_count": 202,
+        "total_realized_cost_usd": 158931.5474857995,
+        "total_no_action_cost_usd": 161126.32532948186,
+        "total_net_benefit_usd": 2194.7778436823573,
+        "utilization_pct": 13.861386138613863,
+        "mean_cost_per_shipment_usd": 156.89195210839043,
+        "mean_benefit_per_shipment_usd": 2.1666118891237485
+      }
+    },
+    "high": {
+      "k_5pct": {
+        "allocated_count": 40,
+        "capacity_limit_count": 50,
+        "total_realized_cost_usd": 400017.4218808949,
+        "total_no_action_cost_usd": 408335.71076216083,
+        "total_net_benefit_usd": 8318.288881265908,
+        "utilization_pct": 80.0,
+        "mean_cost_per_shipment_usd": 394.88393078074523,
+        "mean_benefit_per_shipment_usd": 8.211538875879475
+      },
+      "k_10pct": {
+        "allocated_count": 40,
+        "capacity_limit_count": 101,
+        "total_realized_cost_usd": 400017.4218808949,
+        "total_no_action_cost_usd": 408335.71076216083,
+        "total_net_benefit_usd": 8318.288881265908,
+        "utilization_pct": 39.603960396039604,
+        "mean_cost_per_shipment_usd": 394.88393078074523,
+        "mean_benefit_per_shipment_usd": 8.211538875879475
+      },
+      "k_20pct": {
+        "allocated_count": 40,
+        "capacity_limit_count": 202,
+        "total_realized_cost_usd": 400017.4218808949,
+        "total_no_action_cost_usd": 408335.71076216083,
+        "total_net_benefit_usd": 8318.288881265908,
+        "utilization_pct": 19.801980198019802,
+        "mean_cost_per_shipment_usd": 394.88393078074523,
+        "mean_benefit_per_shipment_usd": 8.211538875879475
+      }
+    }
+  },
+  "switching_analysis": {
+    "P1": {
+      "switching_rate_low_to_base_pct": 14.313919052319843,
+      "switching_rate_base_to_high_pct": 16.189536031589338,
+      "switching_rate_low_to_high_pct": 30.50345508390918
+    },
+    "P2": {
+      "switching_rate_low_to_base_pct": 0.0,
+      "switching_rate_base_to_high_pct": 0.0,
+      "switching_rate_low_to_high_pct": 0.0
+    },
+    "P3": {
+      "switching_rate_low_to_base_pct": 0.19743336623889435,
+      "switching_rate_base_to_high_pct": 0.09871668311944717,
+      "switching_rate_low_to_high_pct": 0.29615004935834155
+    },
+    "P4": {
+      "switching_rate_low_to_base_pct": 0.6910167818361304,
+      "switching_rate_base_to_high_pct": 0.4935834155972359,
+      "switching_rate_low_to_high_pct": 1.1846001974333662
+    },
+    "P5": {
+      "switching_rate_low_to_base_pct": 0.0,
+      "switching_rate_base_to_high_pct": 0.0,
+      "switching_rate_low_to_high_pct": 0.0
+    },
+    "Oracle": {
+      "switching_rate_low_to_base_pct": 1.8756169792694966,
+      "switching_rate_base_to_high_pct": 1.1846001974333662,
+      "switching_rate_low_to_high_pct": 3.0602171767028628
+    }
+  },
+  "scientific_disclaimer": "MANDATORY SCIENTIFIC NOTICE: Historical SCMS supply chain records lack randomized treatment assignments and explicit intervention logs. All counterfactual transitions, risk reductions, and cost savings evaluated in Experiment E10 represent synthetic scenario simulations parameterized by explicit domain assumptions. No observational claims of actual historical intervention efficacy or true causal treatment effects are asserted."
+}

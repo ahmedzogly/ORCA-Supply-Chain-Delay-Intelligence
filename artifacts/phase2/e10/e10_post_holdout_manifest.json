@@ -1,0 +1,159 @@
+{
+  "metadata": {
+    "manifest_name": "E10 Post-Holdout Baseline Invariance Manifest",
+    "phase": "Phase 2 \u2014 Experiment E10 (Counterfactual Policy Evaluation)",
+    "milestone": "Milestone 5 (Single-Pass Final Holdout Evaluation & Invariance Verification)",
+    "created_at_utc": "2026-08-22T16:38:00Z",
+    "status": "VERIFIED_100_PERCENT_BITWISE_INVARIANT",
+    "total_artifacts_verified": 36,
+    "pre_freeze_manifest_ref": "artifacts/phase2/e10/e10_pre_freeze_manifest.json",
+    "verification_result": "PASS",
+    "verification_note": "All 36 baseline artifacts from Stages 0-13, E6.5, E7, E8, and E9 verified 100% bitwise invariant post single-pass holdout evaluation."
+  },
+  "artifacts": {
+    "artifacts/model_registry/v1/catboost_champion.cbm": {
+      "sha256": "261dc20da9ea3eb9fc53dd543c2bb837d9d6f613f8b81b71e13e1e2b99584ea4",
+      "size_bytes": 75504
+    },
+    "artifacts/model_registry/v1/cqr_calibration.json": {
+      "sha256": "36f3b10fb80f5691edb41e51251241ce92c0c914729861bd8d1e7c0fe42be284",
+      "size_bytes": 92
+    },
+    "artifacts/model_registry/v1/feature_schema.json": {
+      "sha256": "b641ba259ea2ba6eb6d06ef757f39124d508d03f3073548cc57e9d0044d7a669",
+      "size_bytes": 2043
+    },
+    "artifacts/model_registry/v1/metadata.json": {
+      "sha256": "2bb8dd35aa94bf30497f1804d3135352c3e2e47ee9329b1504679f50e8610f3c",
+      "size_bytes": 295
+    },
+    "artifacts/model_registry/v1/decision.yaml": {
+      "sha256": "90e8cdb50f221bd5a697f19e9ff2e1ba41227a279a9918437d107c7bf481bdb4",
+      "size_bytes": 1177
+    },
+    "artifacts/model_registry/v1/explainability.yaml": {
+      "sha256": "ba79a20d50a6f2dce9e2e3650add2ecdf46d6c8971d8b1f9e63e53f250d7718c",
+      "size_bytes": 317
+    },
+    "artifacts/model_registry/v1/causal.yaml": {
+      "sha256": "761db5fae0bf381a0394ea870fe0bae0721f7e80ec5fe3cb242161f5278d55a4",
+      "size_bytes": 485
+    },
+    "artifacts/data/bronze_scms.parquet": {
+      "sha256": "54161877af09fb24c5125277624013c5b008d394ce60bfd839d024097ca39e04",
+      "size_bytes": 705657
+    },
+    "artifacts/data/scms_modeling_features.parquet": {
+      "sha256": "4e59296fe41cb2e5e20f350765805e4c74ba60c5dca4d18cff6313470775adc6",
+      "size_bytes": 549649
+    },
+    "artifacts/final/final_holdout_metrics.json": {
+      "sha256": "ee42a5b3fe41883875f334d63e557393188798db94771340272238ae18f70c75",
+      "size_bytes": 683
+    },
+    "artifacts/evaluation/fold_manifest.csv": {
+      "sha256": "c7a82e82170c6105540d98667baa47fab5a19c7bed88fb10f5831295a46edfe3",
+      "size_bytes": 673
+    },
+    "artifacts/evaluation/stage5_metrics.csv": {
+      "sha256": "07de4e631b6a8c75b1b9779d9a41556704113469b5a65b9f0f7c835dd1d72f9c",
+      "size_bytes": 5168
+    },
+    "artifacts/evaluation/stage6_uncertainty_metrics.csv": {
+      "sha256": "ea4474db1328eee2354053c1727fb64010af60b6f6e5eb3d82221b067437d6f4",
+      "size_bytes": 6008
+    },
+    "artifacts/drift/cv_drift_summary.json": {
+      "sha256": "ff9507aaf4b97707511696487624284613b221911725482231ac956f52a030ff",
+      "size_bytes": 130583
+    },
+    "artifacts/drift/drift_triggers.json": {
+      "sha256": "39ec2bfbc987f01c9123b63f8737c9609fbab7b2f742df6098b95a2e8979cfa4",
+      "size_bytes": 6068
+    },
+    "artifacts/drift/drift_metrics.csv": {
+      "sha256": "8934b382dee0c16daaafcbcde5ba894248534033a8e8cb3299ea3b83fc781f3d",
+      "size_bytes": 1955
+    },
+    "artifacts/drift/feature_drift_summary.csv": {
+      "sha256": "896062c49d74c043fa5ae711fe24609ac1bd3acc11bfa2dcaffffd262d50bed5",
+      "size_bytes": 20863
+    },
+    "artifacts/adaptive_conformal/cv_adaptive_comparison.json": {
+      "sha256": "c8b53ea946f94efe207dbf62b2e8ed5869076d2d00307f7478a271366b1e5225",
+      "size_bytes": 41821
+    },
+    "artifacts/adaptive_conformal/holdout_adaptive_comparison.json": {
+      "sha256": "e47b6c04ec532750face69fb43aef184f709b0db8bd759d5e708af0dc047e2fb",
+      "size_bytes": 10795
+    },
+    "artifacts/adaptive_conformal/adaptive_efficiency_summary.csv": {
+      "sha256": "2c305d4206184ef65231d3e95c67e93469e04067ea3290b98eed83680da01199",
+      "size_bytes": 743
+    },
+    "artifacts/adaptive_conformal/holdout_recalibration_events.json": {
+      "sha256": "b3d6ac5b0934a61ff2c021988952ba6a86a70d7c590cd0548e144359c417df34",
+      "size_bytes": 8139
+    },
+    "artifacts/results/e8_frozen_policy.json": {
+      "sha256": "a5f127c1d433904ce0b31ef5c71ed10b35490ba6d51f82157b5b6d17692a0b3f",
+      "size_bytes": 9410
+    },
+    "artifacts/results/e8_final_holdout_results.parquet": {
+      "sha256": "e88a7aeb2d182c04ddcd2db452fa9b6ee9417d785e03176e38e96b669be68501",
+      "size_bytes": 413830
+    },
+    "artifacts/results/e8_final_holdout_metrics.json": {
+      "sha256": "29d2f9b01831f60f196398bb94f8b979f529f0d955f048b0c120a90cb3a176d2",
+      "size_bytes": 78281
+    },
+    "artifacts/results/e8_dev_backtest_results.parquet": {
+      "sha256": "3a745f9e851074f6ffde798493df3705b25fee8786f1b512e9a42c9c274a5ed1",
+      "size_bytes": 1233493
+    },
+    "artifacts/results/e8_dev_metrics.json": {
+      "sha256": "1e3e1e80094ead77ff970302ad844420139a8592354a867d836a1925a407eb6c",
+      "size_bytes": 159397
+    },
+    "artifacts/results/e8_dev_budget_results.json": {
+      "sha256": "5d886f22546b3b082078f00751484f9c509f80b00e2a114989511875b24377a7",
+      "size_bytes": 1448191
+    },
+    "artifacts/results/e8_dev_sensitivity_results.json": {
+      "sha256": "1b6a076124da02144b981d3bfe93e202b4f76c706af444b504e2ff2d96f80870",
+      "size_bytes": 1990078
+    },
+    "artifacts/phase2/e9/e9_immutability_manifest.json": {
+      "sha256": "fd790c565f44585aa7d5a9f0bb398939d0728fb306b3e49f0e3eb628eb4ee3c6",
+      "size_bytes": 489
+    },
+    "artifacts/phase2/e9/e9_scenario_results.csv": {
+      "sha256": "c16979be90322008959048dfb550885179cd7c28756530aa3ab252c2e5688d7a",
+      "size_bytes": 577
+    },
+    "artifacts/phase2/e9/e9_multi_shipment_stress.csv": {
+      "sha256": "9b14bb28b5b18a4002193de85731e276e1f1dc065b953b787c7f71cf3444febe",
+      "size_bytes": 139
+    },
+    "configs/prediction_contract.yaml": {
+      "sha256": "541b403a8cc386f0564ecee0ab933c8c48b454a66f4fce54da4de047bc501613",
+      "size_bytes": 9509
+    },
+    "configs/cost_scenarios.yaml": {
+      "sha256": "b7a2071d90c6e38726a837c97e548f17df67436afd5451ae3f5d138029a0a2bf",
+      "size_bytes": 5426
+    },
+    "configs/e8_experiments.yaml": {
+      "sha256": "fe0b03325ab08e02d568825cd2650943ff670223b76d8cb6d56a09b1a7cc0275",
+      "size_bytes": 2602
+    },
+    "docs/e9_simulation_assumptions.json": {
+      "sha256": "9c4c7a213a5ade86e7895118ade43c846cf36606281e77cc47319c62e7f62ab9",
+      "size_bytes": 515
+    },
+    "docs/e9_feature_contract.json": {
+      "sha256": "e8a0bf6dd63ba35c08acaddcbcbc16b2ac0c798428d8a7fbe5e327f67806be66",
+      "size_bytes": 734
+    }
+  }
+}

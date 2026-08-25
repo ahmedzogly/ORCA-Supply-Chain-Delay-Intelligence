@@ -1,0 +1,20 @@
+{
+  "temperature_c": {
+    "state_variable": "current_temperature",
+    "derived_feature": "temperature_excursion_flag",
+    "existing_model_feature": "MONITORING-ONLY SIGNAL",
+    "prediction_time_availability": "Post-dispatch IoT continuous"
+  },
+  "route_deviation_km": {
+    "state_variable": "route_status",
+    "derived_feature": "route_deviation_flag",
+    "existing_model_feature": "MONITORING-ONLY SIGNAL",
+    "prediction_time_availability": "Post-dispatch IoT continuous"
+  },
+  "eta_timestamp": {
+    "state_variable": "current_ETA",
+    "derived_feature": "ETA_shock_flag",
+    "existing_model_feature": "MONITORING-ONLY SIGNAL",
+    "prediction_time_availability": "Post-dispatch IoT continuous"
+  }
+}

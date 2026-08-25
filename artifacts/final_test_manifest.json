@@ -1,0 +1,5222 @@
+{
+  "manifest_type": "final_test_manifest",
+  "project": "Supply Chain Delay Intelligence System",
+  "timestamp_utc": "2026-08-22T20:16:32.957251+00:00",
+  "execution_environment": {
+    "platform": "Windows 11 (AMD64)",
+    "python_version": "3.14.5",
+    "pytest_version": "9.1.1",
+    "command": ".venv\\Scripts\\pytest.exe -v --tb=short --basetemp=scratch/pytest_temp"
+  },
+  "summary": {
+    "total_collected": 659,
+    "total_passed": 659,
+    "total_failed": 0,
+    "total_errors": 0,
+    "total_skipped": 0,
+    "pass_rate_percentage": 100.0,
+    "total_execution_time_seconds": 100.315,
+    "total_modules_evaluated": 73
+  },
+  "module_breakdown": {
+    "tests/test_adaptive_adversarial_stress.py": {
+      "total": 11,
+      "passed": 11,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0,
+      "duration_seconds": 17.564
+    },
+    "tests/test_adaptive_holdout_isolation.py": {
+      "total": 5,
+      "passed": 5,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0,
+      "duration_seconds": 2.933
+    },
+    "tests/test_adaptive_temporal_safety.py": {
+      "total": 5,
+      "passed": 5,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0,
+      "duration_seconds": 0.189
+    },
+    "tests/test_adversarial_cost_leakage.py": {
+      "total": 41,
+      "passed": 41,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0,
+      "duration_seconds": 0.398
+    },
+    "tests/test_adversarial_e8_m4_challenger.py": {
+      "total": 40,
+      "passed": 40,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0,
+      "duration_seconds": 0.289
+    },
+    "tests/test_adversarial_e8_m5_holdout.py": {
+      "total": 18,
+      "passed": 18,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0,
+      "duration_seconds": 0.273
+    },
+    "tests/test_adversarial_e8_models.py": {
+      "total": 23,
+      "passed": 23,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0,
+      "duration_seconds": 10.178
+    },
+    "tests/test_adversarial_scms.py": {
+      "total": 74,
+      "passed": 74,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0,
+      "duration_seconds": 12.771
+    },
+    "tests/test_adversarial_temporal_embargo.py": {
+      "total": 12,
+      "passed": 12,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0,
+      "duration_seconds": 5.228
+    },
+    "tests/test_api_explain.py": {
+      "total": 1,
+      "passed": 1,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0,
+      "duration_seconds": 0.026
+    },
+    "tests/test_api_health.py": {
+      "total": 1,
+      "passed": 1,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0,
+      "duration_seconds": 0.005
+    },
+    "tests/test_api_predict.py": {
+      "total": 1,
+      "passed": 1,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0,
+      "duration_seconds": 0.013
+    },
+    "tests/test_api_recommend.py": {
+      "total": 1,
+      "passed": 1,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0,
+      "duration_seconds": 0.03
+    },
+    "tests/test_api_safety.py": {
+      "total": 1,
+      "passed": 1,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0,
+      "duration_seconds": 0.003
+    },
+    "tests/test_api_schema.py": {
+      "total": 1,
+      "passed": 1,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0,
+      "duration_seconds": 0.004
+    },
+    "tests/test_architecture.py": {
+      "total": 36,
+      "passed": 36,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0,
+      "duration_seconds": 0.024
+    },
+    "tests/test_calibration.py": {
+      "total": 1,
+      "passed": 1,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0,
+      "duration_seconds": 0.003
+    },
+    "tests/test_causal_constraints.py": {
+      "total": 1,
+      "passed": 1,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0,
+      "duration_seconds": 0.003
+    },
+    "tests/test_causal_stability.py": {
+      "total": 1,
+      "passed": 1,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0,
+      "duration_seconds": 0.003
+    },
+    "tests/test_causal_temporal_safety.py": {
+      "total": 1,
+      "passed": 1,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0,
+      "duration_seconds": 0.001
+    },
+    "tests/test_config.py": {
+      "total": 18,
+      "passed": 18,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0,
+      "duration_seconds": 0.067
+    },
+    "tests/test_conformal_temporal_safety.py": {
+      "total": 2,
+      "passed": 2,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0,
+      "duration_seconds": 0.037
+    },
+    "tests/test_cost_engine_stress.py": {
+      "total": 31,
+      "passed": 31,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0,
+      "duration_seconds": 0.699
+    },
+    "tests/test_cost_sensitivity.py": {
+      "total": 1,
+      "passed": 1,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0,
+      "duration_seconds": 0.003
+    },
+    "tests/test_cross_domain_protocol.py": {
+      "total": 2,
+      "passed": 2,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0,
+      "duration_seconds": 0.002
+    },
+    "tests/test_dashboard_api_integration.py": {
+      "total": 1,
+      "passed": 1,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0,
+      "duration_seconds": 0.068
+    },
+    "tests/test_dashboard_data_contract.py": {
+      "total": 1,
+      "passed": 1,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0,
+      "duration_seconds": 0.041
+    },
+    "tests/test_dashboard_safety.py": {
+      "total": 2,
+      "passed": 2,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0,
+      "duration_seconds": 0.009
+    },
+    "tests/test_data_immutability.py": {
+      "total": 4,
+      "passed": 4,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0,
+      "duration_seconds": 0.004
+    },
+    "tests/test_dataco_adapter.py": {
+      "total": 2,
+      "passed": 2,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0,
+      "duration_seconds": 0.029
+    },
+    "tests/test_decision_engine.py": {
+      "total": 2,
+      "passed": 2,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0,
+      "duration_seconds": 0.006
+    },
+    "tests/test_decision_safety.py": {
+      "total": 1,
+      "passed": 1,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0,
+      "duration_seconds": 0.003
+    },
+    "tests/test_decision_traceability.py": {
+      "total": 1,
+      "passed": 1,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0,
+      "duration_seconds": 0.003
+    },
+    "tests/test_domain_shift.py": {
+      "total": 2,
+      "passed": 2,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0,
+      "duration_seconds": 0.002
+    },
+    "tests/test_drift_adversarial_stress.py": {
+      "total": 42,
+      "passed": 42,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0,
+      "duration_seconds": 0.46
+    },
+    "tests/test_drift_determinism.py": {
+      "total": 6,
+      "passed": 6,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0,
+      "duration_seconds": 0.051
+    },
+    "tests/test_drift_temporal_safety.py": {
+      "total": 5,
+      "passed": 5,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0,
+      "duration_seconds": 0.142
+    },
+    "tests/test_e10_adversarial_leakage.py": {
+      "total": 57,
+      "passed": 57,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0,
+      "duration_seconds": 29.965
+    },
+    "tests/test_e10_adversarial_oracle_stress.py": {
+      "total": 13,
+      "passed": 13,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0,
+      "duration_seconds": 0.747
+    },
+    "tests/test_e10_budget_allocation.py": {
+      "total": 2,
+      "passed": 2,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0,
+      "duration_seconds": 0.006
+    },
+    "tests/test_e10_evaluator.py": {
+      "total": 3,
+      "passed": 3,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0,
+      "duration_seconds": 0.143
+    },
+    "tests/test_e10_holdout_evaluation.py": {
+      "total": 5,
+      "passed": 5,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0,
+      "duration_seconds": 1.622
+    },
+    "tests/test_e10_oracle_isolation.py": {
+      "total": 3,
+      "passed": 3,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0,
+      "duration_seconds": 0.029
+    },
+    "tests/test_e10_policies.py": {
+      "total": 4,
+      "passed": 4,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0,
+      "duration_seconds": 0.004
+    },
+    "tests/test_e10_provenance_and_immutability.py": {
+      "total": 4,
+      "passed": 4,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0,
+      "duration_seconds": 0.014
+    },
+    "tests/test_e10_sensitivity.py": {
+      "total": 2,
+      "passed": 2,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0,
+      "duration_seconds": 0.022
+    },
+    "tests/test_e10_state_transitions.py": {
+      "total": 8,
+      "passed": 8,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0,
+      "duration_seconds": 0.008
+    },
+    "tests/test_e8_backtester.py": {
+      "total": 6,
+      "passed": 6,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0,
+      "duration_seconds": 1.71
+    },
+    "tests/test_e8_budgeting.py": {
+      "total": 7,
+      "passed": 7,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0,
+      "duration_seconds": 0.665
+    },
+    "tests/test_e8_cost_engine.py": {
+      "total": 27,
+      "passed": 27,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0,
+      "duration_seconds": 0.338
+    },
+    "tests/test_e8_holdout_eval.py": {
+      "total": 10,
+      "passed": 10,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0,
+      "duration_seconds": 0.247
+    },
+    "tests/test_e8_models.py": {
+      "total": 10,
+      "passed": 10,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0,
+      "duration_seconds": 5.448
+    },
+    "tests/test_e8_policy_freeze.py": {
+      "total": 5,
+      "passed": 5,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0,
+      "duration_seconds": 0.037
+    },
+    "tests/test_e8_sensitivity.py": {
+      "total": 4,
+      "passed": 4,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0,
+      "duration_seconds": 1.768
+    },
+    "tests/test_e9_digital_twin.py": {
+      "total": 7,
+      "passed": 7,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0,
+      "duration_seconds": 0.004
+    },
+    "tests/test_end_to_end.py": {
+      "total": 1,
+      "passed": 1,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0,
+      "duration_seconds": 0.052
+    },
+    "tests/test_environment.py": {
+      "total": 5,
+      "passed": 5,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0,
+      "duration_seconds": 0.064
+    },
+    "tests/test_feature_engineering.py": {
+      "total": 4,
+      "passed": 4,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0,
+      "duration_seconds": 0.009
+    },
+    "tests/test_feature_leakage.py": {
+      "total": 2,
+      "passed": 2,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0,
+      "duration_seconds": 0.027
+    },
+    "tests/test_final_artifact_integrity.py": {
+      "total": 2,
+      "passed": 2,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0,
+      "duration_seconds": 0.002
+    },
+    "tests/test_final_end_to_end.py": {
+      "total": 1,
+      "passed": 1,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0,
+      "duration_seconds": 0.067
+    },
+    "tests/test_final_reproducibility.py": {
+      "total": 2,
+      "passed": 2,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0,
+      "duration_seconds": 0.002
+    },
+    "tests/test_model_training.py": {
+      "total": 3,
+      "passed": 3,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0,
+      "duration_seconds": 0.012
+    },
+    "tests/test_olist_adapter.py": {
+      "total": 2,
+      "passed": 2,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0,
+      "duration_seconds": 0.026
+    },
+    "tests/test_point_in_time_features.py": {
+      "total": 3,
+      "passed": 3,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0,
+      "duration_seconds": 2.715
+    },
+    "tests/test_prediction_contract.py": {
+      "total": 13,
+      "passed": 13,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0,
+      "duration_seconds": 0.206
+    },
+    "tests/test_rolling_origin.py": {
+      "total": 7,
+      "passed": 7,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0,
+      "duration_seconds": 0.152
+    },
+    "tests/test_scms_audit.py": {
+      "total": 8,
+      "passed": 8,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0,
+      "duration_seconds": 0.16
+    },
+    "tests/test_scms_ingestion.py": {
+      "total": 10,
+      "passed": 10,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0,
+      "duration_seconds": 1.014
+    },
+    "tests/test_scms_validation.py": {
+      "total": 15,
+      "passed": 15,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0,
+      "duration_seconds": 0.059
+    },
+    "tests/test_shap_explainability.py": {
+      "total": 2,
+      "passed": 2,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0,
+      "duration_seconds": 0.004
+    },
+    "tests/test_threshold_governance.py": {
+      "total": 1,
+      "passed": 1,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0,
+      "duration_seconds": 0.004
+    },
+    "tests/test_uncertainty.py": {
+      "total": 3,
+      "passed": 3,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0,
+      "duration_seconds": 0.007
+    }
+  },
+  "test_cases": [
+    {
+      "module": "tests/test_adaptive_adversarial_stress.py",
+      "classname": "tests.test_adaptive_adversarial_stress",
+      "test_name": "test_adversarial_recalibration_temporal_embargo_invariance",
+      "status": "PASSED",
+      "duration_seconds": 2.792
+    },
+    {
+      "module": "tests/test_adaptive_adversarial_stress.py",
+      "classname": "tests.test_adaptive_adversarial_stress",
+      "test_name": "test_adversarial_synthetic_dense_stream_embargo_probing",
+      "status": "PASSED",
+      "duration_seconds": 0.024
+    },
+    {
+      "module": "tests/test_adaptive_adversarial_stress.py",
+      "classname": "tests.test_adaptive_adversarial_stress",
+      "test_name": "test_adversarial_holdout_bitwise_determinism_10_passes",
+      "status": "PASSED",
+      "duration_seconds": 14.675
+    },
+    {
+      "module": "tests/test_adaptive_adversarial_stress.py",
+      "classname": "tests.test_adaptive_adversarial_stress",
+      "test_name": "test_adversarial_finite_sample_correction_formula",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_adaptive_adversarial_stress.py",
+      "classname": "tests.test_adaptive_adversarial_stress",
+      "test_name": "test_adversarial_sample_size_guards_and_window_expansion",
+      "status": "PASSED",
+      "duration_seconds": 0.002
+    },
+    {
+      "module": "tests/test_adaptive_adversarial_stress.py",
+      "classname": "tests.test_adaptive_adversarial_stress",
+      "test_name": "test_adversarial_exact_boundary_n50",
+      "status": "PASSED",
+      "duration_seconds": 0.002
+    },
+    {
+      "module": "tests/test_adaptive_adversarial_stress.py",
+      "classname": "tests.test_adaptive_adversarial_stress",
+      "test_name": "test_adversarial_latency_micro_benchmark_1000_runs",
+      "status": "PASSED",
+      "duration_seconds": 0.058
+    },
+    {
+      "module": "tests/test_adaptive_adversarial_stress.py",
+      "classname": "tests.test_adaptive_adversarial_stress",
+      "test_name": "test_adversarial_synthetic_drift_shock_recovery",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_adaptive_adversarial_stress.py",
+      "classname": "tests.test_adaptive_adversarial_stress",
+      "test_name": "test_adversarial_degenerate_inputs_and_extreme_outliers",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_adaptive_adversarial_stress.py",
+      "classname": "tests.test_adaptive_adversarial_stress",
+      "test_name": "test_adversarial_cooldown_suppression",
+      "status": "PASSED",
+      "duration_seconds": 0.005
+    },
+    {
+      "module": "tests/test_adaptive_adversarial_stress.py",
+      "classname": "tests.test_adaptive_adversarial_stress",
+      "test_name": "test_adversarial_artifact_manifest_and_report_reconciliation",
+      "status": "PASSED",
+      "duration_seconds": 0.003
+    },
+    {
+      "module": "tests/test_adaptive_holdout_isolation.py",
+      "classname": "tests.test_adaptive_holdout_isolation",
+      "test_name": "test_holdout_sample_size_and_quarantine",
+      "status": "PASSED",
+      "duration_seconds": 0.002
+    },
+    {
+      "module": "tests/test_adaptive_holdout_isolation.py",
+      "classname": "tests.test_adaptive_holdout_isolation",
+      "test_name": "test_holdout_evaluation_determinism",
+      "status": "PASSED",
+      "duration_seconds": 2.924
+    },
+    {
+      "module": "tests/test_adaptive_holdout_isolation.py",
+      "classname": "tests.test_adaptive_holdout_isolation",
+      "test_name": "test_strategy_coverage_hierarchy_on_holdout",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_adaptive_holdout_isolation.py",
+      "classname": "tests.test_adaptive_holdout_isolation",
+      "test_name": "test_efficiency_metrics_validity",
+      "status": "PASSED",
+      "duration_seconds": 0.003
+    },
+    {
+      "module": "tests/test_adaptive_holdout_isolation.py",
+      "classname": "tests.test_adaptive_holdout_isolation",
+      "test_name": "test_cv_adaptive_metrics_exist_and_cover_all_folds",
+      "status": "PASSED",
+      "duration_seconds": 0.003
+    },
+    {
+      "module": "tests/test_adaptive_temporal_safety.py",
+      "classname": "tests.test_adaptive_temporal_safety",
+      "test_name": "test_calibration_strictly_precedes_evaluation_with_embargo",
+      "status": "PASSED",
+      "duration_seconds": 0.181
+    },
+    {
+      "module": "tests/test_adaptive_temporal_safety.py",
+      "classname": "tests.test_adaptive_temporal_safety",
+      "test_name": "test_holdout_recalibration_events_embargo_compliance",
+      "status": "PASSED",
+      "duration_seconds": 0.004
+    },
+    {
+      "module": "tests/test_adaptive_temporal_safety.py",
+      "classname": "tests.test_adaptive_temporal_safety",
+      "test_name": "test_no_future_leakage_in_nonconformity_computation",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_adaptive_temporal_safety.py",
+      "classname": "tests.test_adaptive_temporal_safety",
+      "test_name": "test_frozen_baseline_artifacts_remain_unmodified",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_adaptive_temporal_safety.py",
+      "classname": "tests.test_adaptive_temporal_safety",
+      "test_name": "test_sample_size_guard_suppresses_small_batch_recalibration",
+      "status": "PASSED",
+      "duration_seconds": 0.002
+    },
+    {
+      "module": "tests/test_adversarial_cost_leakage.py",
+      "classname": "tests.test_adversarial_cost_leakage",
+      "test_name": "test_adversarial_single_forbidden_column_dataframe[Delivered to Client Date]",
+      "status": "PASSED",
+      "duration_seconds": 0.007
+    },
+    {
+      "module": "tests/test_adversarial_cost_leakage.py",
+      "classname": "tests.test_adversarial_cost_leakage",
+      "test_name": "test_adversarial_single_forbidden_column_dataframe[Delivery Recorded Date]",
+      "status": "PASSED",
+      "duration_seconds": 0.008
+    },
+    {
+      "module": "tests/test_adversarial_cost_leakage.py",
+      "classname": "tests.test_adversarial_cost_leakage",
+      "test_name": "test_adversarial_single_forbidden_column_dataframe[Delay_Flag]",
+      "status": "PASSED",
+      "duration_seconds": 0.005
+    },
+    {
+      "module": "tests/test_adversarial_cost_leakage.py",
+      "classname": "tests.test_adversarial_cost_leakage",
+      "test_name": "test_adversarial_single_forbidden_column_dataframe[Delay_Days]",
+      "status": "PASSED",
+      "duration_seconds": 0.006
+    },
+    {
+      "module": "tests/test_adversarial_cost_leakage.py",
+      "classname": "tests.test_adversarial_cost_leakage",
+      "test_name": "test_adversarial_single_forbidden_column_dataframe[Freight Cost (USD)]",
+      "status": "PASSED",
+      "duration_seconds": 0.007
+    },
+    {
+      "module": "tests/test_adversarial_cost_leakage.py",
+      "classname": "tests.test_adversarial_cost_leakage",
+      "test_name": "test_adversarial_single_forbidden_column_dataframe[Weight (Kilograms)]",
+      "status": "PASSED",
+      "duration_seconds": 0.008
+    },
+    {
+      "module": "tests/test_adversarial_cost_leakage.py",
+      "classname": "tests.test_adversarial_cost_leakage",
+      "test_name": "test_adversarial_single_forbidden_column_dataframe[ASN/DN #]",
+      "status": "PASSED",
+      "duration_seconds": 0.007
+    },
+    {
+      "module": "tests/test_adversarial_cost_leakage.py",
+      "classname": "tests.test_adversarial_cost_leakage",
+      "test_name": "test_adversarial_single_forbidden_column_dataframe[is_temporal_anomaly]",
+      "status": "PASSED",
+      "duration_seconds": 0.006
+    },
+    {
+      "module": "tests/test_adversarial_cost_leakage.py",
+      "classname": "tests.test_adversarial_cost_leakage",
+      "test_name": "test_adversarial_single_forbidden_column_series[Delivered to Client Date]",
+      "status": "PASSED",
+      "duration_seconds": 0.009
+    },
+    {
+      "module": "tests/test_adversarial_cost_leakage.py",
+      "classname": "tests.test_adversarial_cost_leakage",
+      "test_name": "test_adversarial_single_forbidden_column_series[Delivery Recorded Date]",
+      "status": "PASSED",
+      "duration_seconds": 0.008
+    },
+    {
+      "module": "tests/test_adversarial_cost_leakage.py",
+      "classname": "tests.test_adversarial_cost_leakage",
+      "test_name": "test_adversarial_single_forbidden_column_series[Delay_Flag]",
+      "status": "PASSED",
+      "duration_seconds": 0.008
+    },
+    {
+      "module": "tests/test_adversarial_cost_leakage.py",
+      "classname": "tests.test_adversarial_cost_leakage",
+      "test_name": "test_adversarial_single_forbidden_column_series[Delay_Days]",
+      "status": "PASSED",
+      "duration_seconds": 0.008
+    },
+    {
+      "module": "tests/test_adversarial_cost_leakage.py",
+      "classname": "tests.test_adversarial_cost_leakage",
+      "test_name": "test_adversarial_single_forbidden_column_series[Freight Cost (USD)]",
+      "status": "PASSED",
+      "duration_seconds": 0.008
+    },
+    {
+      "module": "tests/test_adversarial_cost_leakage.py",
+      "classname": "tests.test_adversarial_cost_leakage",
+      "test_name": "test_adversarial_single_forbidden_column_series[Weight (Kilograms)]",
+      "status": "PASSED",
+      "duration_seconds": 0.007
+    },
+    {
+      "module": "tests/test_adversarial_cost_leakage.py",
+      "classname": "tests.test_adversarial_cost_leakage",
+      "test_name": "test_adversarial_single_forbidden_column_series[ASN/DN #]",
+      "status": "PASSED",
+      "duration_seconds": 0.008
+    },
+    {
+      "module": "tests/test_adversarial_cost_leakage.py",
+      "classname": "tests.test_adversarial_cost_leakage",
+      "test_name": "test_adversarial_single_forbidden_column_series[is_temporal_anomaly]",
+      "status": "PASSED",
+      "duration_seconds": 0.007
+    },
+    {
+      "module": "tests/test_adversarial_cost_leakage.py",
+      "classname": "tests.test_adversarial_cost_leakage",
+      "test_name": "test_adversarial_single_forbidden_column_dict[Delivered to Client Date]",
+      "status": "PASSED",
+      "duration_seconds": 0.008
+    },
+    {
+      "module": "tests/test_adversarial_cost_leakage.py",
+      "classname": "tests.test_adversarial_cost_leakage",
+      "test_name": "test_adversarial_single_forbidden_column_dict[Delivery Recorded Date]",
+      "status": "PASSED",
+      "duration_seconds": 0.007
+    },
+    {
+      "module": "tests/test_adversarial_cost_leakage.py",
+      "classname": "tests.test_adversarial_cost_leakage",
+      "test_name": "test_adversarial_single_forbidden_column_dict[Delay_Flag]",
+      "status": "PASSED",
+      "duration_seconds": 0.007
+    },
+    {
+      "module": "tests/test_adversarial_cost_leakage.py",
+      "classname": "tests.test_adversarial_cost_leakage",
+      "test_name": "test_adversarial_single_forbidden_column_dict[Delay_Days]",
+      "status": "PASSED",
+      "duration_seconds": 0.007
+    },
+    {
+      "module": "tests/test_adversarial_cost_leakage.py",
+      "classname": "tests.test_adversarial_cost_leakage",
+      "test_name": "test_adversarial_single_forbidden_column_dict[Freight Cost (USD)]",
+      "status": "PASSED",
+      "duration_seconds": 0.007
+    },
+    {
+      "module": "tests/test_adversarial_cost_leakage.py",
+      "classname": "tests.test_adversarial_cost_leakage",
+      "test_name": "test_adversarial_single_forbidden_column_dict[Weight (Kilograms)]",
+      "status": "PASSED",
+      "duration_seconds": 0.008
+    },
+    {
+      "module": "tests/test_adversarial_cost_leakage.py",
+      "classname": "tests.test_adversarial_cost_leakage",
+      "test_name": "test_adversarial_single_forbidden_column_dict[ASN/DN #]",
+      "status": "PASSED",
+      "duration_seconds": 0.006
+    },
+    {
+      "module": "tests/test_adversarial_cost_leakage.py",
+      "classname": "tests.test_adversarial_cost_leakage",
+      "test_name": "test_adversarial_single_forbidden_column_dict[is_temporal_anomaly]",
+      "status": "PASSED",
+      "duration_seconds": 0.007
+    },
+    {
+      "module": "tests/test_adversarial_cost_leakage.py",
+      "classname": "tests.test_adversarial_cost_leakage",
+      "test_name": "test_adversarial_all_forbidden_columns_simultaneous",
+      "status": "PASSED",
+      "duration_seconds": 0.007
+    },
+    {
+      "module": "tests/test_adversarial_cost_leakage.py",
+      "classname": "tests.test_adversarial_cost_leakage",
+      "test_name": "test_adversarial_sample_weights_and_benefit_ranking_enforce_leakage",
+      "status": "PASSED",
+      "duration_seconds": 0.007
+    },
+    {
+      "module": "tests/test_adversarial_cost_leakage.py",
+      "classname": "tests.test_adversarial_cost_leakage",
+      "test_name": "test_adversarial_monetary_extraction_identity",
+      "status": "PASSED",
+      "duration_seconds": 0.007
+    },
+    {
+      "module": "tests/test_adversarial_cost_leakage.py",
+      "classname": "tests.test_adversarial_cost_leakage",
+      "test_name": "test_adversarial_explicit_unlogged_flag_prevents_false_autodetect",
+      "status": "PASSED",
+      "duration_seconds": 0.007
+    },
+    {
+      "module": "tests/test_adversarial_cost_leakage.py",
+      "classname": "tests.test_adversarial_cost_leakage",
+      "test_name": "test_adversarial_negative_and_nan_monetary_values",
+      "status": "PASSED",
+      "duration_seconds": 0.007
+    },
+    {
+      "module": "tests/test_adversarial_cost_leakage.py",
+      "classname": "tests.test_adversarial_cost_leakage",
+      "test_name": "test_adversarial_empty_dataframe",
+      "status": "PASSED",
+      "duration_seconds": 0.009
+    },
+    {
+      "module": "tests/test_adversarial_cost_leakage.py",
+      "classname": "tests.test_adversarial_cost_leakage",
+      "test_name": "test_adversarial_missing_all_optional_columns",
+      "status": "PASSED",
+      "duration_seconds": 0.008
+    },
+    {
+      "module": "tests/test_adversarial_cost_leakage.py",
+      "classname": "tests.test_adversarial_cost_leakage",
+      "test_name": "test_adversarial_categorical_edge_cases",
+      "status": "PASSED",
+      "duration_seconds": 0.016
+    },
+    {
+      "module": "tests/test_adversarial_cost_leakage.py",
+      "classname": "tests.test_adversarial_cost_leakage",
+      "test_name": "test_adversarial_cost_monotonicity_with_value",
+      "status": "PASSED",
+      "duration_seconds": 0.009
+    },
+    {
+      "module": "tests/test_adversarial_cost_leakage.py",
+      "classname": "tests.test_adversarial_cost_leakage",
+      "test_name": "test_adversarial_criticality_boost_invariants",
+      "status": "PASSED",
+      "duration_seconds": 0.008
+    },
+    {
+      "module": "tests/test_adversarial_cost_leakage.py",
+      "classname": "tests.test_adversarial_cost_leakage",
+      "test_name": "test_adversarial_scenario_hierarchy_invariants",
+      "status": "PASSED",
+      "duration_seconds": 0.007
+    },
+    {
+      "module": "tests/test_adversarial_cost_leakage.py",
+      "classname": "tests.test_adversarial_cost_leakage",
+      "test_name": "test_adversarial_tau_star_bounds_and_validity",
+      "status": "PASSED",
+      "duration_seconds": 0.014
+    },
+    {
+      "module": "tests/test_adversarial_cost_leakage.py",
+      "classname": "tests.test_adversarial_cost_leakage",
+      "test_name": "test_leakage_violation_is_subclass_of_value_error",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_adversarial_cost_leakage.py",
+      "classname": "tests.test_adversarial_cost_leakage",
+      "test_name": "test_adversarial_negative_net_benefit_clamps_tau_star_to_one",
+      "status": "PASSED",
+      "duration_seconds": 0.007
+    },
+    {
+      "module": "tests/test_adversarial_cost_leakage.py",
+      "classname": "tests.test_adversarial_cost_leakage",
+      "test_name": "test_adversarial_sample_weights_mismatched_length",
+      "status": "PASSED",
+      "duration_seconds": 0.008
+    },
+    {
+      "module": "tests/test_adversarial_cost_leakage.py",
+      "classname": "tests.test_adversarial_cost_leakage",
+      "test_name": "test_adversarial_compute_expected_cost_unsupported_type",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_adversarial_cost_leakage.py",
+      "classname": "tests.test_adversarial_cost_leakage",
+      "test_name": "test_adversarial_large_batch_stress",
+      "status": "PASSED",
+      "duration_seconds": 0.101
+    },
+    {
+      "module": "tests/test_adversarial_e8_m4_challenger.py",
+      "classname": "tests.test_adversarial_e8_m4_challenger.TestAdversarialCostLeakageAndIsolation",
+      "test_name": "test_forbidden_columns_intercepted_in_cost_engine[Delivered to Client Date]",
+      "status": "PASSED",
+      "duration_seconds": 0.006
+    },
+    {
+      "module": "tests/test_adversarial_e8_m4_challenger.py",
+      "classname": "tests.test_adversarial_e8_m4_challenger.TestAdversarialCostLeakageAndIsolation",
+      "test_name": "test_forbidden_columns_intercepted_in_cost_engine[Delivery Recorded Date]",
+      "status": "PASSED",
+      "duration_seconds": 0.009
+    },
+    {
+      "module": "tests/test_adversarial_e8_m4_challenger.py",
+      "classname": "tests.test_adversarial_e8_m4_challenger.TestAdversarialCostLeakageAndIsolation",
+      "test_name": "test_forbidden_columns_intercepted_in_cost_engine[Delay_Flag]",
+      "status": "PASSED",
+      "duration_seconds": 0.005
+    },
+    {
+      "module": "tests/test_adversarial_e8_m4_challenger.py",
+      "classname": "tests.test_adversarial_e8_m4_challenger.TestAdversarialCostLeakageAndIsolation",
+      "test_name": "test_forbidden_columns_intercepted_in_cost_engine[Delay_Days]",
+      "status": "PASSED",
+      "duration_seconds": 0.007
+    },
+    {
+      "module": "tests/test_adversarial_e8_m4_challenger.py",
+      "classname": "tests.test_adversarial_e8_m4_challenger.TestAdversarialCostLeakageAndIsolation",
+      "test_name": "test_forbidden_columns_intercepted_in_cost_engine[Freight Cost (USD)]",
+      "status": "PASSED",
+      "duration_seconds": 0.007
+    },
+    {
+      "module": "tests/test_adversarial_e8_m4_challenger.py",
+      "classname": "tests.test_adversarial_e8_m4_challenger.TestAdversarialCostLeakageAndIsolation",
+      "test_name": "test_forbidden_columns_intercepted_in_cost_engine[Weight (Kilograms)]",
+      "status": "PASSED",
+      "duration_seconds": 0.007
+    },
+    {
+      "module": "tests/test_adversarial_e8_m4_challenger.py",
+      "classname": "tests.test_adversarial_e8_m4_challenger.TestAdversarialCostLeakageAndIsolation",
+      "test_name": "test_forbidden_columns_intercepted_in_cost_engine[ASN/DN #]",
+      "status": "PASSED",
+      "duration_seconds": 0.008
+    },
+    {
+      "module": "tests/test_adversarial_e8_m4_challenger.py",
+      "classname": "tests.test_adversarial_e8_m4_challenger.TestAdversarialCostLeakageAndIsolation",
+      "test_name": "test_forbidden_columns_intercepted_in_cost_engine[is_temporal_anomaly]",
+      "status": "PASSED",
+      "duration_seconds": 0.008
+    },
+    {
+      "module": "tests/test_adversarial_e8_m4_challenger.py",
+      "classname": "tests.test_adversarial_e8_m4_challenger.TestAdversarialCostLeakageAndIsolation",
+      "test_name": "test_forbidden_columns_intercepted_in_sample_weights[Delivered to Client Date]",
+      "status": "PASSED",
+      "duration_seconds": 0.008
+    },
+    {
+      "module": "tests/test_adversarial_e8_m4_challenger.py",
+      "classname": "tests.test_adversarial_e8_m4_challenger.TestAdversarialCostLeakageAndIsolation",
+      "test_name": "test_forbidden_columns_intercepted_in_sample_weights[Delivery Recorded Date]",
+      "status": "PASSED",
+      "duration_seconds": 0.007
+    },
+    {
+      "module": "tests/test_adversarial_e8_m4_challenger.py",
+      "classname": "tests.test_adversarial_e8_m4_challenger.TestAdversarialCostLeakageAndIsolation",
+      "test_name": "test_forbidden_columns_intercepted_in_sample_weights[Delay_Flag]",
+      "status": "PASSED",
+      "duration_seconds": 0.008
+    },
+    {
+      "module": "tests/test_adversarial_e8_m4_challenger.py",
+      "classname": "tests.test_adversarial_e8_m4_challenger.TestAdversarialCostLeakageAndIsolation",
+      "test_name": "test_forbidden_columns_intercepted_in_sample_weights[Delay_Days]",
+      "status": "PASSED",
+      "duration_seconds": 0.007
+    },
+    {
+      "module": "tests/test_adversarial_e8_m4_challenger.py",
+      "classname": "tests.test_adversarial_e8_m4_challenger.TestAdversarialCostLeakageAndIsolation",
+      "test_name": "test_forbidden_columns_intercepted_in_sample_weights[Freight Cost (USD)]",
+      "status": "PASSED",
+      "duration_seconds": 0.008
+    },
+    {
+      "module": "tests/test_adversarial_e8_m4_challenger.py",
+      "classname": "tests.test_adversarial_e8_m4_challenger.TestAdversarialCostLeakageAndIsolation",
+      "test_name": "test_forbidden_columns_intercepted_in_sample_weights[Weight (Kilograms)]",
+      "status": "PASSED",
+      "duration_seconds": 0.007
+    },
+    {
+      "module": "tests/test_adversarial_e8_m4_challenger.py",
+      "classname": "tests.test_adversarial_e8_m4_challenger.TestAdversarialCostLeakageAndIsolation",
+      "test_name": "test_forbidden_columns_intercepted_in_sample_weights[ASN/DN #]",
+      "status": "PASSED",
+      "duration_seconds": 0.008
+    },
+    {
+      "module": "tests/test_adversarial_e8_m4_challenger.py",
+      "classname": "tests.test_adversarial_e8_m4_challenger.TestAdversarialCostLeakageAndIsolation",
+      "test_name": "test_forbidden_columns_intercepted_in_sample_weights[is_temporal_anomaly]",
+      "status": "PASSED",
+      "duration_seconds": 0.007
+    },
+    {
+      "module": "tests/test_adversarial_e8_m4_challenger.py",
+      "classname": "tests.test_adversarial_e8_m4_challenger.TestAdversarialCostLeakageAndIsolation",
+      "test_name": "test_verify_holdout_isolation_accepts_clean_dev_data",
+      "status": "PASSED",
+      "duration_seconds": 0.003
+    },
+    {
+      "module": "tests/test_adversarial_e8_m4_challenger.py",
+      "classname": "tests.test_adversarial_e8_m4_challenger.TestAdversarialCostLeakageAndIsolation",
+      "test_name": "test_verify_holdout_isolation_rejects_canary_holdout_date",
+      "status": "PASSED",
+      "duration_seconds": 0.003
+    },
+    {
+      "module": "tests/test_adversarial_e8_m4_challenger.py",
+      "classname": "tests.test_adversarial_e8_m4_challenger.TestAdversarialCostLeakageAndIsolation",
+      "test_name": "test_verify_holdout_isolation_rejects_far_future_date",
+      "status": "PASSED",
+      "duration_seconds": 0.002
+    },
+    {
+      "module": "tests/test_adversarial_e8_m4_challenger.py",
+      "classname": "tests.test_adversarial_e8_m4_challenger.TestAdversarialCostLeakageAndIsolation",
+      "test_name": "test_verify_holdout_isolation_mixed_format_vulnerability_demonstration",
+      "status": "PASSED",
+      "duration_seconds": 0.003
+    },
+    {
+      "module": "tests/test_adversarial_e8_m4_challenger.py",
+      "classname": "tests.test_adversarial_e8_m4_challenger.TestAdversarialCostLeakageAndIsolation",
+      "test_name": "test_dev_backtest_results_contain_zero_holdout_records",
+      "status": "PASSED",
+      "duration_seconds": 0.028
+    },
+    {
+      "module": "tests/test_adversarial_e8_m4_challenger.py",
+      "classname": "tests.test_adversarial_e8_m4_challenger.TestAdversarialCostLeakageAndIsolation",
+      "test_name": "test_feature_contract_in_frozen_policy_contains_zero_forbidden_columns",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_adversarial_e8_m4_challenger.py",
+      "classname": "tests.test_adversarial_e8_m4_challenger.TestAdversarialExtremeAssumptionsAndBoundaries",
+      "test_name": "test_empty_cohort_handling",
+      "status": "PASSED",
+      "duration_seconds": 0.007
+    },
+    {
+      "module": "tests/test_adversarial_e8_m4_challenger.py",
+      "classname": "tests.test_adversarial_e8_m4_challenger.TestAdversarialExtremeAssumptionsAndBoundaries",
+      "test_name": "test_single_item_cohort",
+      "status": "PASSED",
+      "duration_seconds": 0.008
+    },
+    {
+      "module": "tests/test_adversarial_e8_m4_challenger.py",
+      "classname": "tests.test_adversarial_e8_m4_challenger.TestAdversarialExtremeAssumptionsAndBoundaries",
+      "test_name": "test_zero_budget_capacity",
+      "status": "PASSED",
+      "duration_seconds": 0.007
+    },
+    {
+      "module": "tests/test_adversarial_e8_m4_challenger.py",
+      "classname": "tests.test_adversarial_e8_m4_challenger.TestAdversarialExtremeAssumptionsAndBoundaries",
+      "test_name": "test_full_100_percent_and_over_budget_capacity",
+      "status": "PASSED",
+      "duration_seconds": 0.007
+    },
+    {
+      "module": "tests/test_adversarial_e8_m4_challenger.py",
+      "classname": "tests.test_adversarial_e8_m4_challenger.TestAdversarialExtremeAssumptionsAndBoundaries",
+      "test_name": "test_all_negative_delay_days_and_early_deliveries",
+      "status": "PASSED",
+      "duration_seconds": 0.008
+    },
+    {
+      "module": "tests/test_adversarial_e8_m4_challenger.py",
+      "classname": "tests.test_adversarial_e8_m4_challenger.TestAdversarialExtremeAssumptionsAndBoundaries",
+      "test_name": "test_extreme_commodity_values_huge_and_zero",
+      "status": "PASSED",
+      "duration_seconds": 0.012
+    },
+    {
+      "module": "tests/test_adversarial_e8_m4_challenger.py",
+      "classname": "tests.test_adversarial_e8_m4_challenger.TestAdversarialExtremeAssumptionsAndBoundaries",
+      "test_name": "test_small_value_auto_detection_caveat",
+      "status": "PASSED",
+      "duration_seconds": 0.006
+    },
+    {
+      "module": "tests/test_adversarial_e8_m4_challenger.py",
+      "classname": "tests.test_adversarial_e8_m4_challenger.TestAdversarialExtremeAssumptionsAndBoundaries",
+      "test_name": "test_inverted_cost_parameters_negative_net_benefit",
+      "status": "PASSED",
+      "duration_seconds": 0.009
+    },
+    {
+      "module": "tests/test_adversarial_e8_m4_challenger.py",
+      "classname": "tests.test_adversarial_e8_m4_challenger.TestAdversarialExtremeAssumptionsAndBoundaries",
+      "test_name": "test_sensitivity_extreme_multipliers",
+      "status": "PASSED",
+      "duration_seconds": 0.007
+    },
+    {
+      "module": "tests/test_adversarial_e8_m4_challenger.py",
+      "classname": "tests.test_adversarial_e8_m4_challenger.TestAdversarialThresholdMonotonicityAndRationality",
+      "test_name": "test_priority_score_strict_monotonicity_wrt_probability",
+      "status": "PASSED",
+      "duration_seconds": 0.008
+    },
+    {
+      "module": "tests/test_adversarial_e8_m4_challenger.py",
+      "classname": "tests.test_adversarial_e8_m4_challenger.TestAdversarialThresholdMonotonicityAndRationality",
+      "test_name": "test_priority_score_strict_monotonicity_wrt_net_benefit",
+      "status": "PASSED",
+      "duration_seconds": 0.008
+    },
+    {
+      "module": "tests/test_adversarial_e8_m4_challenger.py",
+      "classname": "tests.test_adversarial_e8_m4_challenger.TestAdversarialThresholdMonotonicityAndRationality",
+      "test_name": "test_priority_score_strict_monotonicity_wrt_fp_cost",
+      "status": "PASSED",
+      "duration_seconds": 0.008
+    },
+    {
+      "module": "tests/test_adversarial_e8_m4_challenger.py",
+      "classname": "tests.test_adversarial_e8_m4_challenger.TestAdversarialThresholdMonotonicityAndRationality",
+      "test_name": "test_bayes_threshold_monotonicity_wrt_gamma",
+      "status": "PASSED",
+      "duration_seconds": 0.002
+    },
+    {
+      "module": "tests/test_adversarial_e8_m4_challenger.py",
+      "classname": "tests.test_adversarial_e8_m4_challenger.TestAdversarialThresholdMonotonicityAndRationality",
+      "test_name": "test_budget_capacity_monotonicity",
+      "status": "PASSED",
+      "duration_seconds": 0.011
+    },
+    {
+      "module": "tests/test_adversarial_e8_m4_challenger.py",
+      "classname": "tests.test_adversarial_e8_m4_challenger.TestAdversarialThresholdMonotonicityAndRationality",
+      "test_name": "test_ties_handled_with_exact_capacity_enforcement",
+      "status": "PASSED",
+      "duration_seconds": 0.008
+    },
+    {
+      "module": "tests/test_adversarial_e8_m4_challenger.py",
+      "classname": "tests.test_adversarial_e8_m4_challenger.TestAdversarialThresholdMonotonicityAndRationality",
+      "test_name": "test_zero_risk_cohort_rationality",
+      "status": "PASSED",
+      "duration_seconds": 0.008
+    },
+    {
+      "module": "tests/test_adversarial_e8_m4_challenger.py",
+      "classname": "tests.test_adversarial_e8_m4_challenger.TestAdversarialCryptographicManifestIntegrity",
+      "test_name": "test_frozen_policy_json_manifest_file_count",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_adversarial_e8_m4_challenger.py",
+      "classname": "tests.test_adversarial_e8_m4_challenger.TestAdversarialCryptographicManifestIntegrity",
+      "test_name": "test_sha256_checksums_match_actual_files_on_disk",
+      "status": "PASSED",
+      "duration_seconds": 0.007
+    },
+    {
+      "module": "tests/test_adversarial_e8_m5_holdout.py",
+      "classname": "tests.test_adversarial_e8_m5_holdout.TestAdversarialHoldoutIsolation",
+      "test_name": "test_exact_holdout_partition_counts_and_dates",
+      "status": "PASSED",
+      "duration_seconds": 0.052
+    },
+    {
+      "module": "tests/test_adversarial_e8_m5_holdout.py",
+      "classname": "tests.test_adversarial_e8_m5_holdout.TestAdversarialHoldoutIsolation",
+      "test_name": "test_dev_isolation_verification_raises_no_error",
+      "status": "PASSED",
+      "duration_seconds": 0.039
+    },
+    {
+      "module": "tests/test_adversarial_e8_m5_holdout.py",
+      "classname": "tests.test_adversarial_e8_m5_holdout.TestAdversarialHoldoutIsolation",
+      "test_name": "test_dev_inner_train_val_embargo_integrity",
+      "status": "PASSED",
+      "duration_seconds": 0.044
+    },
+    {
+      "module": "tests/test_adversarial_e8_m5_holdout.py",
+      "classname": "tests.test_adversarial_e8_m5_holdout.TestAdversarialFrozenPolicyIntegrity",
+      "test_name": "test_frozen_policy_hyperparameters",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_adversarial_e8_m5_holdout.py",
+      "classname": "tests.test_adversarial_e8_m5_holdout.TestAdversarialFrozenPolicyIntegrity",
+      "test_name": "test_feature_contract_contains_no_forbidden_columns",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_adversarial_e8_m5_holdout.py",
+      "classname": "tests.test_adversarial_e8_m5_holdout.TestAdversarialParquetAndJsonSchema",
+      "test_name": "test_holdout_parquet_shape_and_no_nulls",
+      "status": "PASSED",
+      "duration_seconds": 0.008
+    },
+    {
+      "module": "tests/test_adversarial_e8_m5_holdout.py",
+      "classname": "tests.test_adversarial_e8_m5_holdout.TestAdversarialParquetAndJsonSchema",
+      "test_name": "test_holdout_parquet_datatypes_and_ranges",
+      "status": "PASSED",
+      "duration_seconds": 0.003
+    },
+    {
+      "module": "tests/test_adversarial_e8_m5_holdout.py",
+      "classname": "tests.test_adversarial_e8_m5_holdout.TestAdversarialParquetAndJsonSchema",
+      "test_name": "test_holdout_json_structure_and_completeness",
+      "status": "PASSED",
+      "duration_seconds": 0.003
+    },
+    {
+      "module": "tests/test_adversarial_e8_m5_holdout.py",
+      "classname": "tests.test_adversarial_e8_m5_holdout.TestAdversarialMathematicalIdentities",
+      "test_name": "test_bayes_and_champion_threshold_identities",
+      "status": "PASSED",
+      "duration_seconds": 0.012
+    },
+    {
+      "module": "tests/test_adversarial_e8_m5_holdout.py",
+      "classname": "tests.test_adversarial_e8_m5_holdout.TestAdversarialMathematicalIdentities",
+      "test_name": "test_strategy_decision_rule_and_cost_accounting",
+      "status": "PASSED",
+      "duration_seconds": 0.01
+    },
+    {
+      "module": "tests/test_adversarial_e8_m5_holdout.py",
+      "classname": "tests.test_adversarial_e8_m5_holdout.TestAdversarialMathematicalIdentities",
+      "test_name": "test_do_nothing_cost_identity",
+      "status": "PASSED",
+      "duration_seconds": 0.004
+    },
+    {
+      "module": "tests/test_adversarial_e8_m5_holdout.py",
+      "classname": "tests.test_adversarial_e8_m5_holdout.TestAdversarialPriorityMonotonicityAndBudgeting",
+      "test_name": "test_budget_capacity_counts",
+      "status": "PASSED",
+      "duration_seconds": 0.005
+    },
+    {
+      "module": "tests/test_adversarial_e8_m5_holdout.py",
+      "classname": "tests.test_adversarial_e8_m5_holdout.TestAdversarialPriorityMonotonicityAndBudgeting",
+      "test_name": "test_priority_ranking_strict_monotonicity",
+      "status": "PASSED",
+      "duration_seconds": 0.015
+    },
+    {
+      "module": "tests/test_adversarial_e8_m5_holdout.py",
+      "classname": "tests.test_adversarial_e8_m5_holdout.TestAdversarialPriorityMonotonicityAndBudgeting",
+      "test_name": "test_budget_hierarchical_nesting",
+      "status": "PASSED",
+      "duration_seconds": 0.008
+    },
+    {
+      "module": "tests/test_adversarial_e8_m5_holdout.py",
+      "classname": "tests.test_adversarial_e8_m5_holdout.TestAdversarialCrossMetricReconciliation",
+      "test_name": "test_unconstrained_metrics_reconciliation",
+      "status": "PASSED",
+      "duration_seconds": 0.065
+    },
+    {
+      "module": "tests/test_adversarial_e8_m5_holdout.py",
+      "classname": "tests.test_adversarial_e8_m5_holdout.TestAdversarialCrossMetricReconciliation",
+      "test_name": "test_budget_metrics_savings_math_consistency",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_adversarial_e8_m5_holdout.py",
+      "classname": "tests.test_adversarial_e8_m5_holdout.TestAdversarialEconomicSuperiorityAndDecisionRationality",
+      "test_name": "test_champion_net_savings_strictly_positive",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_adversarial_e8_m5_holdout.py",
+      "classname": "tests.test_adversarial_e8_m5_holdout.TestAdversarialEconomicSuperiorityAndDecisionRationality",
+      "test_name": "test_cost_sensitive_budgeting_dominates_baselines_at_k10",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_adversarial_e8_models.py",
+      "classname": "tests.test_adversarial_e8_models.TestSampleWeightBoundaryBehavior",
+      "test_name": "test_extreme_outlier_monetary_values",
+      "status": "PASSED",
+      "duration_seconds": 0.012
+    },
+    {
+      "module": "tests/test_adversarial_e8_models.py",
+      "classname": "tests.test_adversarial_e8_models.TestSampleWeightBoundaryBehavior",
+      "test_name": "test_negative_monetary_values_clamped_safely",
+      "status": "PASSED",
+      "duration_seconds": 0.011
+    },
+    {
+      "module": "tests/test_adversarial_e8_models.py",
+      "classname": "tests.test_adversarial_e8_models.TestSampleWeightBoundaryBehavior",
+      "test_name": "test_negative_net_benefit_epsilon_clamping",
+      "status": "PASSED",
+      "duration_seconds": 0.007
+    },
+    {
+      "module": "tests/test_adversarial_e8_models.py",
+      "classname": "tests.test_adversarial_e8_models.TestSampleWeightBoundaryBehavior",
+      "test_name": "test_unnormalized_vs_normalized_weights",
+      "status": "PASSED",
+      "duration_seconds": 0.021
+    },
+    {
+      "module": "tests/test_adversarial_e8_models.py",
+      "classname": "tests.test_adversarial_e8_models.TestSampleWeightBoundaryBehavior",
+      "test_name": "test_cost_weighted_catboost_fit_with_extreme_weights",
+      "status": "PASSED",
+      "duration_seconds": 0.823
+    },
+    {
+      "module": "tests/test_adversarial_e8_models.py",
+      "classname": "tests.test_adversarial_e8_models.TestProbabilityCalibrationRobustness",
+      "test_name": "test_calibration_fallback_on_single_class_validation",
+      "status": "PASSED",
+      "duration_seconds": 0.494
+    },
+    {
+      "module": "tests/test_adversarial_e8_models.py",
+      "classname": "tests.test_adversarial_e8_models.TestProbabilityCalibrationRobustness",
+      "test_name": "test_calibration_fallback_on_tiny_validation_set",
+      "status": "PASSED",
+      "duration_seconds": 0.501
+    },
+    {
+      "module": "tests/test_adversarial_e8_models.py",
+      "classname": "tests.test_adversarial_e8_models.TestProbabilityCalibrationRobustness",
+      "test_name": "test_calibration_with_constant_model_predictions",
+      "status": "PASSED",
+      "duration_seconds": 0.162
+    },
+    {
+      "module": "tests/test_adversarial_e8_models.py",
+      "classname": "tests.test_adversarial_e8_models.TestProbabilityCalibrationRobustness",
+      "test_name": "test_calibrated_vs_uncalibrated_monotonicity",
+      "status": "PASSED",
+      "duration_seconds": 0.902
+    },
+    {
+      "module": "tests/test_adversarial_e8_models.py",
+      "classname": "tests.test_adversarial_e8_models.TestBayesOptimalThresholdsExtremeCosts",
+      "test_name": "test_extreme_delay_cost_dominance_fn_vastly_exceeds_fp",
+      "status": "PASSED",
+      "duration_seconds": 0.476
+    },
+    {
+      "module": "tests/test_adversarial_e8_models.py",
+      "classname": "tests.test_adversarial_e8_models.TestBayesOptimalThresholdsExtremeCosts",
+      "test_name": "test_extreme_false_alarm_cost_dominance_fp_vastly_exceeds_fn",
+      "status": "PASSED",
+      "duration_seconds": 0.46
+    },
+    {
+      "module": "tests/test_adversarial_e8_models.py",
+      "classname": "tests.test_adversarial_e8_models.TestBayesOptimalThresholdsExtremeCosts",
+      "test_name": "test_symmetric_cost_boundary_yields_half_threshold",
+      "status": "PASSED",
+      "duration_seconds": 0.008
+    },
+    {
+      "module": "tests/test_adversarial_e8_models.py",
+      "classname": "tests.test_adversarial_e8_models.TestGammaMultiplierTuning",
+      "test_name": "test_gamma_tuning_on_all_zeros_validation",
+      "status": "PASSED",
+      "duration_seconds": 0.479
+    },
+    {
+      "module": "tests/test_adversarial_e8_models.py",
+      "classname": "tests.test_adversarial_e8_models.TestGammaMultiplierTuning",
+      "test_name": "test_gamma_tuning_on_all_ones_validation",
+      "status": "PASSED",
+      "duration_seconds": 0.53
+    },
+    {
+      "module": "tests/test_adversarial_e8_models.py",
+      "classname": "tests.test_adversarial_e8_models.TestGammaMultiplierTuning",
+      "test_name": "test_gamma_clipping_in_predict_thresholds",
+      "status": "PASSED",
+      "duration_seconds": 0.245
+    },
+    {
+      "module": "tests/test_adversarial_e8_models.py",
+      "classname": "tests.test_adversarial_e8_models.TestModelInvariantsAndSanity",
+      "test_name": "test_decision_consistency_invariant[StandardCatBoostStrategy-kwargs0]",
+      "status": "PASSED",
+      "duration_seconds": 0.715
+    },
+    {
+      "module": "tests/test_adversarial_e8_models.py",
+      "classname": "tests.test_adversarial_e8_models.TestModelInvariantsAndSanity",
+      "test_name": "test_decision_consistency_invariant[StandardCatBoostStrategy-kwargs1]",
+      "status": "PASSED",
+      "duration_seconds": 0.896
+    },
+    {
+      "module": "tests/test_adversarial_e8_models.py",
+      "classname": "tests.test_adversarial_e8_models.TestModelInvariantsAndSanity",
+      "test_name": "test_decision_consistency_invariant[CostWeightedCatBoostStrategy-kwargs2]",
+      "status": "PASSED",
+      "duration_seconds": 0.821
+    },
+    {
+      "module": "tests/test_adversarial_e8_models.py",
+      "classname": "tests.test_adversarial_e8_models.TestModelInvariantsAndSanity",
+      "test_name": "test_decision_consistency_invariant[CostThresholdCatBoostStrategy-kwargs3]",
+      "status": "PASSED",
+      "duration_seconds": 0.783
+    },
+    {
+      "module": "tests/test_adversarial_e8_models.py",
+      "classname": "tests.test_adversarial_e8_models.TestModelInvariantsAndSanity",
+      "test_name": "test_decision_consistency_invariant[CostThresholdCatBoostStrategy-kwargs4]",
+      "status": "PASSED",
+      "duration_seconds": 0.802
+    },
+    {
+      "module": "tests/test_adversarial_e8_models.py",
+      "classname": "tests.test_adversarial_e8_models.TestModelInvariantsAndSanity",
+      "test_name": "test_unfitted_model_raises_runtime_error",
+      "status": "PASSED",
+      "duration_seconds": 0.019
+    },
+    {
+      "module": "tests/test_adversarial_e8_models.py",
+      "classname": "tests.test_adversarial_e8_models.TestModelInvariantsAndSanity",
+      "test_name": "test_ranking_score_policies_and_invalid_name",
+      "status": "PASSED",
+      "duration_seconds": 0.683
+    },
+    {
+      "module": "tests/test_adversarial_e8_models.py",
+      "classname": "tests.test_adversarial_e8_models.TestModelInvariantsAndSanity",
+      "test_name": "test_metadata_completeness",
+      "status": "PASSED",
+      "duration_seconds": 0.328
+    },
+    {
+      "module": "tests/test_adversarial_scms.py",
+      "classname": "tests.test_adversarial_scms.TestAdversarialDateHandling",
+      "test_name": "test_milestone_dates_malformed_string_coercion[2020-99-99]",
+      "status": "PASSED",
+      "duration_seconds": 0.016
+    },
+    {
+      "module": "tests/test_adversarial_scms.py",
+      "classname": "tests.test_adversarial_scms.TestAdversarialDateHandling",
+      "test_name": "test_milestone_dates_malformed_string_coercion[INVALID_DATE]",
+      "status": "PASSED",
+      "duration_seconds": 0.01
+    },
+    {
+      "module": "tests/test_adversarial_scms.py",
+      "classname": "tests.test_adversarial_scms.TestAdversarialDateHandling",
+      "test_name": "test_milestone_dates_malformed_string_coercion[UNKNOWN]",
+      "status": "PASSED",
+      "duration_seconds": 0.015
+    },
+    {
+      "module": "tests/test_adversarial_scms.py",
+      "classname": "tests.test_adversarial_scms.TestAdversarialDateHandling",
+      "test_name": "test_milestone_dates_malformed_string_coercion[00-00-00]",
+      "status": "PASSED",
+      "duration_seconds": 0.009
+    },
+    {
+      "module": "tests/test_adversarial_scms.py",
+      "classname": "tests.test_adversarial_scms.TestAdversarialDateHandling",
+      "test_name": "test_milestone_dates_malformed_string_coercion[32-Dec-11]",
+      "status": "PASSED",
+      "duration_seconds": 0.009
+    },
+    {
+      "module": "tests/test_adversarial_scms.py",
+      "classname": "tests.test_adversarial_scms.TestAdversarialDateHandling",
+      "test_name": "test_milestone_dates_malformed_string_coercion[2012/13/40]",
+      "status": "PASSED",
+      "duration_seconds": 0.01
+    },
+    {
+      "module": "tests/test_adversarial_scms.py",
+      "classname": "tests.test_adversarial_scms.TestAdversarialDateHandling",
+      "test_name": "test_milestone_dates_malformed_string_coercion[30-Feb-11]",
+      "status": "PASSED",
+      "duration_seconds": 0.01
+    },
+    {
+      "module": "tests/test_adversarial_scms.py",
+      "classname": "tests.test_adversarial_scms.TestAdversarialDateHandling",
+      "test_name": "test_milestone_dates_malformed_string_coercion[]",
+      "status": "PASSED",
+      "duration_seconds": 0.012
+    },
+    {
+      "module": "tests/test_adversarial_scms.py",
+      "classname": "tests.test_adversarial_scms.TestAdversarialDateHandling",
+      "test_name": "test_milestone_dates_malformed_string_coercion[   ]",
+      "status": "PASSED",
+      "duration_seconds": 0.016
+    },
+    {
+      "module": "tests/test_adversarial_scms.py",
+      "classname": "tests.test_adversarial_scms.TestAdversarialDateHandling",
+      "test_name": "test_milestone_dates_malformed_string_coercion[None]",
+      "status": "PASSED",
+      "duration_seconds": 0.01
+    },
+    {
+      "module": "tests/test_adversarial_scms.py",
+      "classname": "tests.test_adversarial_scms.TestAdversarialDateHandling",
+      "test_name": "test_milestone_dates_malformed_string_coercion[N/A]",
+      "status": "PASSED",
+      "duration_seconds": 0.013
+    },
+    {
+      "module": "tests/test_adversarial_scms.py",
+      "classname": "tests.test_adversarial_scms.TestAdversarialDateHandling",
+      "test_name": "test_milestone_dates_malformed_string_coercion[2011-05-12]",
+      "status": "PASSED",
+      "duration_seconds": 0.015
+    },
+    {
+      "module": "tests/test_adversarial_scms.py",
+      "classname": "tests.test_adversarial_scms.TestAdversarialDateHandling",
+      "test_name": "test_milestone_dates_malformed_string_coercion[05/12/2011]",
+      "status": "PASSED",
+      "duration_seconds": 0.014
+    },
+    {
+      "module": "tests/test_adversarial_scms.py",
+      "classname": "tests.test_adversarial_scms.TestAdversarialDateHandling",
+      "test_name": "test_milestone_dates_malformed_string_coercion[12-31-2011]",
+      "status": "PASSED",
+      "duration_seconds": 0.014
+    },
+    {
+      "module": "tests/test_adversarial_scms.py",
+      "classname": "tests.test_adversarial_scms.TestAdversarialDateHandling",
+      "test_name": "test_milestone_dates_nat_validator_rejection",
+      "status": "PASSED",
+      "duration_seconds": 0.022
+    },
+    {
+      "module": "tests/test_adversarial_scms.py",
+      "classname": "tests.test_adversarial_scms.TestAdversarialDateHandling",
+      "test_name": "test_procurement_dates_sentinels_coercion[Date Needed Delay]",
+      "status": "PASSED",
+      "duration_seconds": 0.014
+    },
+    {
+      "module": "tests/test_adversarial_scms.py",
+      "classname": "tests.test_adversarial_scms.TestAdversarialDateHandling",
+      "test_name": "test_procurement_dates_sentinels_coercion[Pre-PQ Process]",
+      "status": "PASSED",
+      "duration_seconds": 0.01
+    },
+    {
+      "module": "tests/test_adversarial_scms.py",
+      "classname": "tests.test_adversarial_scms.TestAdversarialDateHandling",
+      "test_name": "test_procurement_dates_sentinels_coercion[From RDC]",
+      "status": "PASSED",
+      "duration_seconds": 0.011
+    },
+    {
+      "module": "tests/test_adversarial_scms.py",
+      "classname": "tests.test_adversarial_scms.TestAdversarialDateHandling",
+      "test_name": "test_procurement_dates_sentinels_coercion[Invoiced Separately]",
+      "status": "PASSED",
+      "duration_seconds": 0.012
+    },
+    {
+      "module": "tests/test_adversarial_scms.py",
+      "classname": "tests.test_adversarial_scms.TestAdversarialDateHandling",
+      "test_name": "test_procurement_dates_sentinels_coercion[N/A]",
+      "status": "PASSED",
+      "duration_seconds": 0.018
+    },
+    {
+      "module": "tests/test_adversarial_scms.py",
+      "classname": "tests.test_adversarial_scms.TestAdversarialDateHandling",
+      "test_name": "test_procurement_dates_sentinels_coercion[Unknown]",
+      "status": "PASSED",
+      "duration_seconds": 0.015
+    },
+    {
+      "module": "tests/test_adversarial_scms.py",
+      "classname": "tests.test_adversarial_scms.TestAdversarialDateHandling",
+      "test_name": "test_procurement_dates_sentinels_coercion[See Note 42]",
+      "status": "PASSED",
+      "duration_seconds": 0.015
+    },
+    {
+      "module": "tests/test_adversarial_scms.py",
+      "classname": "tests.test_adversarial_scms.TestAdversarialDateHandling",
+      "test_name": "test_procurement_dates_sentinels_coercion[]",
+      "status": "PASSED",
+      "duration_seconds": 0.015
+    },
+    {
+      "module": "tests/test_adversarial_scms.py",
+      "classname": "tests.test_adversarial_scms.TestAdversarialDateHandling",
+      "test_name": "test_temporal_features_safe_handling_when_dates_are_nat",
+      "status": "PASSED",
+      "duration_seconds": 0.019
+    },
+    {
+      "module": "tests/test_adversarial_scms.py",
+      "classname": "tests.test_adversarial_scms.TestAdversarialSchemaPermutations",
+      "test_name": "test_validator_fails_gracefully_on_missing_critical_columns[Project Code]",
+      "status": "PASSED",
+      "duration_seconds": 0.157
+    },
+    {
+      "module": "tests/test_adversarial_scms.py",
+      "classname": "tests.test_adversarial_scms.TestAdversarialSchemaPermutations",
+      "test_name": "test_validator_fails_gracefully_on_missing_critical_columns[Country]",
+      "status": "PASSED",
+      "duration_seconds": 0.013
+    },
+    {
+      "module": "tests/test_adversarial_scms.py",
+      "classname": "tests.test_adversarial_scms.TestAdversarialSchemaPermutations",
+      "test_name": "test_validator_fails_gracefully_on_missing_critical_columns[Scheduled Delivery Date]",
+      "status": "PASSED",
+      "duration_seconds": 0.011
+    },
+    {
+      "module": "tests/test_adversarial_scms.py",
+      "classname": "tests.test_adversarial_scms.TestAdversarialSchemaPermutations",
+      "test_name": "test_validator_fails_gracefully_on_missing_critical_columns[Delivered to Client Date]",
+      "status": "PASSED",
+      "duration_seconds": 0.008
+    },
+    {
+      "module": "tests/test_adversarial_scms.py",
+      "classname": "tests.test_adversarial_scms.TestAdversarialSchemaPermutations",
+      "test_name": "test_validator_fails_gracefully_on_missing_critical_columns[Delivery Recorded Date]",
+      "status": "PASSED",
+      "duration_seconds": 0.009
+    },
+    {
+      "module": "tests/test_adversarial_scms.py",
+      "classname": "tests.test_adversarial_scms.TestAdversarialSchemaPermutations",
+      "test_name": "test_validator_fails_gracefully_on_missing_critical_columns[Line Item Quantity]",
+      "status": "PASSED",
+      "duration_seconds": 0.01
+    },
+    {
+      "module": "tests/test_adversarial_scms.py",
+      "classname": "tests.test_adversarial_scms.TestAdversarialSchemaPermutations",
+      "test_name": "test_validator_fails_gracefully_on_missing_critical_columns[Line Item Value]",
+      "status": "PASSED",
+      "duration_seconds": 0.009
+    },
+    {
+      "module": "tests/test_adversarial_scms.py",
+      "classname": "tests.test_adversarial_scms.TestAdversarialSchemaPermutations",
+      "test_name": "test_validator_fails_gracefully_on_missing_id_column",
+      "status": "PASSED",
+      "duration_seconds": 0.011
+    },
+    {
+      "module": "tests/test_adversarial_scms.py",
+      "classname": "tests.test_adversarial_scms.TestAdversarialSchemaPermutations",
+      "test_name": "test_adapter_and_validator_with_extra_columns",
+      "status": "PASSED",
+      "duration_seconds": 0.015
+    },
+    {
+      "module": "tests/test_adversarial_scms.py",
+      "classname": "tests.test_adversarial_scms.TestAdversarialSchemaPermutations",
+      "test_name": "test_adapter_and_validator_with_reversed_column_order",
+      "status": "PASSED",
+      "duration_seconds": 0.023
+    },
+    {
+      "module": "tests/test_adversarial_scms.py",
+      "classname": "tests.test_adversarial_scms.TestAdversarialMixedNumericFields",
+      "test_name": "test_weight_mixed_string_coercion_and_indicator[100-1-False]",
+      "status": "PASSED",
+      "duration_seconds": 0.015
+    },
+    {
+      "module": "tests/test_adversarial_scms.py",
+      "classname": "tests.test_adversarial_scms.TestAdversarialMixedNumericFields",
+      "test_name": "test_weight_mixed_string_coercion_and_indicator[1234.56-1-False]",
+      "status": "PASSED",
+      "duration_seconds": 0.015
+    },
+    {
+      "module": "tests/test_adversarial_scms.py",
+      "classname": "tests.test_adversarial_scms.TestAdversarialMixedNumericFields",
+      "test_name": "test_weight_mixed_string_coercion_and_indicator[0-1-False]",
+      "status": "PASSED",
+      "duration_seconds": 0.014
+    },
+    {
+      "module": "tests/test_adversarial_scms.py",
+      "classname": "tests.test_adversarial_scms.TestAdversarialMixedNumericFields",
+      "test_name": "test_weight_mixed_string_coercion_and_indicator[Weight Captured Separately-0-True]",
+      "status": "PASSED",
+      "duration_seconds": 0.014
+    },
+    {
+      "module": "tests/test_adversarial_scms.py",
+      "classname": "tests.test_adversarial_scms.TestAdversarialMixedNumericFields",
+      "test_name": "test_weight_mixed_string_coercion_and_indicator[See Line Item 5-0-True]",
+      "status": "PASSED",
+      "duration_seconds": 0.014
+    },
+    {
+      "module": "tests/test_adversarial_scms.py",
+      "classname": "tests.test_adversarial_scms.TestAdversarialMixedNumericFields",
+      "test_name": "test_weight_mixed_string_coercion_and_indicator[Freight Included in Price-0-True]",
+      "status": "PASSED",
+      "duration_seconds": 0.013
+    },
+    {
+      "module": "tests/test_adversarial_scms.py",
+      "classname": "tests.test_adversarial_scms.TestAdversarialMixedNumericFields",
+      "test_name": "test_weight_mixed_string_coercion_and_indicator[N/A-0-True]",
+      "status": "PASSED",
+      "duration_seconds": 0.01
+    },
+    {
+      "module": "tests/test_adversarial_scms.py",
+      "classname": "tests.test_adversarial_scms.TestAdversarialMixedNumericFields",
+      "test_name": "test_weight_mixed_string_coercion_and_indicator[TBD-0-True]",
+      "status": "PASSED",
+      "duration_seconds": 0.01
+    },
+    {
+      "module": "tests/test_adversarial_scms.py",
+      "classname": "tests.test_adversarial_scms.TestAdversarialMixedNumericFields",
+      "test_name": "test_weight_mixed_string_coercion_and_indicator[approx 500kg-0-True]",
+      "status": "PASSED",
+      "duration_seconds": 0.01
+    },
+    {
+      "module": "tests/test_adversarial_scms.py",
+      "classname": "tests.test_adversarial_scms.TestAdversarialMixedNumericFields",
+      "test_name": "test_weight_mixed_string_coercion_and_indicator[$1,234.50-0-True]",
+      "status": "PASSED",
+      "duration_seconds": 0.01
+    },
+    {
+      "module": "tests/test_adversarial_scms.py",
+      "classname": "tests.test_adversarial_scms.TestAdversarialMixedNumericFields",
+      "test_name": "test_weight_mixed_string_coercion_and_indicator[-0-True]",
+      "status": "PASSED",
+      "duration_seconds": 0.011
+    },
+    {
+      "module": "tests/test_adversarial_scms.py",
+      "classname": "tests.test_adversarial_scms.TestAdversarialMixedNumericFields",
+      "test_name": "test_weight_mixed_string_coercion_and_indicator[   -0-True]",
+      "status": "PASSED",
+      "duration_seconds": 0.012
+    },
+    {
+      "module": "tests/test_adversarial_scms.py",
+      "classname": "tests.test_adversarial_scms.TestAdversarialMixedNumericFields",
+      "test_name": "test_weight_mixed_string_coercion_and_indicator[-50.5-1-False]",
+      "status": "PASSED",
+      "duration_seconds": 0.016
+    },
+    {
+      "module": "tests/test_adversarial_scms.py",
+      "classname": "tests.test_adversarial_scms.TestAdversarialMixedNumericFields",
+      "test_name": "test_freight_cost_mixed_string_coercion_and_indicator[1500.50-1-False]",
+      "status": "PASSED",
+      "duration_seconds": 0.015
+    },
+    {
+      "module": "tests/test_adversarial_scms.py",
+      "classname": "tests.test_adversarial_scms.TestAdversarialMixedNumericFields",
+      "test_name": "test_freight_cost_mixed_string_coercion_and_indicator[0.0-1-False]",
+      "status": "PASSED",
+      "duration_seconds": 0.015
+    },
+    {
+      "module": "tests/test_adversarial_scms.py",
+      "classname": "tests.test_adversarial_scms.TestAdversarialMixedNumericFields",
+      "test_name": "test_freight_cost_mixed_string_coercion_and_indicator[Invoiced Separately-0-True]",
+      "status": "PASSED",
+      "duration_seconds": 0.015
+    },
+    {
+      "module": "tests/test_adversarial_scms.py",
+      "classname": "tests.test_adversarial_scms.TestAdversarialMixedNumericFields",
+      "test_name": "test_freight_cost_mixed_string_coercion_and_indicator[Freight Included in Price-0-True]",
+      "status": "PASSED",
+      "duration_seconds": 0.014
+    },
+    {
+      "module": "tests/test_adversarial_scms.py",
+      "classname": "tests.test_adversarial_scms.TestAdversarialMixedNumericFields",
+      "test_name": "test_freight_cost_mixed_string_coercion_and_indicator[See Note 12-0-True]",
+      "status": "PASSED",
+      "duration_seconds": 0.01
+    },
+    {
+      "module": "tests/test_adversarial_scms.py",
+      "classname": "tests.test_adversarial_scms.TestAdversarialMixedNumericFields",
+      "test_name": "test_freight_cost_mixed_string_coercion_and_indicator[FREE-0-True]",
+      "status": "PASSED",
+      "duration_seconds": 0.01
+    },
+    {
+      "module": "tests/test_adversarial_scms.py",
+      "classname": "tests.test_adversarial_scms.TestAdversarialMixedNumericFields",
+      "test_name": "test_freight_cost_mixed_string_coercion_and_indicator[N/A-0-True]",
+      "status": "PASSED",
+      "duration_seconds": 0.014
+    },
+    {
+      "module": "tests/test_adversarial_scms.py",
+      "classname": "tests.test_adversarial_scms.TestAdversarialMixedNumericFields",
+      "test_name": "test_freight_cost_mixed_string_coercion_and_indicator[$500.00-0-True]",
+      "status": "PASSED",
+      "duration_seconds": 0.016
+    },
+    {
+      "module": "tests/test_adversarial_scms.py",
+      "classname": "tests.test_adversarial_scms.TestAdversarialMixedNumericFields",
+      "test_name": "test_freight_cost_mixed_string_coercion_and_indicator[EUR 400-0-True]",
+      "status": "PASSED",
+      "duration_seconds": 0.014
+    },
+    {
+      "module": "tests/test_adversarial_scms.py",
+      "classname": "tests.test_adversarial_scms.TestAdversarialMixedNumericFields",
+      "test_name": "test_freight_cost_mixed_string_coercion_and_indicator[-0-True]",
+      "status": "PASSED",
+      "duration_seconds": 0.014
+    },
+    {
+      "module": "tests/test_adversarial_scms.py",
+      "classname": "tests.test_adversarial_scms.TestAdversarialMixedNumericFields",
+      "test_name": "test_strictly_integer_columns_invalid_values_coercion",
+      "status": "PASSED",
+      "duration_seconds": 0.014
+    },
+    {
+      "module": "tests/test_adversarial_scms.py",
+      "classname": "tests.test_adversarial_scms.TestAdversarialBoundaries",
+      "test_name": "test_validator_on_empty_dataframe",
+      "status": "PASSED",
+      "duration_seconds": 0.005
+    },
+    {
+      "module": "tests/test_adversarial_scms.py",
+      "classname": "tests.test_adversarial_scms.TestAdversarialBoundaries",
+      "test_name": "test_validator_on_empty_schema_dataframe",
+      "status": "PASSED",
+      "duration_seconds": 0.008
+    },
+    {
+      "module": "tests/test_adversarial_scms.py",
+      "classname": "tests.test_adversarial_scms.TestAdversarialBoundaries",
+      "test_name": "test_validator_handles_empty_dataframe_with_delay_days_column",
+      "status": "PASSED",
+      "duration_seconds": 0.009
+    },
+    {
+      "module": "tests/test_adversarial_scms.py",
+      "classname": "tests.test_adversarial_scms.TestAdversarialBoundaries",
+      "test_name": "test_single_row_dataframe_full_lifecycle",
+      "status": "PASSED",
+      "duration_seconds": 0.021
+    },
+    {
+      "module": "tests/test_adversarial_scms.py",
+      "classname": "tests.test_adversarial_scms.TestAdversarialBoundaries",
+      "test_name": "test_extreme_numeric_values_handling",
+      "status": "PASSED",
+      "duration_seconds": 0.024
+    },
+    {
+      "module": "tests/test_adversarial_scms.py",
+      "classname": "tests.test_adversarial_scms.TestAdversarialBoundaries",
+      "test_name": "test_negative_delay_and_extreme_delay_days",
+      "status": "PASSED",
+      "duration_seconds": 0.021
+    },
+    {
+      "module": "tests/test_adversarial_scms.py",
+      "classname": "tests.test_adversarial_scms.TestAdversarialBoundaries",
+      "test_name": "test_validator_rejects_unseen_categorical_levels[Shipment Mode-Teleportation]",
+      "status": "PASSED",
+      "duration_seconds": 0.024
+    },
+    {
+      "module": "tests/test_adversarial_scms.py",
+      "classname": "tests.test_adversarial_scms.TestAdversarialBoundaries",
+      "test_name": "test_validator_rejects_unseen_categorical_levels[Shipment Mode-Spacecraft]",
+      "status": "PASSED",
+      "duration_seconds": 0.024
+    },
+    {
+      "module": "tests/test_adversarial_scms.py",
+      "classname": "tests.test_adversarial_scms.TestAdversarialBoundaries",
+      "test_name": "test_validator_rejects_unseen_categorical_levels[Fulfill Via-Drone Direct]",
+      "status": "PASSED",
+      "duration_seconds": 0.023
+    },
+    {
+      "module": "tests/test_adversarial_scms.py",
+      "classname": "tests.test_adversarial_scms.TestAdversarialBoundaries",
+      "test_name": "test_validator_rejects_unseen_categorical_levels[Product Group-UNKNOWN_VACCINE]",
+      "status": "PASSED",
+      "duration_seconds": 0.02
+    },
+    {
+      "module": "tests/test_adversarial_scms.py",
+      "classname": "tests.test_adversarial_scms.TestAdversarialBoundaries",
+      "test_name": "test_validator_rejects_unseen_categorical_levels[First Line Designation-Maybe]",
+      "status": "PASSED",
+      "duration_seconds": 0.015
+    },
+    {
+      "module": "tests/test_adversarial_scms.py",
+      "classname": "tests.test_adversarial_scms.TestAdversarialBoundaries",
+      "test_name": "test_validator_rejects_unseen_categorical_levels[Managed By-Alien Field Office]",
+      "status": "PASSED",
+      "duration_seconds": 0.023
+    },
+    {
+      "module": "tests/test_adversarial_scms.py",
+      "classname": "tests.test_adversarial_scms.TestAdversarialConcurrencyAndImmutability",
+      "test_name": "test_concurrent_multi_threaded_ingestion",
+      "status": "PASSED",
+      "duration_seconds": 1.812
+    },
+    {
+      "module": "tests/test_adversarial_scms.py",
+      "classname": "tests.test_adversarial_scms.TestAdversarialConcurrencyAndImmutability",
+      "test_name": "test_in_place_mutation_isolation",
+      "status": "PASSED",
+      "duration_seconds": 0.149
+    },
+    {
+      "module": "tests/test_adversarial_scms.py",
+      "classname": "tests.test_adversarial_scms.TestAdversarialConcurrencyAndImmutability",
+      "test_name": "test_raw_csv_checksum_stability_across_50_runs",
+      "status": "PASSED",
+      "duration_seconds": 3.303
+    },
+    {
+      "module": "tests/test_adversarial_scms.py",
+      "classname": "tests.test_adversarial_scms.TestAdversarialScaleStress",
+      "test_name": "test_high_volume_synthetic_dataset_throughput",
+      "status": "PASSED",
+      "duration_seconds": 6.385
+    },
+    {
+      "module": "tests/test_adversarial_temporal_embargo.py",
+      "classname": "tests.test_adversarial_temporal_embargo",
+      "test_name": "test_adversarial_strict_90_day_embargo_gap_all_folds",
+      "status": "PASSED",
+      "duration_seconds": 0.049
+    },
+    {
+      "module": "tests/test_adversarial_temporal_embargo.py",
+      "classname": "tests.test_adversarial_temporal_embargo",
+      "test_name": "test_adversarial_expanding_window_containment_and_disjointness",
+      "status": "PASSED",
+      "duration_seconds": 0.066
+    },
+    {
+      "module": "tests/test_adversarial_temporal_embargo.py",
+      "classname": "tests.test_adversarial_temporal_embargo",
+      "test_name": "test_adversarial_inner_train_val_containment_and_embargo",
+      "status": "PASSED",
+      "duration_seconds": 0.104
+    },
+    {
+      "module": "tests/test_adversarial_temporal_embargo.py",
+      "classname": "tests.test_adversarial_temporal_embargo",
+      "test_name": "test_adversarial_inner_split_fallback_safety",
+      "status": "PASSED",
+      "duration_seconds": 0.009
+    },
+    {
+      "module": "tests/test_adversarial_temporal_embargo.py",
+      "classname": "tests.test_adversarial_temporal_embargo",
+      "test_name": "test_adversarial_final_holdout_strict_isolation",
+      "status": "PASSED",
+      "duration_seconds": 0.093
+    },
+    {
+      "module": "tests/test_adversarial_temporal_embargo.py",
+      "classname": "tests.test_adversarial_temporal_embargo",
+      "test_name": "test_adversarial_canary_future_labels_have_zero_impact_on_model_fit",
+      "status": "PASSED",
+      "duration_seconds": 2.62
+    },
+    {
+      "module": "tests/test_adversarial_temporal_embargo.py",
+      "classname": "tests.test_adversarial_temporal_embargo",
+      "test_name": "test_adversarial_shuffled_input_dataframe_sorting_invariance",
+      "status": "PASSED",
+      "duration_seconds": 0.109
+    },
+    {
+      "module": "tests/test_adversarial_temporal_embargo.py",
+      "classname": "tests.test_adversarial_temporal_embargo",
+      "test_name": "test_adversarial_forbidden_columns_intercepted_in_backtester_and_models",
+      "status": "PASSED",
+      "duration_seconds": 0.02
+    },
+    {
+      "module": "tests/test_adversarial_temporal_embargo.py",
+      "classname": "tests.test_adversarial_temporal_embargo",
+      "test_name": "test_adversarial_inference_threshold_independence_from_labels",
+      "status": "PASSED",
+      "duration_seconds": 0.321
+    },
+    {
+      "module": "tests/test_adversarial_temporal_embargo.py",
+      "classname": "tests.test_adversarial_temporal_embargo",
+      "test_name": "test_adversarial_synthetic_exact_embargo_boundary_stress",
+      "status": "PASSED",
+      "duration_seconds": 0.021
+    },
+    {
+      "module": "tests/test_adversarial_temporal_embargo.py",
+      "classname": "tests.test_adversarial_temporal_embargo",
+      "test_name": "test_adversarial_feature_schema_and_preprocessor_exclude_all_forbidden_columns",
+      "status": "PASSED",
+      "duration_seconds": 0.075
+    },
+    {
+      "module": "tests/test_adversarial_temporal_embargo.py",
+      "classname": "tests.test_adversarial_temporal_embargo",
+      "test_name": "test_adversarial_backtest_spy_zero_future_access_during_fit",
+      "status": "PASSED",
+      "duration_seconds": 1.741
+    },
+    {
+      "module": "tests/test_api_explain.py",
+      "classname": "tests.test_api_explain",
+      "test_name": "test_api_explain",
+      "status": "PASSED",
+      "duration_seconds": 0.026
+    },
+    {
+      "module": "tests/test_api_health.py",
+      "classname": "tests.test_api_health",
+      "test_name": "test_api_health",
+      "status": "PASSED",
+      "duration_seconds": 0.005
+    },
+    {
+      "module": "tests/test_api_predict.py",
+      "classname": "tests.test_api_predict",
+      "test_name": "test_api_predict",
+      "status": "PASSED",
+      "duration_seconds": 0.013
+    },
+    {
+      "module": "tests/test_api_recommend.py",
+      "classname": "tests.test_api_recommend",
+      "test_name": "test_api_recommend",
+      "status": "PASSED",
+      "duration_seconds": 0.03
+    },
+    {
+      "module": "tests/test_api_safety.py",
+      "classname": "tests.test_api_safety",
+      "test_name": "test_api_safety_no_execution",
+      "status": "PASSED",
+      "duration_seconds": 0.003
+    },
+    {
+      "module": "tests/test_api_schema.py",
+      "classname": "tests.test_api_schema",
+      "test_name": "test_api_schema_forbidden_fields",
+      "status": "PASSED",
+      "duration_seconds": 0.004
+    },
+    {
+      "module": "tests/test_architecture.py",
+      "classname": "tests.test_architecture",
+      "test_name": "test_required_documentation_files_exist[ARCHITECTURE.md]",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_architecture.py",
+      "classname": "tests.test_architecture",
+      "test_name": "test_required_documentation_files_exist[README.md]",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_architecture.py",
+      "classname": "tests.test_architecture",
+      "test_name": "test_required_documentation_files_exist[pyproject.toml]",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_architecture.py",
+      "classname": "tests.test_architecture",
+      "test_name": "test_required_documentation_files_exist[docs/technology_decision_record.md]",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_architecture.py",
+      "classname": "tests.test_architecture",
+      "test_name": "test_required_documentation_files_exist[docs/repository_structure.md]",
+      "status": "PASSED",
+      "duration_seconds": 0.0
+    },
+    {
+      "module": "tests/test_architecture.py",
+      "classname": "tests.test_architecture",
+      "test_name": "test_required_documentation_files_exist[docs/pipeline_specification.md]",
+      "status": "PASSED",
+      "duration_seconds": 0.0
+    },
+    {
+      "module": "tests/test_architecture.py",
+      "classname": "tests.test_architecture",
+      "test_name": "test_required_documentation_files_exist[docs/data_dictionary.md]",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_architecture.py",
+      "classname": "tests.test_architecture",
+      "test_name": "test_required_documentation_files_exist[docs/scms_data_audit.md]",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_architecture.py",
+      "classname": "tests.test_architecture",
+      "test_name": "test_required_documentation_files_exist[docs/scms_schema.md]",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_architecture.py",
+      "classname": "tests.test_architecture",
+      "test_name": "test_all_modules_importable[delay_intelligence]",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_architecture.py",
+      "classname": "tests.test_architecture",
+      "test_name": "test_all_modules_importable[delay_intelligence.core]",
+      "status": "PASSED",
+      "duration_seconds": 0.0
+    },
+    {
+      "module": "tests/test_architecture.py",
+      "classname": "tests.test_architecture",
+      "test_name": "test_all_modules_importable[delay_intelligence.core.config]",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_architecture.py",
+      "classname": "tests.test_architecture",
+      "test_name": "test_all_modules_importable[delay_intelligence.core.logging]",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_architecture.py",
+      "classname": "tests.test_architecture",
+      "test_name": "test_all_modules_importable[delay_intelligence.core.exceptions]",
+      "status": "PASSED",
+      "duration_seconds": 0.0
+    },
+    {
+      "module": "tests/test_architecture.py",
+      "classname": "tests.test_architecture",
+      "test_name": "test_all_modules_importable[delay_intelligence.data]",
+      "status": "PASSED",
+      "duration_seconds": 0.0
+    },
+    {
+      "module": "tests/test_architecture.py",
+      "classname": "tests.test_architecture",
+      "test_name": "test_all_modules_importable[delay_intelligence.data.adapters]",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_architecture.py",
+      "classname": "tests.test_architecture",
+      "test_name": "test_all_modules_importable[delay_intelligence.data.adapters.base]",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_architecture.py",
+      "classname": "tests.test_architecture",
+      "test_name": "test_all_modules_importable[delay_intelligence.validation]",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_architecture.py",
+      "classname": "tests.test_architecture",
+      "test_name": "test_all_modules_importable[delay_intelligence.features]",
+      "status": "PASSED",
+      "duration_seconds": 0.0
+    },
+    {
+      "module": "tests/test_architecture.py",
+      "classname": "tests.test_architecture",
+      "test_name": "test_all_modules_importable[delay_intelligence.evaluation]",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_architecture.py",
+      "classname": "tests.test_architecture",
+      "test_name": "test_all_modules_importable[delay_intelligence.models]",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_architecture.py",
+      "classname": "tests.test_architecture",
+      "test_name": "test_all_modules_importable[delay_intelligence.uncertainty]",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_architecture.py",
+      "classname": "tests.test_architecture",
+      "test_name": "test_all_modules_importable[delay_intelligence.causal]",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_architecture.py",
+      "classname": "tests.test_architecture",
+      "test_name": "test_all_modules_importable[delay_intelligence.decision]",
+      "status": "PASSED",
+      "duration_seconds": 0.0
+    },
+    {
+      "module": "tests/test_architecture.py",
+      "classname": "tests.test_architecture",
+      "test_name": "test_all_modules_importable[delay_intelligence.api]",
+      "status": "PASSED",
+      "duration_seconds": 0.0
+    },
+    {
+      "module": "tests/test_architecture.py",
+      "classname": "tests.test_architecture",
+      "test_name": "test_all_modules_importable[delay_intelligence.dashboard]",
+      "status": "PASSED",
+      "duration_seconds": 0.0
+    },
+    {
+      "module": "tests/test_architecture.py",
+      "classname": "tests.test_architecture",
+      "test_name": "test_artifact_directories_exist[artifacts/data]",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_architecture.py",
+      "classname": "tests.test_architecture",
+      "test_name": "test_artifact_directories_exist[artifacts/models]",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_architecture.py",
+      "classname": "tests.test_architecture",
+      "test_name": "test_artifact_directories_exist[artifacts/uncertainty]",
+      "status": "PASSED",
+      "duration_seconds": 0.0
+    },
+    {
+      "module": "tests/test_architecture.py",
+      "classname": "tests.test_architecture",
+      "test_name": "test_artifact_directories_exist[artifacts/causal]",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_architecture.py",
+      "classname": "tests.test_architecture",
+      "test_name": "test_artifact_directories_exist[artifacts/metrics]",
+      "status": "PASSED",
+      "duration_seconds": 0.0
+    },
+    {
+      "module": "tests/test_architecture.py",
+      "classname": "tests.test_architecture",
+      "test_name": "test_artifact_directories_exist[artifacts/reports]",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_architecture.py",
+      "classname": "tests.test_architecture",
+      "test_name": "test_artifact_directories_exist[models]",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_architecture.py",
+      "classname": "tests.test_architecture",
+      "test_name": "test_base_ingestion_adapter_contract",
+      "status": "PASSED",
+      "duration_seconds": 0.0
+    },
+    {
+      "module": "tests/test_architecture.py",
+      "classname": "tests.test_architecture",
+      "test_name": "test_custom_exception_hierarchy",
+      "status": "PASSED",
+      "duration_seconds": 0.0
+    },
+    {
+      "module": "tests/test_architecture.py",
+      "classname": "tests.test_architecture",
+      "test_name": "test_logging_setup",
+      "status": "PASSED",
+      "duration_seconds": 0.002
+    },
+    {
+      "module": "tests/test_calibration.py",
+      "classname": "tests.test_calibration",
+      "test_name": "test_calibration_bounds",
+      "status": "PASSED",
+      "duration_seconds": 0.003
+    },
+    {
+      "module": "tests/test_causal_constraints.py",
+      "classname": "tests.test_causal_constraints",
+      "test_name": "test_causal_constraints_enforced",
+      "status": "PASSED",
+      "duration_seconds": 0.003
+    },
+    {
+      "module": "tests/test_causal_stability.py",
+      "classname": "tests.test_causal_stability",
+      "test_name": "test_causal_stability",
+      "status": "PASSED",
+      "duration_seconds": 0.003
+    },
+    {
+      "module": "tests/test_causal_temporal_safety.py",
+      "classname": "tests.test_causal_temporal_safety",
+      "test_name": "test_causal_temporal_safety",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_config.py",
+      "classname": "tests.test_config",
+      "test_name": "test_load_all_required_configs[base]",
+      "status": "PASSED",
+      "duration_seconds": 0.003
+    },
+    {
+      "module": "tests/test_config.py",
+      "classname": "tests.test_config",
+      "test_name": "test_load_all_required_configs[data]",
+      "status": "PASSED",
+      "duration_seconds": 0.005
+    },
+    {
+      "module": "tests/test_config.py",
+      "classname": "tests.test_config",
+      "test_name": "test_load_all_required_configs[validation]",
+      "status": "PASSED",
+      "duration_seconds": 0.005
+    },
+    {
+      "module": "tests/test_config.py",
+      "classname": "tests.test_config",
+      "test_name": "test_load_all_required_configs[features]",
+      "status": "PASSED",
+      "duration_seconds": 0.009
+    },
+    {
+      "module": "tests/test_config.py",
+      "classname": "tests.test_config",
+      "test_name": "test_load_all_required_configs[models]",
+      "status": "PASSED",
+      "duration_seconds": 0.005
+    },
+    {
+      "module": "tests/test_config.py",
+      "classname": "tests.test_config",
+      "test_name": "test_load_all_required_configs[uncertainty]",
+      "status": "PASSED",
+      "duration_seconds": 0.003
+    },
+    {
+      "module": "tests/test_config.py",
+      "classname": "tests.test_config",
+      "test_name": "test_load_all_required_configs[causal]",
+      "status": "PASSED",
+      "duration_seconds": 0.002
+    },
+    {
+      "module": "tests/test_config.py",
+      "classname": "tests.test_config",
+      "test_name": "test_load_all_required_configs[decision]",
+      "status": "PASSED",
+      "duration_seconds": 0.003
+    },
+    {
+      "module": "tests/test_config.py",
+      "classname": "tests.test_config",
+      "test_name": "test_load_all_required_configs[serving]",
+      "status": "PASSED",
+      "duration_seconds": 0.002
+    },
+    {
+      "module": "tests/test_config.py",
+      "classname": "tests.test_config",
+      "test_name": "test_base_config_keys",
+      "status": "PASSED",
+      "duration_seconds": 0.003
+    },
+    {
+      "module": "tests/test_config.py",
+      "classname": "tests.test_config",
+      "test_name": "test_data_config_keys_and_datasets",
+      "status": "PASSED",
+      "duration_seconds": 0.004
+    },
+    {
+      "module": "tests/test_config.py",
+      "classname": "tests.test_config",
+      "test_name": "test_get_data_paths_resolution",
+      "status": "PASSED",
+      "duration_seconds": 0.005
+    },
+    {
+      "module": "tests/test_config.py",
+      "classname": "tests.test_config",
+      "test_name": "test_get_data_paths_with_default_base_dir",
+      "status": "PASSED",
+      "duration_seconds": 0.005
+    },
+    {
+      "module": "tests/test_config.py",
+      "classname": "tests.test_config",
+      "test_name": "test_load_nonexistent_config_raises_error",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_config.py",
+      "classname": "tests.test_config",
+      "test_name": "test_find_config_dir_invalid_path",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_config.py",
+      "classname": "tests.test_config",
+      "test_name": "test_find_config_dir_default",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_config.py",
+      "classname": "tests.test_config",
+      "test_name": "test_load_empty_and_non_dict_yaml",
+      "status": "PASSED",
+      "duration_seconds": 0.006
+    },
+    {
+      "module": "tests/test_config.py",
+      "classname": "tests.test_config",
+      "test_name": "test_get_data_paths_missing_datasets_section",
+      "status": "PASSED",
+      "duration_seconds": 0.004
+    },
+    {
+      "module": "tests/test_conformal_temporal_safety.py",
+      "classname": "tests.test_conformal_temporal_safety",
+      "test_name": "test_conformal_temporal_safety",
+      "status": "PASSED",
+      "duration_seconds": 0.019
+    },
+    {
+      "module": "tests/test_conformal_temporal_safety.py",
+      "classname": "tests.test_conformal_temporal_safety",
+      "test_name": "test_no_final_holdout_access_in_uncertainty",
+      "status": "PASSED",
+      "duration_seconds": 0.018
+    },
+    {
+      "module": "tests/test_cost_engine_stress.py",
+      "classname": "tests.test_cost_engine_stress",
+      "test_name": "test_zero_monetary_value_stability[low]",
+      "status": "PASSED",
+      "duration_seconds": 0.012
+    },
+    {
+      "module": "tests/test_cost_engine_stress.py",
+      "classname": "tests.test_cost_engine_stress",
+      "test_name": "test_zero_monetary_value_stability[base]",
+      "status": "PASSED",
+      "duration_seconds": 0.011
+    },
+    {
+      "module": "tests/test_cost_engine_stress.py",
+      "classname": "tests.test_cost_engine_stress",
+      "test_name": "test_zero_monetary_value_stability[high]",
+      "status": "PASSED",
+      "duration_seconds": 0.012
+    },
+    {
+      "module": "tests/test_cost_engine_stress.py",
+      "classname": "tests.test_cost_engine_stress",
+      "test_name": "test_negative_monetary_values_clamped_to_zero[-0.01]",
+      "status": "PASSED",
+      "duration_seconds": 0.014
+    },
+    {
+      "module": "tests/test_cost_engine_stress.py",
+      "classname": "tests.test_cost_engine_stress",
+      "test_name": "test_negative_monetary_values_clamped_to_zero[-1.0]",
+      "status": "PASSED",
+      "duration_seconds": 0.015
+    },
+    {
+      "module": "tests/test_cost_engine_stress.py",
+      "classname": "tests.test_cost_engine_stress",
+      "test_name": "test_negative_monetary_values_clamped_to_zero[-100.0]",
+      "status": "PASSED",
+      "duration_seconds": 0.014
+    },
+    {
+      "module": "tests/test_cost_engine_stress.py",
+      "classname": "tests.test_cost_engine_stress",
+      "test_name": "test_negative_monetary_values_clamped_to_zero[-1000000.0]",
+      "status": "PASSED",
+      "duration_seconds": 0.014
+    },
+    {
+      "module": "tests/test_cost_engine_stress.py",
+      "classname": "tests.test_cost_engine_stress",
+      "test_name": "test_negative_monetary_values_clamped_to_zero[-1000000000000.0]",
+      "status": "PASSED",
+      "duration_seconds": 0.013
+    },
+    {
+      "module": "tests/test_cost_engine_stress.py",
+      "classname": "tests.test_cost_engine_stress",
+      "test_name": "test_astronomical_monetary_values[1000000000.0]",
+      "status": "PASSED",
+      "duration_seconds": 0.008
+    },
+    {
+      "module": "tests/test_cost_engine_stress.py",
+      "classname": "tests.test_cost_engine_stress",
+      "test_name": "test_astronomical_monetary_values[1000000000000.0]",
+      "status": "PASSED",
+      "duration_seconds": 0.008
+    },
+    {
+      "module": "tests/test_cost_engine_stress.py",
+      "classname": "tests.test_cost_engine_stress",
+      "test_name": "test_astronomical_monetary_values[1000000000000000.0]",
+      "status": "PASSED",
+      "duration_seconds": 0.01
+    },
+    {
+      "module": "tests/test_cost_engine_stress.py",
+      "classname": "tests.test_cost_engine_stress",
+      "test_name": "test_nan_and_subnormal_handling",
+      "status": "PASSED",
+      "duration_seconds": 0.01
+    },
+    {
+      "module": "tests/test_cost_engine_stress.py",
+      "classname": "tests.test_cost_engine_stress",
+      "test_name": "test_unseen_and_wildcard_categorical_levels",
+      "status": "PASSED",
+      "duration_seconds": 0.011
+    },
+    {
+      "module": "tests/test_cost_engine_stress.py",
+      "classname": "tests.test_cost_engine_stress",
+      "test_name": "test_mixed_casing_and_whitespace_in_categories",
+      "status": "PASSED",
+      "duration_seconds": 0.012
+    },
+    {
+      "module": "tests/test_cost_engine_stress.py",
+      "classname": "tests.test_cost_engine_stress",
+      "test_name": "test_completely_disjoint_and_missing_columns",
+      "status": "PASSED",
+      "duration_seconds": 0.008
+    },
+    {
+      "module": "tests/test_cost_engine_stress.py",
+      "classname": "tests.test_cost_engine_stress",
+      "test_name": "test_empty_dataframe_handling",
+      "status": "PASSED",
+      "duration_seconds": 0.009
+    },
+    {
+      "module": "tests/test_cost_engine_stress.py",
+      "classname": "tests.test_cost_engine_stress",
+      "test_name": "test_large_batch_vectorization_throughput_50k",
+      "status": "PASSED",
+      "duration_seconds": 0.124
+    },
+    {
+      "module": "tests/test_cost_engine_stress.py",
+      "classname": "tests.test_cost_engine_stress",
+      "test_name": "test_batch_determinism_and_memory_stability",
+      "status": "PASSED",
+      "duration_seconds": 0.042
+    },
+    {
+      "module": "tests/test_cost_engine_stress.py",
+      "classname": "tests.test_cost_engine_stress",
+      "test_name": "test_tau_star_strict_bounds_across_random_regimes",
+      "status": "PASSED",
+      "duration_seconds": 0.053
+    },
+    {
+      "module": "tests/test_cost_engine_stress.py",
+      "classname": "tests.test_cost_engine_stress",
+      "test_name": "test_monotonicity_of_tau_star_simple_with_cost_ratio",
+      "status": "PASSED",
+      "duration_seconds": 0.007
+    },
+    {
+      "module": "tests/test_cost_engine_stress.py",
+      "classname": "tests.test_cost_engine_stress",
+      "test_name": "test_monotonicity_of_tau_star_simple_with_cost_ratio_r",
+      "status": "PASSED",
+      "duration_seconds": 0.007
+    },
+    {
+      "module": "tests/test_cost_engine_stress.py",
+      "classname": "tests.test_cost_engine_stress",
+      "test_name": "test_monotonicity_of_tau_star_with_net_benefit_ratio",
+      "status": "PASSED",
+      "duration_seconds": 0.007
+    },
+    {
+      "module": "tests/test_cost_engine_stress.py",
+      "classname": "tests.test_cost_engine_stress",
+      "test_name": "test_cost_ordering_and_decomposition_invariants",
+      "status": "PASSED",
+      "duration_seconds": 0.012
+    },
+    {
+      "module": "tests/test_cost_engine_stress.py",
+      "classname": "tests.test_cost_engine_stress",
+      "test_name": "test_oracle_policy_strictly_minimizes_business_cost",
+      "status": "PASSED",
+      "duration_seconds": 0.015
+    },
+    {
+      "module": "tests/test_cost_engine_stress.py",
+      "classname": "tests.test_cost_engine_stress",
+      "test_name": "test_sample_weights_zero_delay_cases",
+      "status": "PASSED",
+      "duration_seconds": 0.006
+    },
+    {
+      "module": "tests/test_cost_engine_stress.py",
+      "classname": "tests.test_cost_engine_stress",
+      "test_name": "test_sample_weights_all_delay_cases",
+      "status": "PASSED",
+      "duration_seconds": 0.007
+    },
+    {
+      "module": "tests/test_cost_engine_stress.py",
+      "classname": "tests.test_cost_engine_stress",
+      "test_name": "test_sample_weights_length_mismatch_raises",
+      "status": "PASSED",
+      "duration_seconds": 0.005
+    },
+    {
+      "module": "tests/test_cost_engine_stress.py",
+      "classname": "tests.test_cost_engine_stress",
+      "test_name": "test_expected_net_benefit_ranking_boundary_probabilities",
+      "status": "PASSED",
+      "duration_seconds": 0.009
+    },
+    {
+      "module": "tests/test_cost_engine_stress.py",
+      "classname": "tests.test_cost_engine_stress",
+      "test_name": "test_large_batch_100k_throughput_and_memory",
+      "status": "PASSED",
+      "duration_seconds": 0.212
+    },
+    {
+      "module": "tests/test_cost_engine_stress.py",
+      "classname": "tests.test_cost_engine_stress",
+      "test_name": "test_custom_scenario_zero_penalties",
+      "status": "PASSED",
+      "duration_seconds": 0.004
+    },
+    {
+      "module": "tests/test_cost_engine_stress.py",
+      "classname": "tests.test_cost_engine_stress",
+      "test_name": "test_input_format_flexibility",
+      "status": "PASSED",
+      "duration_seconds": 0.008
+    },
+    {
+      "module": "tests/test_cost_sensitivity.py",
+      "classname": "tests.test_cost_sensitivity",
+      "test_name": "test_cost_sensitivity_classifications",
+      "status": "PASSED",
+      "duration_seconds": 0.003
+    },
+    {
+      "module": "tests/test_cross_domain_protocol.py",
+      "classname": "tests.test_cross_domain_protocol",
+      "test_name": "test_cross_domain_zero_shot_degrades",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_cross_domain_protocol.py",
+      "classname": "tests.test_cross_domain_protocol",
+      "test_name": "test_cross_domain_recalibration_improves",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_dashboard_api_integration.py",
+      "classname": "tests.test_dashboard_api_integration",
+      "test_name": "test_dashboard_api_integration",
+      "status": "PASSED",
+      "duration_seconds": 0.068
+    },
+    {
+      "module": "tests/test_dashboard_data_contract.py",
+      "classname": "tests.test_dashboard_data_contract",
+      "test_name": "test_dashboard_data_contract_schemas",
+      "status": "PASSED",
+      "duration_seconds": 0.041
+    },
+    {
+      "module": "tests/test_dashboard_safety.py",
+      "classname": "tests.test_dashboard_safety",
+      "test_name": "test_dashboard_does_not_mutate_data",
+      "status": "PASSED",
+      "duration_seconds": 0.008
+    },
+    {
+      "module": "tests/test_dashboard_safety.py",
+      "classname": "tests.test_dashboard_safety",
+      "test_name": "test_dashboard_api_client_strips_forbidden_fields",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_data_immutability.py",
+      "classname": "tests.test_data_immutability",
+      "test_name": "test_raw_data_directories_exist",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_data_immutability.py",
+      "classname": "tests.test_data_immutability",
+      "test_name": "test_raw_data_inventory_and_counts",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_data_immutability.py",
+      "classname": "tests.test_data_immutability",
+      "test_name": "test_raw_data_volume_baseline",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_data_immutability.py",
+      "classname": "tests.test_data_immutability",
+      "test_name": "test_raw_data_read_only_stream",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_dataco_adapter.py",
+      "classname": "tests.test_dataco_adapter",
+      "test_name": "test_dataco_adapter_loads_and_maps_ontology",
+      "status": "PASSED",
+      "duration_seconds": 0.015
+    },
+    {
+      "module": "tests/test_dataco_adapter.py",
+      "classname": "tests.test_dataco_adapter",
+      "test_name": "test_dataco_eligibility",
+      "status": "PASSED",
+      "duration_seconds": 0.014
+    },
+    {
+      "module": "tests/test_decision_engine.py",
+      "classname": "tests.test_decision_engine",
+      "test_name": "test_risk_tiers_applied",
+      "status": "PASSED",
+      "duration_seconds": 0.003
+    },
+    {
+      "module": "tests/test_decision_engine.py",
+      "classname": "tests.test_decision_engine",
+      "test_name": "test_high_uncertainty_downgrades_to_human_review",
+      "status": "PASSED",
+      "duration_seconds": 0.003
+    },
+    {
+      "module": "tests/test_decision_safety.py",
+      "classname": "tests.test_decision_safety",
+      "test_name": "test_human_review_flag_safety",
+      "status": "PASSED",
+      "duration_seconds": 0.003
+    },
+    {
+      "module": "tests/test_decision_traceability.py",
+      "classname": "tests.test_decision_traceability",
+      "test_name": "test_decision_traceability_schema",
+      "status": "PASSED",
+      "duration_seconds": 0.003
+    },
+    {
+      "module": "tests/test_domain_shift.py",
+      "classname": "tests.test_domain_shift",
+      "test_name": "test_scms_final_holdout_untouched",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_domain_shift.py",
+      "classname": "tests.test_domain_shift",
+      "test_name": "test_unsupported_transfer_directions_rejected",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_drift_adversarial_stress.py",
+      "classname": "tests.test_drift_adversarial_stress",
+      "test_name": "test_metrics_bitwise_reproducibility_across_50_iterations",
+      "status": "PASSED",
+      "duration_seconds": 0.364
+    },
+    {
+      "module": "tests/test_drift_adversarial_stress.py",
+      "classname": "tests.test_drift_adversarial_stress",
+      "test_name": "test_sample_size_guard_suppresses_false_alarms_below_n_min[0]",
+      "status": "PASSED",
+      "duration_seconds": 0.0
+    },
+    {
+      "module": "tests/test_drift_adversarial_stress.py",
+      "classname": "tests.test_drift_adversarial_stress",
+      "test_name": "test_sample_size_guard_suppresses_false_alarms_below_n_min[1]",
+      "status": "PASSED",
+      "duration_seconds": 0.0
+    },
+    {
+      "module": "tests/test_drift_adversarial_stress.py",
+      "classname": "tests.test_drift_adversarial_stress",
+      "test_name": "test_sample_size_guard_suppresses_false_alarms_below_n_min[2]",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_drift_adversarial_stress.py",
+      "classname": "tests.test_drift_adversarial_stress",
+      "test_name": "test_sample_size_guard_suppresses_false_alarms_below_n_min[10]",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_drift_adversarial_stress.py",
+      "classname": "tests.test_drift_adversarial_stress",
+      "test_name": "test_sample_size_guard_suppresses_false_alarms_below_n_min[35]",
+      "status": "PASSED",
+      "duration_seconds": 0.0
+    },
+    {
+      "module": "tests/test_drift_adversarial_stress.py",
+      "classname": "tests.test_drift_adversarial_stress",
+      "test_name": "test_sample_size_guard_suppresses_false_alarms_below_n_min[49]",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_drift_adversarial_stress.py",
+      "classname": "tests.test_drift_adversarial_stress",
+      "test_name": "test_sample_size_guard_permits_evaluation_at_or_above_n_min[50]",
+      "status": "PASSED",
+      "duration_seconds": 0.0
+    },
+    {
+      "module": "tests/test_drift_adversarial_stress.py",
+      "classname": "tests.test_drift_adversarial_stress",
+      "test_name": "test_sample_size_guard_permits_evaluation_at_or_above_n_min[51]",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_drift_adversarial_stress.py",
+      "classname": "tests.test_drift_adversarial_stress",
+      "test_name": "test_sample_size_guard_permits_evaluation_at_or_above_n_min[100]",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_drift_adversarial_stress.py",
+      "classname": "tests.test_drift_adversarial_stress",
+      "test_name": "test_sample_size_guard_permits_evaluation_at_or_above_n_min[500]",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_drift_adversarial_stress.py",
+      "classname": "tests.test_drift_adversarial_stress",
+      "test_name": "test_individual_tier1_feature_veto_triggers_immediate_red[Vendor INCO Term]",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_drift_adversarial_stress.py",
+      "classname": "tests.test_drift_adversarial_stress",
+      "test_name": "test_individual_tier1_feature_veto_triggers_immediate_red[Vendor]",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_drift_adversarial_stress.py",
+      "classname": "tests.test_drift_adversarial_stress",
+      "test_name": "test_individual_tier1_feature_veto_triggers_immediate_red[vendor_hist_volume]",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_drift_adversarial_stress.py",
+      "classname": "tests.test_drift_adversarial_stress",
+      "test_name": "test_individual_tier1_feature_veto_triggers_immediate_red[Country]",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_drift_adversarial_stress.py",
+      "classname": "tests.test_drift_adversarial_stress",
+      "test_name": "test_individual_tier1_feature_veto_triggers_immediate_red[country_hist_delay_rate]",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_drift_adversarial_stress.py",
+      "classname": "tests.test_drift_adversarial_stress",
+      "test_name": "test_individual_tier1_feature_veto_triggers_immediate_red[vendor_hist_delay_rate]",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_drift_adversarial_stress.py",
+      "classname": "tests.test_drift_adversarial_stress",
+      "test_name": "test_individual_tier1_feature_veto_triggers_immediate_red[country_hist_volume]",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_drift_adversarial_stress.py",
+      "classname": "tests.test_drift_adversarial_stress",
+      "test_name": "test_individual_tier1_feature_veto_triggers_immediate_red[Scheduled_Transit_Days]",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_drift_adversarial_stress.py",
+      "classname": "tests.test_drift_adversarial_stress",
+      "test_name": "test_individual_tier1_feature_veto_triggers_immediate_red[Forecast_Horizon_Days]",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_drift_adversarial_stress.py",
+      "classname": "tests.test_drift_adversarial_stress",
+      "test_name": "test_individual_tier1_feature_veto_triggers_immediate_red[Line Item Insurance (USD)]",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_drift_adversarial_stress.py",
+      "classname": "tests.test_drift_adversarial_stress",
+      "test_name": "test_individual_tier1_feature_veto_triggers_immediate_red[Line Item Quantity]",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_drift_adversarial_stress.py",
+      "classname": "tests.test_drift_adversarial_stress",
+      "test_name": "test_tier2_feature_does_not_trigger_veto_alone[Line Item Value]",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_drift_adversarial_stress.py",
+      "classname": "tests.test_drift_adversarial_stress",
+      "test_name": "test_tier2_feature_does_not_trigger_veto_alone[Unit Price]",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_drift_adversarial_stress.py",
+      "classname": "tests.test_drift_adversarial_stress",
+      "test_name": "test_tier2_feature_does_not_trigger_veto_alone[Pack Price]",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_drift_adversarial_stress.py",
+      "classname": "tests.test_drift_adversarial_stress",
+      "test_name": "test_tier2_feature_does_not_trigger_veto_alone[is_rdc_fulfillment]",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_drift_adversarial_stress.py",
+      "classname": "tests.test_drift_adversarial_stress",
+      "test_name": "test_tier3_feature_does_not_trigger_veto[Dosage]",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_drift_adversarial_stress.py",
+      "classname": "tests.test_drift_adversarial_stress",
+      "test_name": "test_tier3_feature_does_not_trigger_veto[Brand]",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_drift_adversarial_stress.py",
+      "classname": "tests.test_drift_adversarial_stress",
+      "test_name": "test_tier3_feature_does_not_trigger_veto[Fulfill Via]",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_drift_adversarial_stress.py",
+      "classname": "tests.test_drift_adversarial_stress",
+      "test_name": "test_tier3_feature_does_not_trigger_veto[is_pre_pq_process]",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_drift_adversarial_stress.py",
+      "classname": "tests.test_drift_adversarial_stress",
+      "test_name": "test_stale_calibration_timeout_triggers_red",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_drift_adversarial_stress.py",
+      "classname": "tests.test_drift_adversarial_stress",
+      "test_name": "test_cooldown_suppresses_triggers_when_active",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_drift_adversarial_stress.py",
+      "classname": "tests.test_drift_adversarial_stress",
+      "test_name": "test_zero_holdout_contamination_in_drift_evaluation",
+      "status": "PASSED",
+      "duration_seconds": 0.011
+    },
+    {
+      "module": "tests/test_drift_adversarial_stress.py",
+      "classname": "tests.test_drift_adversarial_stress",
+      "test_name": "test_frozen_baseline_artifacts_unmodified",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_drift_adversarial_stress.py",
+      "classname": "tests.test_drift_adversarial_stress",
+      "test_name": "test_constant_zero_variance_distribution_stability",
+      "status": "PASSED",
+      "duration_seconds": 0.003
+    },
+    {
+      "module": "tests/test_drift_adversarial_stress.py",
+      "classname": "tests.test_drift_adversarial_stress",
+      "test_name": "test_extreme_and_outlier_values_stability",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_drift_adversarial_stress.py",
+      "classname": "tests.test_drift_adversarial_stress",
+      "test_name": "test_nan_and_inf_handling_stability",
+      "status": "PASSED",
+      "duration_seconds": 0.002
+    },
+    {
+      "module": "tests/test_drift_adversarial_stress.py",
+      "classname": "tests.test_drift_adversarial_stress",
+      "test_name": "test_100_percent_unseen_categorical_levels_stability",
+      "status": "PASSED",
+      "duration_seconds": 0.007
+    },
+    {
+      "module": "tests/test_drift_adversarial_stress.py",
+      "classname": "tests.test_drift_adversarial_stress",
+      "test_name": "test_empty_and_single_item_inputs_graceful_handling",
+      "status": "PASSED",
+      "duration_seconds": 0.002
+    },
+    {
+      "module": "tests/test_drift_adversarial_stress.py",
+      "classname": "tests.test_drift_adversarial_stress",
+      "test_name": "test_benjamini_hochberg_fdr_edge_cases",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_drift_adversarial_stress.py",
+      "classname": "tests.test_drift_adversarial_stress",
+      "test_name": "test_uncertainty_drift_extreme_boundary_conditions",
+      "status": "PASSED",
+      "duration_seconds": 0.005
+    },
+    {
+      "module": "tests/test_drift_adversarial_stress.py",
+      "classname": "tests.test_drift_adversarial_stress",
+      "test_name": "test_chronological_drift_detector_end_to_end_adversarial_stress",
+      "status": "PASSED",
+      "duration_seconds": 0.036
+    },
+    {
+      "module": "tests/test_drift_determinism.py",
+      "classname": "tests.test_drift_determinism",
+      "test_name": "test_psi_mathematical_properties_and_robustness",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_drift_determinism.py",
+      "classname": "tests.test_drift_determinism",
+      "test_name": "test_wasserstein_metric_axioms",
+      "status": "PASSED",
+      "duration_seconds": 0.002
+    },
+    {
+      "module": "tests/test_drift_determinism.py",
+      "classname": "tests.test_drift_determinism",
+      "test_name": "test_categorical_metrics_axioms",
+      "status": "PASSED",
+      "duration_seconds": 0.015
+    },
+    {
+      "module": "tests/test_drift_determinism.py",
+      "classname": "tests.test_drift_determinism",
+      "test_name": "test_uncertainty_drift_metrics_axioms",
+      "status": "PASSED",
+      "duration_seconds": 0.002
+    },
+    {
+      "module": "tests/test_drift_determinism.py",
+      "classname": "tests.test_drift_determinism",
+      "test_name": "test_composite_trigger_state_transitions",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_drift_determinism.py",
+      "classname": "tests.test_drift_determinism",
+      "test_name": "test_end_to_end_drift_determinism_across_runs",
+      "status": "PASSED",
+      "duration_seconds": 0.03
+    },
+    {
+      "module": "tests/test_drift_temporal_safety.py",
+      "classname": "tests.test_drift_temporal_safety",
+      "test_name": "test_holdout_isolation_in_threshold_calibration",
+      "status": "PASSED",
+      "duration_seconds": 0.064
+    },
+    {
+      "module": "tests/test_drift_temporal_safety.py",
+      "classname": "tests.test_drift_temporal_safety",
+      "test_name": "test_strict_chronological_ordering_of_windows",
+      "status": "PASSED",
+      "duration_seconds": 0.047
+    },
+    {
+      "module": "tests/test_drift_temporal_safety.py",
+      "classname": "tests.test_drift_temporal_safety",
+      "test_name": "test_label_lag_embargo_compliance",
+      "status": "PASSED",
+      "duration_seconds": 0.019
+    },
+    {
+      "module": "tests/test_drift_temporal_safety.py",
+      "classname": "tests.test_drift_temporal_safety",
+      "test_name": "test_dev_frozen_threshold_immutability",
+      "status": "PASSED",
+      "duration_seconds": 0.007
+    },
+    {
+      "module": "tests/test_drift_temporal_safety.py",
+      "classname": "tests.test_drift_temporal_safety",
+      "test_name": "test_drift_runner_artifacts_temporal_isolation",
+      "status": "PASSED",
+      "duration_seconds": 0.005
+    },
+    {
+      "module": "tests/test_e10_adversarial_leakage.py",
+      "classname": "tests.test_e10_adversarial_leakage.TestHiddenScenarioLeakage",
+      "test_name": "test_scenario_invariance_oracle[S0_BASELINE]",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_e10_adversarial_leakage.py",
+      "classname": "tests.test_e10_adversarial_leakage.TestHiddenScenarioLeakage",
+      "test_name": "test_scenario_invariance_oracle[S1_PORT_CONGESTION]",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_e10_adversarial_leakage.py",
+      "classname": "tests.test_e10_adversarial_leakage.TestHiddenScenarioLeakage",
+      "test_name": "test_scenario_invariance_oracle[S2_CUSTOMS_DELAY]",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_e10_adversarial_leakage.py",
+      "classname": "tests.test_e10_adversarial_leakage.TestHiddenScenarioLeakage",
+      "test_name": "test_scenario_invariance_oracle[S3_COLD_CHAIN_FAILURE]",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_e10_adversarial_leakage.py",
+      "classname": "tests.test_e10_adversarial_leakage.TestHiddenScenarioLeakage",
+      "test_name": "test_scenario_invariance_oracle[S4_SUPPLIER_QUALITY_ISSUE]",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_e10_adversarial_leakage.py",
+      "classname": "tests.test_e10_adversarial_leakage.TestHiddenScenarioLeakage",
+      "test_name": "test_scenario_invariance_oracle[S5_ROUTE_DISRUPTION]",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_e10_adversarial_leakage.py",
+      "classname": "tests.test_e10_adversarial_leakage.TestHiddenScenarioLeakage",
+      "test_name": "test_scenario_invariance_oracle[S6_EXTREME_WEATHER_GEOPOLITICAL]",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_e10_adversarial_leakage.py",
+      "classname": "tests.test_e10_adversarial_leakage.TestHiddenScenarioLeakage",
+      "test_name": "test_scenario_invariance_oracle[MALICIOUS_DISRUPTION_INJECTION]",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_e10_adversarial_leakage.py",
+      "classname": "tests.test_e10_adversarial_leakage.TestHiddenScenarioLeakage",
+      "test_name": "test_observable_state_blocks_scenario_attribute_injection",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_e10_adversarial_leakage.py",
+      "classname": "tests.test_e10_adversarial_leakage.TestHiddenScenarioLeakage",
+      "test_name": "test_from_row_filters_scenario_and_regime_columns",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_e10_adversarial_leakage.py",
+      "classname": "tests.test_e10_adversarial_leakage.TestHiddenScenarioLeakage",
+      "test_name": "test_ast_policies_contain_no_scenario_references",
+      "status": "PASSED",
+      "duration_seconds": 0.005
+    },
+    {
+      "module": "tests/test_e10_adversarial_leakage.py",
+      "classname": "tests.test_e10_adversarial_leakage.TestCostModelAndFeatureLeakage",
+      "test_name": "test_forbidden_post_outcome_column_injection_immunity[Delivered to Client Date]",
+      "status": "PASSED",
+      "duration_seconds": 0.002
+    },
+    {
+      "module": "tests/test_e10_adversarial_leakage.py",
+      "classname": "tests.test_e10_adversarial_leakage.TestCostModelAndFeatureLeakage",
+      "test_name": "test_forbidden_post_outcome_column_injection_immunity[Delivery Recorded Date]",
+      "status": "PASSED",
+      "duration_seconds": 0.002
+    },
+    {
+      "module": "tests/test_e10_adversarial_leakage.py",
+      "classname": "tests.test_e10_adversarial_leakage.TestCostModelAndFeatureLeakage",
+      "test_name": "test_forbidden_post_outcome_column_injection_immunity[Delay_Flag]",
+      "status": "PASSED",
+      "duration_seconds": 0.002
+    },
+    {
+      "module": "tests/test_e10_adversarial_leakage.py",
+      "classname": "tests.test_e10_adversarial_leakage.TestCostModelAndFeatureLeakage",
+      "test_name": "test_forbidden_post_outcome_column_injection_immunity[Delay_Days]",
+      "status": "PASSED",
+      "duration_seconds": 0.002
+    },
+    {
+      "module": "tests/test_e10_adversarial_leakage.py",
+      "classname": "tests.test_e10_adversarial_leakage.TestCostModelAndFeatureLeakage",
+      "test_name": "test_forbidden_post_outcome_column_injection_immunity[Freight Cost (USD)]",
+      "status": "PASSED",
+      "duration_seconds": 0.002
+    },
+    {
+      "module": "tests/test_e10_adversarial_leakage.py",
+      "classname": "tests.test_e10_adversarial_leakage.TestCostModelAndFeatureLeakage",
+      "test_name": "test_forbidden_post_outcome_column_injection_immunity[Weight (Kilograms)]",
+      "status": "PASSED",
+      "duration_seconds": 0.002
+    },
+    {
+      "module": "tests/test_e10_adversarial_leakage.py",
+      "classname": "tests.test_e10_adversarial_leakage.TestCostModelAndFeatureLeakage",
+      "test_name": "test_forbidden_post_outcome_column_injection_immunity[ASN/DN #]",
+      "status": "PASSED",
+      "duration_seconds": 0.002
+    },
+    {
+      "module": "tests/test_e10_adversarial_leakage.py",
+      "classname": "tests.test_e10_adversarial_leakage.TestCostModelAndFeatureLeakage",
+      "test_name": "test_forbidden_post_outcome_column_injection_immunity[is_temporal_anomaly]",
+      "status": "PASSED",
+      "duration_seconds": 0.002
+    },
+    {
+      "module": "tests/test_e10_adversarial_leakage.py",
+      "classname": "tests.test_e10_adversarial_leakage.TestCostModelAndFeatureLeakage",
+      "test_name": "test_forbidden_post_outcome_column_injection_immunity[actual_delivery_date]",
+      "status": "PASSED",
+      "duration_seconds": 0.002
+    },
+    {
+      "module": "tests/test_e10_adversarial_leakage.py",
+      "classname": "tests.test_e10_adversarial_leakage.TestCostModelAndFeatureLeakage",
+      "test_name": "test_forbidden_post_outcome_column_injection_immunity[actual_delivered_date]",
+      "status": "PASSED",
+      "duration_seconds": 0.002
+    },
+    {
+      "module": "tests/test_e10_adversarial_leakage.py",
+      "classname": "tests.test_e10_adversarial_leakage.TestCostModelAndFeatureLeakage",
+      "test_name": "test_forbidden_post_outcome_column_injection_immunity[realized_delay_days]",
+      "status": "PASSED",
+      "duration_seconds": 0.002
+    },
+    {
+      "module": "tests/test_e10_adversarial_leakage.py",
+      "classname": "tests.test_e10_adversarial_leakage.TestCostModelAndFeatureLeakage",
+      "test_name": "test_forbidden_post_outcome_column_injection_immunity[delay_days_realized]",
+      "status": "PASSED",
+      "duration_seconds": 0.002
+    },
+    {
+      "module": "tests/test_e10_adversarial_leakage.py",
+      "classname": "tests.test_e10_adversarial_leakage.TestCostModelAndFeatureLeakage",
+      "test_name": "test_forbidden_post_outcome_column_injection_immunity[future_timestamp]",
+      "status": "PASSED",
+      "duration_seconds": 0.002
+    },
+    {
+      "module": "tests/test_e10_adversarial_leakage.py",
+      "classname": "tests.test_e10_adversarial_leakage.TestCostModelAndFeatureLeakage",
+      "test_name": "test_forbidden_post_outcome_column_injection_immunity[target_delay_flag]",
+      "status": "PASSED",
+      "duration_seconds": 0.002
+    },
+    {
+      "module": "tests/test_e10_adversarial_leakage.py",
+      "classname": "tests.test_e10_adversarial_leakage.TestCostModelAndFeatureLeakage",
+      "test_name": "test_catboost_feature_schema_strictly_excludes_forbidden_columns",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_e10_adversarial_leakage.py",
+      "classname": "tests.test_e10_adversarial_leakage.TestCostModelAndFeatureLeakage",
+      "test_name": "test_cost_calculation_uses_strictly_pre_outcome_attributes",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_e10_adversarial_leakage.py",
+      "classname": "tests.test_e10_adversarial_leakage.TestTemporalBoundaryAndHoldoutSeparation",
+      "test_name": "test_dev_data_strictly_quarantined",
+      "status": "PASSED",
+      "duration_seconds": 0.038
+    },
+    {
+      "module": "tests/test_e10_adversarial_leakage.py",
+      "classname": "tests.test_e10_adversarial_leakage.TestTemporalBoundaryAndHoldoutSeparation",
+      "test_name": "test_holdout_quarantine_integrity",
+      "status": "PASSED",
+      "duration_seconds": 0.037
+    },
+    {
+      "module": "tests/test_e10_adversarial_leakage.py",
+      "classname": "tests.test_e10_adversarial_leakage.TestTemporalBoundaryAndHoldoutSeparation",
+      "test_name": "test_rolling_origin_folds_embargo_gap_and_precedence",
+      "status": "PASSED",
+      "duration_seconds": 0.038
+    },
+    {
+      "module": "tests/test_e10_adversarial_leakage.py",
+      "classname": "tests.test_e10_adversarial_leakage.TestTemporalBoundaryAndHoldoutSeparation",
+      "test_name": "test_splitter_order_invariance",
+      "status": "PASSED",
+      "duration_seconds": 0.056
+    },
+    {
+      "module": "tests/test_e10_adversarial_leakage.py",
+      "classname": "tests.test_e10_adversarial_leakage.TestBoundaryAndExtremeStress",
+      "test_name": "test_extreme_monetary_values_stability[0.0]",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_e10_adversarial_leakage.py",
+      "classname": "tests.test_e10_adversarial_leakage.TestBoundaryAndExtremeStress",
+      "test_name": "test_extreme_monetary_values_stability[0.001]",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_e10_adversarial_leakage.py",
+      "classname": "tests.test_e10_adversarial_leakage.TestBoundaryAndExtremeStress",
+      "test_name": "test_extreme_monetary_values_stability[10.0]",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_e10_adversarial_leakage.py",
+      "classname": "tests.test_e10_adversarial_leakage.TestBoundaryAndExtremeStress",
+      "test_name": "test_extreme_monetary_values_stability[1000000.0]",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_e10_adversarial_leakage.py",
+      "classname": "tests.test_e10_adversarial_leakage.TestBoundaryAndExtremeStress",
+      "test_name": "test_extreme_monetary_values_stability[50000000.0]",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_e10_adversarial_leakage.py",
+      "classname": "tests.test_e10_adversarial_leakage.TestBoundaryAndExtremeStress",
+      "test_name": "test_extreme_probability_bounds_stability[0.0]",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_e10_adversarial_leakage.py",
+      "classname": "tests.test_e10_adversarial_leakage.TestBoundaryAndExtremeStress",
+      "test_name": "test_extreme_probability_bounds_stability[1e-07]",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_e10_adversarial_leakage.py",
+      "classname": "tests.test_e10_adversarial_leakage.TestBoundaryAndExtremeStress",
+      "test_name": "test_extreme_probability_bounds_stability[0.5]",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_e10_adversarial_leakage.py",
+      "classname": "tests.test_e10_adversarial_leakage.TestBoundaryAndExtremeStress",
+      "test_name": "test_extreme_probability_bounds_stability[0.9999999]",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_e10_adversarial_leakage.py",
+      "classname": "tests.test_e10_adversarial_leakage.TestBoundaryAndExtremeStress",
+      "test_name": "test_extreme_probability_bounds_stability[1.0]",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_e10_adversarial_leakage.py",
+      "classname": "tests.test_e10_adversarial_leakage.TestBoundaryAndExtremeStress",
+      "test_name": "test_p5_human_review_sharp_boundary[0.1-NO_ACTION]",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_e10_adversarial_leakage.py",
+      "classname": "tests.test_e10_adversarial_leakage.TestBoundaryAndExtremeStress",
+      "test_name": "test_p5_human_review_sharp_boundary[13.999-NO_ACTION]",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_e10_adversarial_leakage.py",
+      "classname": "tests.test_e10_adversarial_leakage.TestBoundaryAndExtremeStress",
+      "test_name": "test_p5_human_review_sharp_boundary[14.0-NO_ACTION]",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_e10_adversarial_leakage.py",
+      "classname": "tests.test_e10_adversarial_leakage.TestBoundaryAndExtremeStress",
+      "test_name": "test_p5_human_review_sharp_boundary[14.0001-HUMAN_REVIEW]",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_e10_adversarial_leakage.py",
+      "classname": "tests.test_e10_adversarial_leakage.TestBoundaryAndExtremeStress",
+      "test_name": "test_p5_human_review_sharp_boundary[50.0-HUMAN_REVIEW]",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_e10_adversarial_leakage.py",
+      "classname": "tests.test_e10_adversarial_leakage.TestBudgetAllocationStress",
+      "test_name": "test_budget_strict_capacity_adherence",
+      "status": "PASSED",
+      "duration_seconds": 0.018
+    },
+    {
+      "module": "tests/test_e10_adversarial_leakage.py",
+      "classname": "tests.test_e10_adversarial_leakage.TestBudgetAllocationStress",
+      "test_name": "test_budget_never_intervenes_on_negative_net_benefit",
+      "status": "PASSED",
+      "duration_seconds": 0.002
+    },
+    {
+      "module": "tests/test_e10_adversarial_leakage.py",
+      "classname": "tests.test_e10_adversarial_leakage.TestOracleIsolationAndRegret",
+      "test_name": "test_regret_non_negativity_comprehensive_grid",
+      "status": "PASSED",
+      "duration_seconds": 0.013
+    },
+    {
+      "module": "tests/test_e10_adversarial_leakage.py",
+      "classname": "tests.test_e10_adversarial_leakage.TestProvenanceSecurity",
+      "test_name": "test_unauthorized_provenance_tag_rejected[TRUE_CAUSAL_EFFECT]",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_e10_adversarial_leakage.py",
+      "classname": "tests.test_e10_adversarial_leakage.TestProvenanceSecurity",
+      "test_name": "test_unauthorized_provenance_tag_rejected[OBSERVED_SAVINGS_CONFIRMED]",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_e10_adversarial_leakage.py",
+      "classname": "tests.test_e10_adversarial_leakage.TestProvenanceSecurity",
+      "test_name": "test_unauthorized_provenance_tag_rejected[UNAUDITED]",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_e10_adversarial_leakage.py",
+      "classname": "tests.test_e10_adversarial_leakage.TestProvenanceSecurity",
+      "test_name": "test_unauthorized_provenance_tag_rejected[]",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_e10_adversarial_leakage.py",
+      "classname": "tests.test_e10_adversarial_leakage.TestProvenanceSecurity",
+      "test_name": "test_unauthorized_provenance_tag_rejected[FAKE_TAG]",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_e10_adversarial_leakage.py",
+      "classname": "tests.test_e10_adversarial_leakage.TestProvenanceSecurity",
+      "test_name": "test_scientific_disclaimer_mandatory_content",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_e10_adversarial_leakage.py",
+      "classname": "tests.test_e10_adversarial_leakage.TestEvaluatorEndToEndArtifactIntegrity",
+      "test_name": "test_full_dev_evaluation_execution_and_quarantine",
+      "status": "PASSED",
+      "duration_seconds": 29.644
+    },
+    {
+      "module": "tests/test_e10_adversarial_leakage.py",
+      "classname": "tests.test_e10_adversarial_leakage.TestInferenceResilienceAndNoise",
+      "test_name": "test_generate_predictions_deterministic_and_feature_isolation",
+      "status": "PASSED",
+      "duration_seconds": 0.053
+    },
+    {
+      "module": "tests/test_e10_adversarial_oracle_stress.py",
+      "classname": "tests.test_e10_adversarial_oracle_stress",
+      "test_name": "test_action_effects_exact_match_e9_simulation_assumptions",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_e10_adversarial_oracle_stress.py",
+      "classname": "tests.test_e10_adversarial_oracle_stress",
+      "test_name": "test_transition_engine_determinism_under_repetition",
+      "status": "PASSED",
+      "duration_seconds": 0.005
+    },
+    {
+      "module": "tests/test_e10_adversarial_oracle_stress.py",
+      "classname": "tests.test_e10_adversarial_oracle_stress",
+      "test_name": "test_ast_deep_oracle_isolation",
+      "status": "PASSED",
+      "duration_seconds": 0.101
+    },
+    {
+      "module": "tests/test_e10_adversarial_oracle_stress.py",
+      "classname": "tests.test_e10_adversarial_oracle_stress",
+      "test_name": "test_policies_independence_from_oracle",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_e10_adversarial_oracle_stress.py",
+      "classname": "tests.test_e10_adversarial_oracle_stress",
+      "test_name": "test_budget_allocator_strict_capacity_bounds",
+      "status": "PASSED",
+      "duration_seconds": 0.473
+    },
+    {
+      "module": "tests/test_e10_adversarial_oracle_stress.py",
+      "classname": "tests.test_e10_adversarial_oracle_stress",
+      "test_name": "test_budget_allocator_empty_and_single_shipment_queues",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_e10_adversarial_oracle_stress.py",
+      "classname": "tests.test_e10_adversarial_oracle_stress",
+      "test_name": "test_budget_allocator_no_negative_benefit_allocation",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_e10_adversarial_oracle_stress.py",
+      "classname": "tests.test_e10_adversarial_oracle_stress",
+      "test_name": "test_extreme_zero_line_item_value",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_e10_adversarial_oracle_stress.py",
+      "classname": "tests.test_e10_adversarial_oracle_stress",
+      "test_name": "test_extreme_massive_line_item_value",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_e10_adversarial_oracle_stress.py",
+      "classname": "tests.test_e10_adversarial_oracle_stress",
+      "test_name": "test_boundary_probabilities_zero_and_one",
+      "status": "PASSED",
+      "duration_seconds": 0.0
+    },
+    {
+      "module": "tests/test_e10_adversarial_oracle_stress.py",
+      "classname": "tests.test_e10_adversarial_oracle_stress",
+      "test_name": "test_extreme_uncertainty_widths",
+      "status": "PASSED",
+      "duration_seconds": 0.0
+    },
+    {
+      "module": "tests/test_e10_adversarial_oracle_stress.py",
+      "classname": "tests.test_e10_adversarial_oracle_stress",
+      "test_name": "test_telemetry_extreme_anomalies",
+      "status": "PASSED",
+      "duration_seconds": 0.0
+    },
+    {
+      "module": "tests/test_e10_adversarial_oracle_stress.py",
+      "classname": "tests.test_e10_adversarial_oracle_stress",
+      "test_name": "test_adversarial_fuzzing_1000_randomized_states",
+      "status": "PASSED",
+      "duration_seconds": 0.162
+    },
+    {
+      "module": "tests/test_e10_budget_allocation.py",
+      "classname": "tests.test_e10_budget_allocation",
+      "test_name": "test_budget_capacity_bounds",
+      "status": "PASSED",
+      "duration_seconds": 0.004
+    },
+    {
+      "module": "tests/test_e10_budget_allocation.py",
+      "classname": "tests.test_e10_budget_allocation",
+      "test_name": "test_budget_conservation_and_positive_benefit",
+      "status": "PASSED",
+      "duration_seconds": 0.002
+    },
+    {
+      "module": "tests/test_e10_evaluator.py",
+      "classname": "tests.test_e10_evaluator",
+      "test_name": "test_dev_cohort_loading_and_quarantine",
+      "status": "PASSED",
+      "duration_seconds": 0.05
+    },
+    {
+      "module": "tests/test_e10_evaluator.py",
+      "classname": "tests.test_e10_evaluator",
+      "test_name": "test_predictions_generation",
+      "status": "PASSED",
+      "duration_seconds": 0.051
+    },
+    {
+      "module": "tests/test_e10_evaluator.py",
+      "classname": "tests.test_e10_evaluator",
+      "test_name": "test_cohort_evaluation_structure",
+      "status": "PASSED",
+      "duration_seconds": 0.042
+    },
+    {
+      "module": "tests/test_e10_holdout_evaluation.py",
+      "classname": "tests.test_e10_holdout_evaluation",
+      "test_name": "test_holdout_cohort_loading_and_quarantine",
+      "status": "PASSED",
+      "duration_seconds": 0.028
+    },
+    {
+      "module": "tests/test_e10_holdout_evaluation.py",
+      "classname": "tests.test_e10_holdout_evaluation",
+      "test_name": "test_holdout_evaluation_parquet_structure",
+      "status": "PASSED",
+      "duration_seconds": 0.013
+    },
+    {
+      "module": "tests/test_e10_holdout_evaluation.py",
+      "classname": "tests.test_e10_holdout_evaluation",
+      "test_name": "test_holdout_oracle_properties",
+      "status": "PASSED",
+      "duration_seconds": 0.005
+    },
+    {
+      "module": "tests/test_e10_holdout_evaluation.py",
+      "classname": "tests.test_e10_holdout_evaluation",
+      "test_name": "test_holdout_budget_allocation_constraints",
+      "status": "PASSED",
+      "duration_seconds": 1.575
+    },
+    {
+      "module": "tests/test_e10_holdout_evaluation.py",
+      "classname": "tests.test_e10_holdout_evaluation",
+      "test_name": "test_post_holdout_invariance_manifest_matches_pre_freeze",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_e10_oracle_isolation.py",
+      "classname": "tests.test_e10_oracle_isolation",
+      "test_name": "test_oracle_cost_minimization",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_e10_oracle_isolation.py",
+      "classname": "tests.test_e10_oracle_isolation",
+      "test_name": "test_policy_regret_non_negative",
+      "status": "PASSED",
+      "duration_seconds": 0.003
+    },
+    {
+      "module": "tests/test_e10_oracle_isolation.py",
+      "classname": "tests.test_e10_oracle_isolation",
+      "test_name": "test_ast_architectural_isolation",
+      "status": "PASSED",
+      "duration_seconds": 0.025
+    },
+    {
+      "module": "tests/test_e10_policies.py",
+      "classname": "tests.test_e10_policies",
+      "test_name": "test_policy_registry_coverage",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_e10_policies.py",
+      "classname": "tests.test_e10_policies",
+      "test_name": "test_p0_no_action_always_returns_no_action",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_e10_policies.py",
+      "classname": "tests.test_e10_policies",
+      "test_name": "test_p1_e8_cost_sensitive_threshold_logic",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_e10_policies.py",
+      "classname": "tests.test_e10_policies",
+      "test_name": "test_p5_human_review_triggers",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_e10_provenance_and_immutability.py",
+      "classname": "tests.test_e10_provenance_and_immutability",
+      "test_name": "test_provenance_tag_validation",
+      "status": "PASSED",
+      "duration_seconds": 0.0
+    },
+    {
+      "module": "tests/test_e10_provenance_and_immutability.py",
+      "classname": "tests.test_e10_provenance_and_immutability",
+      "test_name": "test_attach_provenance_metadata",
+      "status": "PASSED",
+      "duration_seconds": 0.002
+    },
+    {
+      "module": "tests/test_e10_provenance_and_immutability.py",
+      "classname": "tests.test_e10_provenance_and_immutability",
+      "test_name": "test_non_causal_disclaimer_present",
+      "status": "PASSED",
+      "duration_seconds": 0.0
+    },
+    {
+      "module": "tests/test_e10_provenance_and_immutability.py",
+      "classname": "tests.test_e10_provenance_and_immutability",
+      "test_name": "test_baseline_pre_freeze_manifest_hashes",
+      "status": "PASSED",
+      "duration_seconds": 0.012
+    },
+    {
+      "module": "tests/test_e10_sensitivity.py",
+      "classname": "tests.test_e10_sensitivity",
+      "test_name": "test_sensitivity_grid_dimensions",
+      "status": "PASSED",
+      "duration_seconds": 0.01
+    },
+    {
+      "module": "tests/test_e10_sensitivity.py",
+      "classname": "tests.test_e10_sensitivity",
+      "test_name": "test_sensitivity_monotonicity",
+      "status": "PASSED",
+      "duration_seconds": 0.012
+    },
+    {
+      "module": "tests/test_e10_state_transitions.py",
+      "classname": "tests.test_e10_state_transitions",
+      "test_name": "test_observable_state_immutability",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_e10_state_transitions.py",
+      "classname": "tests.test_e10_state_transitions",
+      "test_name": "test_observable_state_validation_bounds",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_e10_state_transitions.py",
+      "classname": "tests.test_e10_state_transitions",
+      "test_name": "test_transition_no_action",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_e10_state_transitions.py",
+      "classname": "tests.test_e10_state_transitions",
+      "test_name": "test_transition_expedite_frozen_effects",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_e10_state_transitions.py",
+      "classname": "tests.test_e10_state_transitions",
+      "test_name": "test_transition_transport_mode_review_effects",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_e10_state_transitions.py",
+      "classname": "tests.test_e10_state_transitions",
+      "test_name": "test_transition_supplier_escalation_effects",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_e10_state_transitions.py",
+      "classname": "tests.test_e10_state_transitions",
+      "test_name": "test_transition_human_review_effects",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_e10_state_transitions.py",
+      "classname": "tests.test_e10_state_transitions",
+      "test_name": "test_action_normalization",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_e8_backtester.py",
+      "classname": "tests.test_e8_backtester",
+      "test_name": "test_compute_expected_calibration_error",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_e8_backtester.py",
+      "classname": "tests.test_e8_backtester",
+      "test_name": "test_calculate_e8_metrics_correctness",
+      "status": "PASSED",
+      "duration_seconds": 0.012
+    },
+    {
+      "module": "tests/test_e8_backtester.py",
+      "classname": "tests.test_e8_backtester",
+      "test_name": "test_backtester_development_folds_and_embargo",
+      "status": "PASSED",
+      "duration_seconds": 0.075
+    },
+    {
+      "module": "tests/test_e8_backtester.py",
+      "classname": "tests.test_e8_backtester",
+      "test_name": "test_inner_train_val_split_integrity",
+      "status": "PASSED",
+      "duration_seconds": 0.071
+    },
+    {
+      "module": "tests/test_e8_backtester.py",
+      "classname": "tests.test_e8_backtester",
+      "test_name": "test_strategy_instantiation",
+      "status": "PASSED",
+      "duration_seconds": 0.011
+    },
+    {
+      "module": "tests/test_e8_backtester.py",
+      "classname": "tests.test_e8_backtester",
+      "test_name": "test_quick_development_backtest_execution",
+      "status": "PASSED",
+      "duration_seconds": 1.54
+    },
+    {
+      "module": "tests/test_e8_budgeting.py",
+      "classname": "tests.test_e8_budgeting",
+      "test_name": "test_operational_policy_type_enum",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_e8_budgeting.py",
+      "classname": "tests.test_e8_budgeting",
+      "test_name": "test_compute_priority_scores_mathematical_correctness",
+      "status": "PASSED",
+      "duration_seconds": 0.002
+    },
+    {
+      "module": "tests/test_e8_budgeting.py",
+      "classname": "tests.test_e8_budgeting",
+      "test_name": "test_compute_policy_decisions_budget_capacities",
+      "status": "PASSED",
+      "duration_seconds": 0.002
+    },
+    {
+      "module": "tests/test_e8_budgeting.py",
+      "classname": "tests.test_e8_budgeting",
+      "test_name": "test_cost_sensitive_strictly_positive_benefit_gating",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_e8_budgeting.py",
+      "classname": "tests.test_e8_budgeting",
+      "test_name": "test_evaluate_cohort_under_budget_metrics_consistency",
+      "status": "PASSED",
+      "duration_seconds": 0.008
+    },
+    {
+      "module": "tests/test_e8_budgeting.py",
+      "classname": "tests.test_e8_budgeting",
+      "test_name": "test_simulate_all_policies_pairwise_savings",
+      "status": "PASSED",
+      "duration_seconds": 0.011
+    },
+    {
+      "module": "tests/test_e8_budgeting.py",
+      "classname": "tests.test_e8_budgeting",
+      "test_name": "test_run_e8_dev_budget_simulation_e2e",
+      "status": "PASSED",
+      "duration_seconds": 0.64
+    },
+    {
+      "module": "tests/test_e8_cost_engine.py",
+      "classname": "tests.test_e8_cost_engine",
+      "test_name": "test_config_loading_and_available_scenarios",
+      "status": "PASSED",
+      "duration_seconds": 0.007
+    },
+    {
+      "module": "tests/test_e8_cost_engine.py",
+      "classname": "tests.test_e8_cost_engine",
+      "test_name": "test_scenario_switching",
+      "status": "PASSED",
+      "duration_seconds": 0.007
+    },
+    {
+      "module": "tests/test_e8_cost_engine.py",
+      "classname": "tests.test_e8_cost_engine",
+      "test_name": "test_invalid_scenario_raises_key_error",
+      "status": "PASSED",
+      "duration_seconds": 0.007
+    },
+    {
+      "module": "tests/test_e8_cost_engine.py",
+      "classname": "tests.test_e8_cost_engine",
+      "test_name": "test_cost_scenario_pydantic_validation",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_e8_cost_engine.py",
+      "classname": "tests.test_e8_cost_engine",
+      "test_name": "test_cost_engine_alias_equivalence",
+      "status": "PASSED",
+      "duration_seconds": 0.007
+    },
+    {
+      "module": "tests/test_e8_cost_engine.py",
+      "classname": "tests.test_e8_cost_engine",
+      "test_name": "test_leakage_guard_rejects_forbidden_columns_in_dataframe[Delivered to Client Date]",
+      "status": "PASSED",
+      "duration_seconds": 0.008
+    },
+    {
+      "module": "tests/test_e8_cost_engine.py",
+      "classname": "tests.test_e8_cost_engine",
+      "test_name": "test_leakage_guard_rejects_forbidden_columns_in_dataframe[Delivery Recorded Date]",
+      "status": "PASSED",
+      "duration_seconds": 0.007
+    },
+    {
+      "module": "tests/test_e8_cost_engine.py",
+      "classname": "tests.test_e8_cost_engine",
+      "test_name": "test_leakage_guard_rejects_forbidden_columns_in_dataframe[Delay_Flag]",
+      "status": "PASSED",
+      "duration_seconds": 0.007
+    },
+    {
+      "module": "tests/test_e8_cost_engine.py",
+      "classname": "tests.test_e8_cost_engine",
+      "test_name": "test_leakage_guard_rejects_forbidden_columns_in_dataframe[Delay_Days]",
+      "status": "PASSED",
+      "duration_seconds": 0.006
+    },
+    {
+      "module": "tests/test_e8_cost_engine.py",
+      "classname": "tests.test_e8_cost_engine",
+      "test_name": "test_leakage_guard_rejects_forbidden_columns_in_dataframe[Freight Cost (USD)]",
+      "status": "PASSED",
+      "duration_seconds": 0.006
+    },
+    {
+      "module": "tests/test_e8_cost_engine.py",
+      "classname": "tests.test_e8_cost_engine",
+      "test_name": "test_leakage_guard_rejects_forbidden_columns_in_dataframe[Weight (Kilograms)]",
+      "status": "PASSED",
+      "duration_seconds": 0.009
+    },
+    {
+      "module": "tests/test_e8_cost_engine.py",
+      "classname": "tests.test_e8_cost_engine",
+      "test_name": "test_leakage_guard_rejects_forbidden_columns_in_dataframe[ASN/DN #]",
+      "status": "PASSED",
+      "duration_seconds": 0.008
+    },
+    {
+      "module": "tests/test_e8_cost_engine.py",
+      "classname": "tests.test_e8_cost_engine",
+      "test_name": "test_leakage_guard_rejects_forbidden_columns_in_dataframe[is_temporal_anomaly]",
+      "status": "PASSED",
+      "duration_seconds": 0.008
+    },
+    {
+      "module": "tests/test_e8_cost_engine.py",
+      "classname": "tests.test_e8_cost_engine",
+      "test_name": "test_leakage_guard_rejects_forbidden_keys_in_dict",
+      "status": "PASSED",
+      "duration_seconds": 0.007
+    },
+    {
+      "module": "tests/test_e8_cost_engine.py",
+      "classname": "tests.test_e8_cost_engine",
+      "test_name": "test_leakage_guard_can_be_disabled_explicitly",
+      "status": "PASSED",
+      "duration_seconds": 0.009
+    },
+    {
+      "module": "tests/test_e8_cost_engine.py",
+      "classname": "tests.test_e8_cost_engine",
+      "test_name": "test_exact_mathematical_calculation_base_scenario",
+      "status": "PASSED",
+      "duration_seconds": 0.007
+    },
+    {
+      "module": "tests/test_e8_cost_engine.py",
+      "classname": "tests.test_e8_cost_engine",
+      "test_name": "test_exact_mathematical_calculation_low_and_high_scenarios",
+      "status": "PASSED",
+      "duration_seconds": 0.007
+    },
+    {
+      "module": "tests/test_e8_cost_engine.py",
+      "classname": "tests.test_e8_cost_engine",
+      "test_name": "test_log_and_unlogged_value_equivalence",
+      "status": "PASSED",
+      "duration_seconds": 0.015
+    },
+    {
+      "module": "tests/test_e8_cost_engine.py",
+      "classname": "tests.test_e8_cost_engine",
+      "test_name": "test_zero_and_negative_value_handling",
+      "status": "PASSED",
+      "duration_seconds": 0.01
+    },
+    {
+      "module": "tests/test_e8_cost_engine.py",
+      "classname": "tests.test_e8_cost_engine",
+      "test_name": "test_vectorization_vs_single_record_consistency",
+      "status": "PASSED",
+      "duration_seconds": 0.032
+    },
+    {
+      "module": "tests/test_e8_cost_engine.py",
+      "classname": "tests.test_e8_cost_engine",
+      "test_name": "test_positive_asymmetry_across_real_scms_modeling_data[low]",
+      "status": "PASSED",
+      "duration_seconds": 0.034
+    },
+    {
+      "module": "tests/test_e8_cost_engine.py",
+      "classname": "tests.test_e8_cost_engine",
+      "test_name": "test_positive_asymmetry_across_real_scms_modeling_data[base]",
+      "status": "PASSED",
+      "duration_seconds": 0.03
+    },
+    {
+      "module": "tests/test_e8_cost_engine.py",
+      "classname": "tests.test_e8_cost_engine",
+      "test_name": "test_positive_asymmetry_across_real_scms_modeling_data[high]",
+      "status": "PASSED",
+      "duration_seconds": 0.029
+    },
+    {
+      "module": "tests/test_e8_cost_engine.py",
+      "classname": "tests.test_e8_cost_engine",
+      "test_name": "test_sample_weights_computation",
+      "status": "PASSED",
+      "duration_seconds": 0.02
+    },
+    {
+      "module": "tests/test_e8_cost_engine.py",
+      "classname": "tests.test_e8_cost_engine",
+      "test_name": "test_expected_cost_and_net_savings",
+      "status": "PASSED",
+      "duration_seconds": 0.009
+    },
+    {
+      "module": "tests/test_e8_cost_engine.py",
+      "classname": "tests.test_e8_cost_engine",
+      "test_name": "test_expected_net_benefit_ranking",
+      "status": "PASSED",
+      "duration_seconds": 0.011
+    },
+    {
+      "module": "tests/test_e8_cost_engine.py",
+      "classname": "tests.test_e8_cost_engine",
+      "test_name": "test_vectorization_performance_benchmark",
+      "status": "PASSED",
+      "duration_seconds": 0.03
+    },
+    {
+      "module": "tests/test_e8_holdout_eval.py",
+      "classname": "tests.test_e8_holdout_eval.TestE8HoldoutTemporalIsolationAndDataPartition",
+      "test_name": "test_dataset_partition_row_counts_and_dates",
+      "status": "PASSED",
+      "duration_seconds": 0.12
+    },
+    {
+      "module": "tests/test_e8_holdout_eval.py",
+      "classname": "tests.test_e8_holdout_eval.TestE8HoldoutTemporalIsolationAndDataPartition",
+      "test_name": "test_dev_temporal_holdout_isolation_verification",
+      "status": "PASSED",
+      "duration_seconds": 0.034
+    },
+    {
+      "module": "tests/test_e8_holdout_eval.py",
+      "classname": "tests.test_e8_holdout_eval.TestE8HoldoutTemporalIsolationAndDataPartition",
+      "test_name": "test_inner_train_val_split_strictly_preserves_embargo",
+      "status": "PASSED",
+      "duration_seconds": 0.06
+    },
+    {
+      "module": "tests/test_e8_holdout_eval.py",
+      "classname": "tests.test_e8_holdout_eval.TestE8FrozenPolicyCompliance",
+      "test_name": "test_frozen_policy_loaded_and_immutable",
+      "status": "PASSED",
+      "duration_seconds": 0.008
+    },
+    {
+      "module": "tests/test_e8_holdout_eval.py",
+      "classname": "tests.test_e8_holdout_eval.TestE8FrozenPolicyCompliance",
+      "test_name": "test_feature_contract_contains_no_forbidden_columns",
+      "status": "PASSED",
+      "duration_seconds": 0.008
+    },
+    {
+      "module": "tests/test_e8_holdout_eval.py",
+      "classname": "tests.test_e8_holdout_eval.TestE8HoldoutArtifactIntegrity",
+      "test_name": "test_holdout_parquet_artifact_schema_and_rows",
+      "status": "PASSED",
+      "duration_seconds": 0.006
+    },
+    {
+      "module": "tests/test_e8_holdout_eval.py",
+      "classname": "tests.test_e8_holdout_eval.TestE8HoldoutArtifactIntegrity",
+      "test_name": "test_holdout_metrics_json_structure",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_e8_holdout_eval.py",
+      "classname": "tests.test_e8_holdout_eval.TestE8HoldoutEconomicPerformanceAndRationality",
+      "test_name": "test_champion_outperforms_do_nothing_and_standard_baseline",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_e8_holdout_eval.py",
+      "classname": "tests.test_e8_holdout_eval.TestE8HoldoutEconomicPerformanceAndRationality",
+      "test_name": "test_cost_sensitive_budgeting_outperforms_baselines_at_k10",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_e8_holdout_eval.py",
+      "classname": "tests.test_e8_holdout_eval.TestE8HoldoutEconomicPerformanceAndRationality",
+      "test_name": "test_budget_capacity_enforcement_on_holdout",
+      "status": "PASSED",
+      "duration_seconds": 0.008
+    },
+    {
+      "module": "tests/test_e8_models.py",
+      "classname": "tests.test_e8_models",
+      "test_name": "test_feature_preprocessing_and_schema",
+      "status": "PASSED",
+      "duration_seconds": 0.025
+    },
+    {
+      "module": "tests/test_e8_models.py",
+      "classname": "tests.test_e8_models",
+      "test_name": "test_sanitize_cost_inputs",
+      "status": "PASSED",
+      "duration_seconds": 0.002
+    },
+    {
+      "module": "tests/test_e8_models.py",
+      "classname": "tests.test_e8_models",
+      "test_name": "test_standard_catboost_fixed_threshold",
+      "status": "PASSED",
+      "duration_seconds": 0.709
+    },
+    {
+      "module": "tests/test_e8_models.py",
+      "classname": "tests.test_e8_models",
+      "test_name": "test_standard_catboost_f1_optimal_and_calibration",
+      "status": "PASSED",
+      "duration_seconds": 1.258
+    },
+    {
+      "module": "tests/test_e8_models.py",
+      "classname": "tests.test_e8_models",
+      "test_name": "test_cost_weighted_catboost_weights_and_fit",
+      "status": "PASSED",
+      "duration_seconds": 0.926
+    },
+    {
+      "module": "tests/test_e8_models.py",
+      "classname": "tests.test_e8_models",
+      "test_name": "test_cost_weighted_asymmetry_behavior",
+      "status": "PASSED",
+      "duration_seconds": 0.019
+    },
+    {
+      "module": "tests/test_e8_models.py",
+      "classname": "tests.test_e8_models",
+      "test_name": "test_cost_threshold_catboost_bayes_thresholds",
+      "status": "PASSED",
+      "duration_seconds": 0.791
+    },
+    {
+      "module": "tests/test_e8_models.py",
+      "classname": "tests.test_e8_models",
+      "test_name": "test_cost_threshold_catboost_gamma_tuning",
+      "status": "PASSED",
+      "duration_seconds": 1.066
+    },
+    {
+      "module": "tests/test_e8_models.py",
+      "classname": "tests.test_e8_models",
+      "test_name": "test_strategy_ranking_scores",
+      "status": "PASSED",
+      "duration_seconds": 0.643
+    },
+    {
+      "module": "tests/test_e8_models.py",
+      "classname": "tests.test_e8_models",
+      "test_name": "test_cost_engine_strict_leakage_guard",
+      "status": "PASSED",
+      "duration_seconds": 0.009
+    },
+    {
+      "module": "tests/test_e8_policy_freeze.py",
+      "classname": "tests.test_e8_policy_freeze",
+      "test_name": "test_compute_file_sha256",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_e8_policy_freeze.py",
+      "classname": "tests.test_e8_policy_freeze",
+      "test_name": "test_verify_temporal_holdout_isolation_pass",
+      "status": "PASSED",
+      "duration_seconds": 0.002
+    },
+    {
+      "module": "tests/test_e8_policy_freeze.py",
+      "classname": "tests.test_e8_policy_freeze",
+      "test_name": "test_verify_temporal_holdout_isolation_raises_on_leakage",
+      "status": "PASSED",
+      "duration_seconds": 0.002
+    },
+    {
+      "module": "tests/test_e8_policy_freeze.py",
+      "classname": "tests.test_e8_policy_freeze",
+      "test_name": "test_frozen_cost_policy_thresholds_and_application",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_e8_policy_freeze.py",
+      "classname": "tests.test_e8_policy_freeze",
+      "test_name": "test_freeze_e8_policy_e2e",
+      "status": "PASSED",
+      "duration_seconds": 0.031
+    },
+    {
+      "module": "tests/test_e8_sensitivity.py",
+      "classname": "tests.test_e8_sensitivity",
+      "test_name": "test_robustness_classification_enum",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_e8_sensitivity.py",
+      "classname": "tests.test_e8_sensitivity",
+      "test_name": "test_create_perturbed_scenario_bounds_and_values",
+      "status": "PASSED",
+      "duration_seconds": 0.007
+    },
+    {
+      "module": "tests/test_e8_sensitivity.py",
+      "classname": "tests.test_e8_sensitivity",
+      "test_name": "test_classify_robustness_decision_boundaries",
+      "status": "PASSED",
+      "duration_seconds": 0.039
+    },
+    {
+      "module": "tests/test_e8_sensitivity.py",
+      "classname": "tests.test_e8_sensitivity",
+      "test_name": "test_run_e8_dev_sensitivity_analysis_e2e",
+      "status": "PASSED",
+      "duration_seconds": 1.721
+    },
+    {
+      "module": "tests/test_e9_digital_twin.py",
+      "classname": "tests.test_e9_digital_twin",
+      "test_name": "test_e9_telemetry",
+      "status": "PASSED",
+      "duration_seconds": 0.0
+    },
+    {
+      "module": "tests/test_e9_digital_twin.py",
+      "classname": "tests.test_e9_digital_twin",
+      "test_name": "test_e9_state_transitions",
+      "status": "PASSED",
+      "duration_seconds": 0.0
+    },
+    {
+      "module": "tests/test_e9_digital_twin.py",
+      "classname": "tests.test_e9_digital_twin",
+      "test_name": "test_e9_temporal_safety",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_e9_digital_twin.py",
+      "classname": "tests.test_e9_digital_twin",
+      "test_name": "test_e9_drift_integration",
+      "status": "PASSED",
+      "duration_seconds": 0.0
+    },
+    {
+      "module": "tests/test_e9_digital_twin.py",
+      "classname": "tests.test_e9_digital_twin",
+      "test_name": "test_e9_closed_loop",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_e9_digital_twin.py",
+      "classname": "tests.test_e9_digital_twin",
+      "test_name": "test_e9_scenarios",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_e9_digital_twin.py",
+      "classname": "tests.test_e9_digital_twin",
+      "test_name": "test_e9_reproducibility",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_end_to_end.py",
+      "classname": "tests.test_end_to_end",
+      "test_name": "test_end_to_end",
+      "status": "PASSED",
+      "duration_seconds": 0.052
+    },
+    {
+      "module": "tests/test_environment.py",
+      "classname": "tests.test_environment",
+      "test_name": "test_python_version_compatibility",
+      "status": "PASSED",
+      "duration_seconds": 0.0
+    },
+    {
+      "module": "tests/test_environment.py",
+      "classname": "tests.test_environment",
+      "test_name": "test_platform_is_supported",
+      "status": "PASSED",
+      "duration_seconds": 0.0
+    },
+    {
+      "module": "tests/test_environment.py",
+      "classname": "tests.test_environment",
+      "test_name": "test_baseline_dependencies_importable",
+      "status": "PASSED",
+      "duration_seconds": 0.062
+    },
+    {
+      "module": "tests/test_environment.py",
+      "classname": "tests.test_environment",
+      "test_name": "test_pyproject_toml_structure",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_environment.py",
+      "classname": "tests.test_environment",
+      "test_name": "test_proportional_architecture_no_cloud_hardcoding",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_feature_engineering.py",
+      "classname": "tests.test_feature_engineering",
+      "test_name": "test_prediction_boundary",
+      "status": "PASSED",
+      "duration_seconds": 0.006
+    },
+    {
+      "module": "tests/test_feature_engineering.py",
+      "classname": "tests.test_feature_engineering",
+      "test_name": "test_row_integrity",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_feature_engineering.py",
+      "classname": "tests.test_feature_engineering",
+      "test_name": "test_structural_missingness",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_feature_engineering.py",
+      "classname": "tests.test_feature_engineering",
+      "test_name": "test_feature_transformations",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_feature_leakage.py",
+      "classname": "tests.test_feature_leakage",
+      "test_name": "test_target_exclusion",
+      "status": "PASSED",
+      "duration_seconds": 0.018
+    },
+    {
+      "module": "tests/test_feature_leakage.py",
+      "classname": "tests.test_feature_leakage",
+      "test_name": "test_leakage_specification_adherence",
+      "status": "PASSED",
+      "duration_seconds": 0.009
+    },
+    {
+      "module": "tests/test_final_artifact_integrity.py",
+      "classname": "tests.test_final_artifact_integrity",
+      "test_name": "test_final_artifact_manifest_exists",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_final_artifact_integrity.py",
+      "classname": "tests.test_final_artifact_integrity",
+      "test_name": "test_final_model_artifacts_frozen",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_final_end_to_end.py",
+      "classname": "tests.test_final_end_to_end",
+      "test_name": "test_final_end_to_end_consistency",
+      "status": "PASSED",
+      "duration_seconds": 0.067
+    },
+    {
+      "module": "tests/test_final_reproducibility.py",
+      "classname": "tests.test_final_reproducibility",
+      "test_name": "test_final_metrics_written",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_final_reproducibility.py",
+      "classname": "tests.test_final_reproducibility",
+      "test_name": "test_final_metrics_are_deterministic",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_model_training.py",
+      "classname": "tests.test_model_training",
+      "test_name": "test_no_final_holdout_access",
+      "status": "PASSED",
+      "duration_seconds": 0.004
+    },
+    {
+      "module": "tests/test_model_training.py",
+      "classname": "tests.test_model_training",
+      "test_name": "test_deterministic_training",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_model_training.py",
+      "classname": "tests.test_model_training",
+      "test_name": "test_no_target_leakage",
+      "status": "PASSED",
+      "duration_seconds": 0.007
+    },
+    {
+      "module": "tests/test_olist_adapter.py",
+      "classname": "tests.test_olist_adapter",
+      "test_name": "test_olist_adapter_loads_and_maps_ontology",
+      "status": "PASSED",
+      "duration_seconds": 0.013
+    },
+    {
+      "module": "tests/test_olist_adapter.py",
+      "classname": "tests.test_olist_adapter",
+      "test_name": "test_olist_eligibility",
+      "status": "PASSED",
+      "duration_seconds": 0.013
+    },
+    {
+      "module": "tests/test_point_in_time_features.py",
+      "classname": "tests.test_point_in_time_features",
+      "test_name": "test_point_in_time_historical_aggregates",
+      "status": "PASSED",
+      "duration_seconds": 0.008
+    },
+    {
+      "module": "tests/test_point_in_time_features.py",
+      "classname": "tests.test_point_in_time_features",
+      "test_name": "test_cold_start_behavior",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_point_in_time_features.py",
+      "classname": "tests.test_point_in_time_features",
+      "test_name": "test_reproducibility",
+      "status": "PASSED",
+      "duration_seconds": 2.706
+    },
+    {
+      "module": "tests/test_prediction_contract.py",
+      "classname": "tests.test_prediction_contract",
+      "test_name": "test_prediction_contract_yaml_structure_and_keys",
+      "status": "PASSED",
+      "duration_seconds": 0.02
+    },
+    {
+      "module": "tests/test_prediction_contract.py",
+      "classname": "tests.test_prediction_contract",
+      "test_name": "test_prediction_timestamp_generation_and_coverage",
+      "status": "PASSED",
+      "duration_seconds": 0.008
+    },
+    {
+      "module": "tests/test_prediction_contract.py",
+      "classname": "tests.test_prediction_contract",
+      "test_name": "test_prediction_timestamp_precedes_outcome",
+      "status": "PASSED",
+      "duration_seconds": 0.032
+    },
+    {
+      "module": "tests/test_prediction_contract.py",
+      "classname": "tests.test_prediction_contract",
+      "test_name": "test_forbidden_features_rejected",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_prediction_contract.py",
+      "classname": "tests.test_prediction_contract",
+      "test_name": "test_allowed_features_accepted",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_prediction_contract.py",
+      "classname": "tests.test_prediction_contract",
+      "test_name": "test_base_population_eligibility_preserves_all_rdc_records",
+      "status": "PASSED",
+      "duration_seconds": 0.016
+    },
+    {
+      "module": "tests/test_prediction_contract.py",
+      "classname": "tests.test_prediction_contract",
+      "test_name": "test_eligibility_rules_deterministic",
+      "status": "PASSED",
+      "duration_seconds": 0.055
+    },
+    {
+      "module": "tests/test_prediction_contract.py",
+      "classname": "tests.test_prediction_contract",
+      "test_name": "test_target_contract_reproducibility",
+      "status": "PASSED",
+      "duration_seconds": 0.004
+    },
+    {
+      "module": "tests/test_prediction_contract.py",
+      "classname": "tests.test_prediction_contract",
+      "test_name": "test_temporal_boundary_invariants",
+      "status": "PASSED",
+      "duration_seconds": 0.013
+    },
+    {
+      "module": "tests/test_prediction_contract.py",
+      "classname": "tests.test_prediction_contract",
+      "test_name": "test_anomaly_policy_handling",
+      "status": "PASSED",
+      "duration_seconds": 0.017
+    },
+    {
+      "module": "tests/test_prediction_contract.py",
+      "classname": "tests.test_prediction_contract",
+      "test_name": "test_edge_cases_same_day_and_early_deliveries",
+      "status": "PASSED",
+      "duration_seconds": 0.003
+    },
+    {
+      "module": "tests/test_prediction_contract.py",
+      "classname": "tests.test_prediction_contract",
+      "test_name": "test_edge_cases_empty_dataframe_and_corrupted_dates",
+      "status": "PASSED",
+      "duration_seconds": 0.004
+    },
+    {
+      "module": "tests/test_prediction_contract.py",
+      "classname": "tests.test_prediction_contract",
+      "test_name": "test_contract_validator_full_dataframe_audit",
+      "status": "PASSED",
+      "duration_seconds": 0.032
+    },
+    {
+      "module": "tests/test_rolling_origin.py",
+      "classname": "tests.test_rolling_origin",
+      "test_name": "test_train_strictly_precedes_eval",
+      "status": "PASSED",
+      "duration_seconds": 0.044
+    },
+    {
+      "module": "tests/test_rolling_origin.py",
+      "classname": "tests.test_rolling_origin",
+      "test_name": "test_configured_gap",
+      "status": "PASSED",
+      "duration_seconds": 0.017
+    },
+    {
+      "module": "tests/test_rolling_origin.py",
+      "classname": "tests.test_rolling_origin",
+      "test_name": "test_no_overlap",
+      "status": "PASSED",
+      "duration_seconds": 0.003
+    },
+    {
+      "module": "tests/test_rolling_origin.py",
+      "classname": "tests.test_rolling_origin",
+      "test_name": "test_final_holdout_isolation",
+      "status": "PASSED",
+      "duration_seconds": 0.003
+    },
+    {
+      "module": "tests/test_rolling_origin.py",
+      "classname": "tests.test_rolling_origin",
+      "test_name": "test_deterministic_folds",
+      "status": "PASSED",
+      "duration_seconds": 0.066
+    },
+    {
+      "module": "tests/test_rolling_origin.py",
+      "classname": "tests.test_rolling_origin",
+      "test_name": "test_insufficient_folds_raises_error",
+      "status": "PASSED",
+      "duration_seconds": 0.011
+    },
+    {
+      "module": "tests/test_rolling_origin.py",
+      "classname": "tests.test_rolling_origin",
+      "test_name": "test_temporal_ordering_ties",
+      "status": "PASSED",
+      "duration_seconds": 0.008
+    },
+    {
+      "module": "tests/test_scms_audit.py",
+      "classname": "tests.test_scms_audit",
+      "test_name": "test_scms_no_full_row_duplicates",
+      "status": "PASSED",
+      "duration_seconds": 0.091
+    },
+    {
+      "module": "tests/test_scms_audit.py",
+      "classname": "tests.test_scms_audit",
+      "test_name": "test_scms_core_milestone_dates_100_percent_parsed",
+      "status": "PASSED",
+      "duration_seconds": 0.002
+    },
+    {
+      "module": "tests/test_scms_audit.py",
+      "classname": "tests.test_scms_audit",
+      "test_name": "test_scms_po_sent_sentinels_handling",
+      "status": "PASSED",
+      "duration_seconds": 0.002
+    },
+    {
+      "module": "tests/test_scms_audit.py",
+      "classname": "tests.test_scms_audit",
+      "test_name": "test_scms_pq_sent_sentinels_handling",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_scms_audit.py",
+      "classname": "tests.test_scms_audit",
+      "test_name": "test_scms_temporal_anomaly_detection",
+      "status": "PASSED",
+      "duration_seconds": 0.004
+    },
+    {
+      "module": "tests/test_scms_audit.py",
+      "classname": "tests.test_scms_audit",
+      "test_name": "test_scms_delay_distribution_baseline",
+      "status": "PASSED",
+      "duration_seconds": 0.053
+    },
+    {
+      "module": "tests/test_scms_audit.py",
+      "classname": "tests.test_scms_audit",
+      "test_name": "test_scms_record_loss_selection_bias_guard",
+      "status": "PASSED",
+      "duration_seconds": 0.005
+    },
+    {
+      "module": "tests/test_scms_audit.py",
+      "classname": "tests.test_scms_audit",
+      "test_name": "test_scms_weight_freight_mixed_value_coercion",
+      "status": "PASSED",
+      "duration_seconds": 0.002
+    },
+    {
+      "module": "tests/test_scms_ingestion.py",
+      "classname": "tests.test_scms_ingestion",
+      "test_name": "test_scms_raw_file_existence_and_size",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_scms_ingestion.py",
+      "classname": "tests.test_scms_ingestion",
+      "test_name": "test_scms_raw_hash_integrity_before_and_after_ingestion",
+      "status": "PASSED",
+      "duration_seconds": 0.206
+    },
+    {
+      "module": "tests/test_scms_ingestion.py",
+      "classname": "tests.test_scms_ingestion",
+      "test_name": "test_scms_adapter_contract_implementation",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_scms_ingestion.py",
+      "classname": "tests.test_scms_ingestion",
+      "test_name": "test_scms_adapter_invalid_path_handling",
+      "status": "PASSED",
+      "duration_seconds": 0.003
+    },
+    {
+      "module": "tests/test_scms_ingestion.py",
+      "classname": "tests.test_scms_ingestion",
+      "test_name": "test_scms_load_raw_dimensions",
+      "status": "PASSED",
+      "duration_seconds": 0.084
+    },
+    {
+      "module": "tests/test_scms_ingestion.py",
+      "classname": "tests.test_scms_ingestion",
+      "test_name": "test_scms_row_count_reconciliation_zero_loss",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_scms_ingestion.py",
+      "classname": "tests.test_scms_ingestion",
+      "test_name": "test_scms_primary_key_uniqueness",
+      "status": "PASSED",
+      "duration_seconds": 0.002
+    },
+    {
+      "module": "tests/test_scms_ingestion.py",
+      "classname": "tests.test_scms_ingestion",
+      "test_name": "test_scms_metadata_summary_contract",
+      "status": "PASSED",
+      "duration_seconds": 0.223
+    },
+    {
+      "module": "tests/test_scms_ingestion.py",
+      "classname": "tests.test_scms_ingestion",
+      "test_name": "test_scms_dataloader_and_parquet_serialization",
+      "status": "PASSED",
+      "duration_seconds": 0.255
+    },
+    {
+      "module": "tests/test_scms_ingestion.py",
+      "classname": "tests.test_scms_ingestion",
+      "test_name": "test_scms_ingest_pipeline_end_to_end",
+      "status": "PASSED",
+      "duration_seconds": 0.238
+    },
+    {
+      "module": "tests/test_scms_validation.py",
+      "classname": "tests.test_scms_validation",
+      "test_name": "test_scms_exact_column_names_and_count",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_scms_validation.py",
+      "classname": "tests.test_scms_validation",
+      "test_name": "test_scms_canonical_data_types",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_scms_validation.py",
+      "classname": "tests.test_scms_validation",
+      "test_name": "test_scms_critical_columns_zero_nulls[ID]",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_scms_validation.py",
+      "classname": "tests.test_scms_validation",
+      "test_name": "test_scms_critical_columns_zero_nulls[Project Code]",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_scms_validation.py",
+      "classname": "tests.test_scms_validation",
+      "test_name": "test_scms_critical_columns_zero_nulls[Country]",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_scms_validation.py",
+      "classname": "tests.test_scms_validation",
+      "test_name": "test_scms_critical_columns_zero_nulls[Scheduled Delivery Date]",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_scms_validation.py",
+      "classname": "tests.test_scms_validation",
+      "test_name": "test_scms_critical_columns_zero_nulls[Delivered to Client Date]",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_scms_validation.py",
+      "classname": "tests.test_scms_validation",
+      "test_name": "test_scms_critical_columns_zero_nulls[Delivery Recorded Date]",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_scms_validation.py",
+      "classname": "tests.test_scms_validation",
+      "test_name": "test_scms_critical_columns_zero_nulls[Line Item Quantity]",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_scms_validation.py",
+      "classname": "tests.test_scms_validation",
+      "test_name": "test_scms_critical_columns_zero_nulls[Line Item Value]",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_scms_validation.py",
+      "classname": "tests.test_scms_validation",
+      "test_name": "test_scms_null_tolerances_within_bounds",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_scms_validation.py",
+      "classname": "tests.test_scms_validation",
+      "test_name": "test_scms_numeric_range_and_positivity",
+      "status": "PASSED",
+      "duration_seconds": 0.002
+    },
+    {
+      "module": "tests/test_scms_validation.py",
+      "classname": "tests.test_scms_validation",
+      "test_name": "test_scms_categorical_domain_validity",
+      "status": "PASSED",
+      "duration_seconds": 0.002
+    },
+    {
+      "module": "tests/test_scms_validation.py",
+      "classname": "tests.test_scms_validation",
+      "test_name": "test_scms_validator_passes_on_valid_data",
+      "status": "PASSED",
+      "duration_seconds": 0.02
+    },
+    {
+      "module": "tests/test_scms_validation.py",
+      "classname": "tests.test_scms_validation",
+      "test_name": "test_scms_validator_fails_on_corrupted_data",
+      "status": "PASSED",
+      "duration_seconds": 0.024
+    },
+    {
+      "module": "tests/test_shap_explainability.py",
+      "classname": "tests.test_shap_explainability",
+      "test_name": "test_shap_explainability_no_leakage",
+      "status": "PASSED",
+      "duration_seconds": 0.003
+    },
+    {
+      "module": "tests/test_shap_explainability.py",
+      "classname": "tests.test_shap_explainability",
+      "test_name": "test_shap_output_dimensions",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_threshold_governance.py",
+      "classname": "tests.test_threshold_governance",
+      "test_name": "test_threshold_learned_from_pre_test_data",
+      "status": "PASSED",
+      "duration_seconds": 0.004
+    },
+    {
+      "module": "tests/test_uncertainty.py",
+      "classname": "tests.test_uncertainty",
+      "test_name": "test_conformal_calibrator_adjustment",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_uncertainty.py",
+      "classname": "tests.test_uncertainty",
+      "test_name": "test_calibrator_predict_before_fit_raises",
+      "status": "PASSED",
+      "duration_seconds": 0.001
+    },
+    {
+      "module": "tests/test_uncertainty.py",
+      "classname": "tests.test_uncertainty",
+      "test_name": "test_quantile_monotonicity",
+      "status": "PASSED",
+      "duration_seconds": 0.005
+    }
+  ]
+}

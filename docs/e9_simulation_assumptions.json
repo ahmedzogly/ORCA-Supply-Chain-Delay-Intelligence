@@ -1,0 +1,20 @@
+[
+  {
+    "Action": "EXPEDITE_SIMULATED",
+    "Parameter": "expected_transit_time_reduction_days",
+    "Frozen_Value": 3.0,
+    "Source": "SIMULATION ASSUMPTION"
+  },
+  {
+    "Action": "TRANSPORT_MODE_REVIEW",
+    "Parameter": "expected_eta_adjustment_days",
+    "Frozen_Value": -2.0,
+    "Source": "SIMULATION ASSUMPTION"
+  },
+  {
+    "Action": "SUPPLIER_ESCALATION_SIMULATED",
+    "Parameter": "expected_risk_reduction_pct",
+    "Frozen_Value": 0.15,
+    "Source": "SIMULATION ASSUMPTION"
+  }
+]

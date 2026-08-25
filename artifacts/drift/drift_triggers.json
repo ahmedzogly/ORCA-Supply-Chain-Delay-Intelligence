@@ -1,0 +1,104 @@
+[
+  {
+    "fold_id": 0,
+    "detection_window": "2012-03-08 to 2012-08-31",
+    "overall_status": "RED",
+    "trigger_recalibration": true,
+    "reasons": [
+      "Tier 1 VETO: Critical feature 'vendor_hist_volume' PSI=4.196 >= 0.25.",
+      "Tier 1 VETO: Critical feature 'country_hist_delay_rate' PSI=1.906 >= 0.25.",
+      "Tier 1 VETO: Critical feature 'vendor_hist_delay_rate' PSI=3.863 >= 0.25.",
+      "Tier 1 VETO: Critical feature 'country_hist_volume' PSI=2.317 >= 0.25.",
+      "Tier 1 VETO: Critical feature 'Country' PSI=3.317 >= 0.25.",
+      "Tier 1 VETO: Critical feature 'Vendor INCO Term' PSI=0.498 >= 0.25.",
+      "Tier 1 VETO: Critical feature 'Vendor' PSI=2.027 >= 0.25.",
+      "Multiple Tier 1 features drifted (PSI >= 0.1): ['vendor_hist_volume', 'country_hist_delay_rate', 'vendor_hist_delay_rate', 'country_hist_volume', 'Line Item Quantity', 'Country', 'Vendor INCO Term', 'Vendor'].",
+      "Weighted feature drift score 140.44 >= 1.2.",
+      "Prediction output drift RED: prob_psi=0.270, prob_W1=0.051.",
+      "Target prevalence drift RED: delta_prevalence=-0.076 (p=0.0000).",
+      "Uncertainty coverage failure RED: empirical_cov=0.963 vs nominal=0.90 (binom_p=1.0000e+00), score_W1=4.23d."
+    ],
+    "veto_triggered": true,
+    "stale_calibration_triggered": false
+  },
+  {
+    "fold_id": 1,
+    "detection_window": "2012-09-05 to 2013-03-01",
+    "overall_status": "RED",
+    "trigger_recalibration": true,
+    "reasons": [
+      "Tier 1 VETO: Critical feature 'vendor_hist_volume' PSI=3.133 >= 0.25.",
+      "Tier 1 VETO: Critical feature 'country_hist_delay_rate' PSI=1.910 >= 0.25.",
+      "Tier 1 VETO: Critical feature 'vendor_hist_delay_rate' PSI=3.910 >= 0.25.",
+      "Tier 1 VETO: Critical feature 'country_hist_volume' PSI=2.465 >= 0.25.",
+      "Tier 1 VETO: Critical feature 'Country' PSI=3.271 >= 0.25.",
+      "Tier 1 VETO: Critical feature 'Vendor INCO Term' PSI=0.719 >= 0.25.",
+      "Tier 1 VETO: Critical feature 'Vendor' PSI=1.924 >= 0.25.",
+      "Multiple Tier 1 features drifted (PSI >= 0.1): ['vendor_hist_volume', 'country_hist_delay_rate', 'vendor_hist_delay_rate', 'Forecast_Horizon_Days', 'Scheduled_Transit_Days', 'country_hist_volume', 'Line Item Quantity', 'Country', 'Vendor INCO Term', 'Vendor'].",
+      "Weighted feature drift score 135.71 >= 1.2."
+    ],
+    "veto_triggered": true,
+    "stale_calibration_triggered": false
+  },
+  {
+    "fold_id": 2,
+    "detection_window": "2013-03-04 to 2013-08-27",
+    "overall_status": "RED",
+    "trigger_recalibration": true,
+    "reasons": [
+      "Tier 1 VETO: Critical feature 'vendor_hist_volume' PSI=4.098 >= 0.25.",
+      "Tier 1 VETO: Critical feature 'country_hist_delay_rate' PSI=0.326 >= 0.25.",
+      "Tier 1 VETO: Critical feature 'vendor_hist_delay_rate' PSI=4.182 >= 0.25.",
+      "Tier 1 VETO: Critical feature 'country_hist_volume' PSI=1.276 >= 0.25.",
+      "Tier 1 VETO: Critical feature 'Country' PSI=1.239 >= 0.25.",
+      "Tier 1 VETO: Critical feature 'Vendor INCO Term' PSI=0.263 >= 0.25.",
+      "Tier 1 VETO: Critical feature 'Vendor' PSI=0.618 >= 0.25.",
+      "Multiple Tier 1 features drifted (PSI >= 0.1): ['vendor_hist_volume', 'country_hist_delay_rate', 'vendor_hist_delay_rate', 'Forecast_Horizon_Days', 'Scheduled_Transit_Days', 'country_hist_volume', 'Country', 'Vendor INCO Term', 'Vendor'].",
+      "Weighted feature drift score 111.68 >= 1.2.",
+      "Target prevalence drift RED: delta_prevalence=+0.134 (p=0.0000).",
+      "Uncertainty coverage failure RED: empirical_cov=0.908 vs nominal=0.90 (binom_p=7.7830e-01), score_W1=3.78d."
+    ],
+    "veto_triggered": true,
+    "stale_calibration_triggered": false
+  },
+  {
+    "fold_id": 3,
+    "detection_window": "2013-08-30 to 2014-02-19",
+    "overall_status": "RED",
+    "trigger_recalibration": true,
+    "reasons": [
+      "Tier 1 VETO: Critical feature 'vendor_hist_volume' PSI=4.143 >= 0.25.",
+      "Tier 1 VETO: Critical feature 'country_hist_delay_rate' PSI=1.331 >= 0.25.",
+      "Tier 1 VETO: Critical feature 'vendor_hist_delay_rate' PSI=5.372 >= 0.25.",
+      "Tier 1 VETO: Critical feature 'Forecast_Horizon_Days' PSI=0.303 >= 0.25.",
+      "Tier 1 VETO: Critical feature 'Scheduled_Transit_Days' PSI=0.303 >= 0.25.",
+      "Tier 1 VETO: Critical feature 'country_hist_volume' PSI=3.046 >= 0.25.",
+      "Tier 1 VETO: Critical feature 'Country' PSI=1.003 >= 0.25.",
+      "Tier 1 VETO: Critical feature 'Vendor' PSI=0.881 >= 0.25.",
+      "Multiple Tier 1 features drifted (PSI >= 0.1): ['vendor_hist_volume', 'country_hist_delay_rate', 'vendor_hist_delay_rate', 'Forecast_Horizon_Days', 'Scheduled_Transit_Days', 'country_hist_volume', 'Country', 'Vendor INCO Term', 'Vendor'].",
+      "Weighted feature drift score 130.14 >= 1.2.",
+      "Prediction output drift RED: prob_psi=0.324, prob_W1=0.054."
+    ],
+    "veto_triggered": true,
+    "stale_calibration_triggered": false
+  },
+  {
+    "fold_id": 4,
+    "detection_window": "2014-02-26 to 2014-08-21",
+    "overall_status": "RED",
+    "trigger_recalibration": true,
+    "reasons": [
+      "Tier 1 VETO: Critical feature 'vendor_hist_volume' PSI=3.402 >= 0.25.",
+      "Tier 1 VETO: Critical feature 'country_hist_delay_rate' PSI=2.273 >= 0.25.",
+      "Tier 1 VETO: Critical feature 'vendor_hist_delay_rate' PSI=5.014 >= 0.25.",
+      "Tier 1 VETO: Critical feature 'country_hist_volume' PSI=1.409 >= 0.25.",
+      "Tier 1 VETO: Critical feature 'Country' PSI=0.804 >= 0.25.",
+      "Tier 1 VETO: Critical feature 'Vendor' PSI=1.031 >= 0.25.",
+      "Multiple Tier 1 features drifted (PSI >= 0.1): ['vendor_hist_volume', 'country_hist_delay_rate', 'vendor_hist_delay_rate', 'Forecast_Horizon_Days', 'Scheduled_Transit_Days', 'country_hist_volume', 'Country', 'Vendor INCO Term', 'Vendor'].",
+      "Weighted feature drift score 113.34 >= 1.2.",
+      "Prediction output drift RED: prob_psi=0.705, prob_W1=0.087."
+    ],
+    "veto_triggered": true,
+    "stale_calibration_triggered": false
+  }
+]

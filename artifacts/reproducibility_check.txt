@@ -1,0 +1,1 @@
+PASS: raw hash, row count, v2 registry, validation metadata, and API smoke checks.

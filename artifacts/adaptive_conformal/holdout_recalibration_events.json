@@ -1,0 +1,162 @@
+[
+  {
+    "event_id": 1,
+    "timestamp": "2014-10-23",
+    "strategy": "DRIFT_TRIGGERED",
+    "trigger_reason": [
+      "Tier 1 VETO: Critical feature 'vendor_hist_volume' PSI=7.102 >= 0.25.",
+      "Tier 1 VETO: Critical feature 'country_hist_delay_rate' PSI=7.039 >= 0.25.",
+      "Tier 1 VETO: Critical feature 'vendor_hist_delay_rate' PSI=6.157 >= 0.25.",
+      "Tier 1 VETO: Critical feature 'Forecast_Horizon_Days' PSI=1.873 >= 0.25.",
+      "Tier 1 VETO: Critical feature 'Line Item Insurance (USD)' PSI=1.198 >= 0.25.",
+      "Tier 1 VETO: Critical feature 'Scheduled_Transit_Days' PSI=1.873 >= 0.25.",
+      "Tier 1 VETO: Critical feature 'country_hist_volume' PSI=6.598 >= 0.25.",
+      "Tier 1 VETO: Critical feature 'Line Item Quantity' PSI=1.253 >= 0.25.",
+      "Tier 1 VETO: Critical feature 'Country' PSI=7.923 >= 0.25.",
+      "Tier 1 VETO: Critical feature 'Vendor INCO Term' PSI=2.171 >= 0.25.",
+      "Tier 1 VETO: Critical feature 'Vendor' PSI=4.773 >= 0.25.",
+      "Multiple Tier 1 features drifted (PSI >= 0.1): ['vendor_hist_volume', 'country_hist_delay_rate', 'vendor_hist_delay_rate', 'Forecast_Horizon_Days', 'Line Item Insurance (USD)', 'Scheduled_Transit_Days', 'country_hist_volume', 'Line Item Quantity', 'Country', 'Vendor INCO Term', 'Vendor'].",
+      "Weighted feature drift score 319.78 >= 1.2.",
+      "Prediction output drift RED: prob_psi=1.691, prob_W1=0.024.",
+      "Target prevalence drift RED: delta_prevalence=-0.112 (p=0.0005).",
+      "Uncertainty coverage failure RED: empirical_cov=0.935 vs nominal=0.90 (binom_p=9.4127e-01), score_W1=3.99d."
+    ],
+    "calib_window_start": "2014-01-26",
+    "calib_window_end": "2014-07-25",
+    "calib_sample_count": 688,
+    "old_q": 0.0,
+    "new_q": 34.0,
+    "delta_q": 34.0,
+    "latency_ms": 0.13149995356798172
+  },
+  {
+    "event_id": 1,
+    "timestamp": "2014-12-22",
+    "strategy": "ROLLING",
+    "trigger_reason": [
+      "Scheduled periodic recalibration (94d >= 90d cadence)."
+    ],
+    "calib_window_start": "2014-03-27",
+    "calib_window_end": "2014-09-23",
+    "calib_sample_count": 869,
+    "old_q": 0.0,
+    "new_q": 33.0,
+    "delta_q": 33.0,
+    "latency_ms": 0.11769961565732956
+  },
+  {
+    "event_id": 2,
+    "timestamp": "2014-12-22",
+    "strategy": "DRIFT_TRIGGERED",
+    "trigger_reason": [
+      "Tier 1 VETO: Critical feature 'vendor_hist_volume' PSI=3.403 >= 0.25.",
+      "Tier 1 VETO: Critical feature 'country_hist_delay_rate' PSI=3.849 >= 0.25.",
+      "Tier 1 VETO: Critical feature 'vendor_hist_delay_rate' PSI=4.475 >= 0.25.",
+      "Tier 1 VETO: Critical feature 'Forecast_Horizon_Days' PSI=2.531 >= 0.25.",
+      "Tier 1 VETO: Critical feature 'Scheduled_Transit_Days' PSI=2.531 >= 0.25.",
+      "Tier 1 VETO: Critical feature 'country_hist_volume' PSI=6.749 >= 0.25.",
+      "Tier 1 VETO: Critical feature 'Country' PSI=4.754 >= 0.25.",
+      "Tier 1 VETO: Critical feature 'Vendor' PSI=1.340 >= 0.25.",
+      "Multiple Tier 1 features drifted (PSI >= 0.1): ['vendor_hist_volume', 'country_hist_delay_rate', 'vendor_hist_delay_rate', 'Forecast_Horizon_Days', 'Scheduled_Transit_Days', 'country_hist_volume', 'Line Item Quantity', 'Country', 'Vendor INCO Term', 'Vendor'].",
+      "Weighted feature drift score 216.03 >= 1.2.",
+      "Prediction output drift RED: prob_psi=0.262, prob_W1=0.020.",
+      "Target prevalence drift RED: delta_prevalence=-0.034 (p=0.2919).",
+      "Uncertainty coverage failure RED: empirical_cov=0.991 vs nominal=0.90 (binom_p=9.9999e-01), score_W1=8.09d."
+    ],
+    "calib_window_start": "2014-03-27",
+    "calib_window_end": "2014-09-23",
+    "calib_sample_count": 869,
+    "old_q": 34.0,
+    "new_q": 33.0,
+    "delta_q": -1.0,
+    "latency_ms": 0.13979990035295486
+  },
+  {
+    "event_id": 3,
+    "timestamp": "2015-02-20",
+    "strategy": "DRIFT_TRIGGERED",
+    "trigger_reason": [
+      "Tier 1 VETO: Critical feature 'vendor_hist_volume' PSI=7.660 >= 0.25.",
+      "Tier 1 VETO: Critical feature 'country_hist_delay_rate' PSI=5.849 >= 0.25.",
+      "Tier 1 VETO: Critical feature 'vendor_hist_delay_rate' PSI=5.173 >= 0.25.",
+      "Tier 1 VETO: Critical feature 'Forecast_Horizon_Days' PSI=4.407 >= 0.25.",
+      "Tier 1 VETO: Critical feature 'Line Item Insurance (USD)' PSI=1.307 >= 0.25.",
+      "Tier 1 VETO: Critical feature 'Scheduled_Transit_Days' PSI=4.407 >= 0.25.",
+      "Tier 1 VETO: Critical feature 'country_hist_volume' PSI=3.466 >= 0.25.",
+      "Tier 1 VETO: Critical feature 'Line Item Quantity' PSI=1.419 >= 0.25.",
+      "Tier 1 VETO: Critical feature 'Country' PSI=4.713 >= 0.25.",
+      "Tier 1 VETO: Critical feature 'Vendor INCO Term' PSI=0.802 >= 0.25.",
+      "Tier 1 VETO: Critical feature 'Vendor' PSI=3.890 >= 0.25.",
+      "Multiple Tier 1 features drifted (PSI >= 0.1): ['vendor_hist_volume', 'country_hist_delay_rate', 'vendor_hist_delay_rate', 'Forecast_Horizon_Days', 'Line Item Insurance (USD)', 'Scheduled_Transit_Days', 'country_hist_volume', 'Line Item Quantity', 'Country', 'Vendor INCO Term', 'Vendor'].",
+      "Weighted feature drift score 323.82 >= 1.2.",
+      "Prediction output drift RED: prob_psi=0.547, prob_W1=0.020.",
+      "Target prevalence drift RED: delta_prevalence=+0.066 (p=0.0173).",
+      "Uncertainty coverage failure RED: empirical_cov=0.977 vs nominal=0.90 (binom_p=9.9989e-01), score_W1=5.76d."
+    ],
+    "calib_window_start": "2014-05-26",
+    "calib_window_end": "2014-11-22",
+    "calib_sample_count": 803,
+    "old_q": 33.0,
+    "new_q": 28.0,
+    "delta_q": -5.0,
+    "latency_ms": 0.12570060789585114
+  },
+  {
+    "event_id": 2,
+    "timestamp": "2015-04-20",
+    "strategy": "ROLLING",
+    "trigger_reason": [
+      "Scheduled periodic recalibration (119d >= 90d cadence)."
+    ],
+    "calib_window_start": "2014-07-24",
+    "calib_window_end": "2015-01-20",
+    "calib_sample_count": 754,
+    "old_q": 33.0,
+    "new_q": 23.0,
+    "delta_q": -10.0,
+    "latency_ms": 0.14709960669279099
+  },
+  {
+    "event_id": 4,
+    "timestamp": "2015-05-18",
+    "strategy": "DRIFT_TRIGGERED",
+    "trigger_reason": [
+      "Tier 1 VETO: Critical feature 'vendor_hist_volume' PSI=7.721 >= 0.25.",
+      "Tier 1 VETO: Critical feature 'country_hist_delay_rate' PSI=6.575 >= 0.25.",
+      "Tier 1 VETO: Critical feature 'vendor_hist_delay_rate' PSI=3.361 >= 0.25.",
+      "Tier 1 VETO: Critical feature 'Forecast_Horizon_Days' PSI=3.980 >= 0.25.",
+      "Tier 1 VETO: Critical feature 'Line Item Insurance (USD)' PSI=1.831 >= 0.25.",
+      "Tier 1 VETO: Critical feature 'Scheduled_Transit_Days' PSI=3.980 >= 0.25.",
+      "Tier 1 VETO: Critical feature 'country_hist_volume' PSI=5.986 >= 0.25.",
+      "Tier 1 VETO: Critical feature 'Line Item Quantity' PSI=0.801 >= 0.25.",
+      "Tier 1 VETO: Critical feature 'Country' PSI=4.440 >= 0.25.",
+      "Tier 1 VETO: Critical feature 'Vendor' PSI=4.944 >= 0.25.",
+      "Multiple Tier 1 features drifted (PSI >= 0.1): ['vendor_hist_volume', 'country_hist_delay_rate', 'vendor_hist_delay_rate', 'Forecast_Horizon_Days', 'Line Item Insurance (USD)', 'Scheduled_Transit_Days', 'country_hist_volume', 'Line Item Quantity', 'Country', 'Vendor INCO Term', 'Vendor'].",
+      "Weighted feature drift score 322.54 >= 1.2.",
+      "Prediction output drift RED: prob_psi=0.581, prob_W1=0.026.",
+      "Uncertainty coverage failure RED: empirical_cov=0.988 vs nominal=0.90 (binom_p=9.9986e-01), score_W1=4.87d."
+    ],
+    "calib_window_start": "2014-08-21",
+    "calib_window_end": "2015-02-17",
+    "calib_sample_count": 697,
+    "old_q": 28.0,
+    "new_q": 21.0,
+    "delta_q": -7.0,
+    "latency_ms": 0.1409994438290596
+  },
+  {
+    "event_id": 3,
+    "timestamp": "2015-08-11",
+    "strategy": "ROLLING",
+    "trigger_reason": [
+      "Scheduled periodic recalibration (113d >= 90d cadence)."
+    ],
+    "calib_window_start": "2014-11-14",
+    "calib_window_end": "2015-05-13",
+    "calib_sample_count": 482,
+    "old_q": 23.0,
+    "new_q": 8.0,
+    "delta_q": -15.0,
+    "latency_ms": 0.13090018182992935
+  }
+]

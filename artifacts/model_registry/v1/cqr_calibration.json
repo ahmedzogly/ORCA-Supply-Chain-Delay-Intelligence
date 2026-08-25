@@ -1,0 +1,6 @@
+{
+  "q_low": 0.1,
+  "q_high": 0.9,
+  "adjustment_low": -1.5,
+  "adjustment_high": 2.5
+}

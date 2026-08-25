@@ -1,0 +1,6 @@
+{
+  "artifacts/model_registry/v1/catboost_champion.cbm": "261dc20da9ea3eb9fc53dd543c2bb837d9d6f613f8b81b71e13e1e2b99584ea4",
+  "artifacts/model_registry/v1/cqr_calibration.json": "36f3b10fb80f5691edb41e51251241ce92c0c914729861bd8d1e7c0fe42be284",
+  "artifacts/results/e8_final_holdout_results.parquet": "e88a7aeb2d182c04ddcd2db452fa9b6ee9417d785e03176e38e96b669be68501",
+  "artifacts/results/e8_frozen_policy.json": "a5f127c1d433904ce0b31ef5c71ed10b35490ba6d51f82157b5b6d17692a0b3f"
+}

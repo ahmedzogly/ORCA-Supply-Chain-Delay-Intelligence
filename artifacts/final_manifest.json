@@ -1,0 +1,10 @@
+{
+  "project": "Delay Intelligence",
+  "version": "1.0.0",
+  "artifacts": {
+    "catboost_champion": "artifacts/model_registry/v1/catboost_champion.cbm",
+    "feature_schema": "artifacts/model_registry/v1/feature_schema.json",
+    "decision_config": "artifacts/model_registry/v1/decision.yaml",
+    "final_holdout_metrics": "artifacts/final/final_holdout_metrics.json"
+  }
+}

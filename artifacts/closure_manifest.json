@@ -1,0 +1,62 @@
+{
+  "created_utc": "2026-08-23T10:50:43.530266+00:00",
+  "project_positioning": "Research-validated Decision Intelligence Prototype with a Production Roadmap",
+  "source_tree_sha256": "e9a6b038d8c30eb9e18982e8dfda46fe740f6ba62abe94482d42db81bd62a535",
+  "source_tree_file_count": 282,
+  "git_commit": null,
+  "git_note": "The uploaded source archive contained no .git history; no commit hash was invented.",
+  "raw_scms": {
+    "path": "data/raw/SCMS_Delivery_History_Dataset.csv",
+    "sha256": "918b992dd3e8d4b64d2a727b2c4ea607603d0c58f19484e73f7b78528c6a8673",
+    "label": "REAL DATA"
+  },
+  "serving_registry": {
+    "path": "artifacts/model_registry/v2",
+    "files_sha256": {
+      "catboost_classifier.cbm": "c6db3be3a1fb8f0e6d974a4fc655f6b4837571f616932e582b02130cdeac0c1e",
+      "lightgbm_q05.txt": "4b2fe164fa2457fee967bffec847792629e12d527d283a5ccb111a7726398f1d",
+      "lightgbm_q50.txt": "ccf46d651234ee0fefb1e3212191e5ef847bd72f12ab6ef704a4e66510aac383",
+      "lightgbm_q95.txt": "36720dfdd008ce08eb492100c4baa6dc19ee49a8e391fc4c8abbb5f0d865105b",
+      "probability_calibration.json": "5b37fd71ce2ff1e6e61393232c057982ff70dedec5167ece809779340f4c3572",
+      "cqr_calibration.json": "7e718bd402139c776d425bbe9684c2b3a37e67f170397dda1857bd06167897c2",
+      "feature_schema.json": "e3947267c30dfa6f384cb802038788040030c8a700e282cf8568770bdf3a1a1b",
+      "serving_validation.json": "873ca74dfeaaf03d0cc6ca9ef670641906ab7e80fb4cc478f2749f1b7fd8c53e",
+      "metadata.json": "e26cdfe38553ab8a9dce16542c6b98dcc7779df4d51b54b77cda8a0787b2ac38"
+    },
+    "label": "MODEL OUTPUT"
+  },
+  "dashboard_pages": [
+    "01_executive.py",
+    "02_shipment_explorer.py",
+    "03_action_center.py",
+    "04_analytics.py",
+    "05_technical.py"
+  ],
+  "dashboard_duplicates_removed": true,
+  "live_source_forbidden_claim_hits": [],
+  "external_validation": {
+    "DataCo": "NOT VALIDATED",
+    "Olist": "NOT VALIDATED"
+  },
+  "causal_scope": "EXPLORATORY ONLY",
+  "business_impact_scope": "SIMULATED SCENARIO",
+  "verification": {
+    "critical_suite": {
+      "failed": 0,
+      "passed": 77,
+      "skipped": 2,
+      "errors": 0
+    },
+    "reproducibility_check": "PASS: raw hash, row count, v2 registry, validation metadata, and API smoke checks.",
+    "full_legacy_suite_attempt": {
+      "failed": 44,
+      "passed": 576,
+      "skipped": 6,
+      "errors": 34
+    },
+    "full_legacy_suite_note": "Current execution image lacks pyarrow/fastparquet; many legacy research tests require Parquet. Optional DataCo/Olist tests are skipped because external datasets are intentionally not bundled.",
+    "python": "3.13.5",
+    "pyarrow_available": false,
+    "streamlit_available": false
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "model_version": "v1.0.0",
+  "feature_schema_version": "v1.0.0",
+  "training_data_version": "scms_modeling_features_v1",
+  "prediction_contract_version": "v1.0",
+  "configuration_version": "v1.0.0",
+  "creation_timestamp": "2026-08-18T12:00:00Z",
+  "git_commit": null,
+  "registry_role": "DEPRECATED_LEGACY_PROXY_DO_NOT_SERVE",
+  "git_commit_note": "The source archive contained no .git history. The previous dummy hash was removed; use the patched closure manifest source-tree hash.",
+  "deprecation_note": "v1 contains historical proxy/placeholder serving artifacts and is retained only for provenance/legacy tests. Live API serves v2."
+}

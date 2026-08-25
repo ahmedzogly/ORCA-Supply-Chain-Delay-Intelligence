@@ -1,0 +1,471 @@
+============================= test session starts ==============================
+platform linux -- Python 3.13.5, pytest-9.0.2, pluggy-1.6.0
+rootdir: /mnt/data/delay_intelligence_system_work/delay_intelligence_system
+configfile: pyproject.toml
+testpaths: tests
+plugins: metadata-3.1.1, ddtrace-4.4.0, Faker-40.1.2, anyio-4.13.0, asyncio-1.3.0, cov-7.0.0, json-report-1.5.0
+asyncio: mode=Mode.STRICT, debug=False, asyncio_default_fixture_loop_scope=None, asyncio_default_test_loop_scope=function
+collected 660 items
+
+tests/test_adaptive_adversarial_stress.py F.F.......F                    [  1%]
+tests/test_adaptive_holdout_isolation.py .F...                           [  2%]
+tests/test_adaptive_temporal_safety.py E....                             [  3%]
+tests/test_adversarial_cost_leakage.py ................................. [  8%]
+........                                                                 [  9%]
+tests/test_adversarial_e8_m4_challenger.py ....................F........ [ 13%]
+...........                                                              [ 15%]
+tests/test_adversarial_e8_m5_holdout.py FFF..EE.EEEEEEE...               [ 18%]
+tests/test_adversarial_e8_models.py .......................              [ 21%]
+tests/test_adversarial_scms.py ......................................... [ 27%]
+.................................                                        [ 32%]
+tests/test_adversarial_temporal_embargo.py FFF.FFF.F.FF                  [ 34%]
+tests/test_api_explain.py .                                              [ 34%]
+tests/test_api_health.py .                                               [ 35%]
+tests/test_api_predict.py .                                              [ 35%]
+tests/test_api_recommend.py .                                            [ 35%]
+tests/test_api_safety.py .                                               [ 35%]
+tests/test_api_schema.py .                                               [ 35%]
+tests/test_architecture.py ....................................          [ 41%]
+tests/test_calibration.py .                                              [ 41%]
+tests/test_causal_constraints.py .                                       [ 41%]
+tests/test_causal_stability.py .                                         [ 41%]
+tests/test_causal_temporal_safety.py .                                   [ 41%]
+tests/test_config.py ..................                                  [ 44%]
+tests/test_conformal_temporal_safety.py ..                               [ 44%]
+tests/test_cost_engine_stress.py ...............................         [ 49%]
+tests/test_cost_sensitivity.py .                                         [ 49%]
+tests/test_cross_domain_protocol.py ..                                   [ 49%]
+tests/test_dashboard_api_integration.py .                                [ 50%]
+tests/test_dashboard_data_contract.py .                                  [ 50%]
+tests/test_dashboard_safety.py ..                                        [ 50%]
+tests/test_data_immutability.py ...ss                                    [ 51%]
+tests/test_dataco_adapter.py ss                                          [ 51%]
+tests/test_decision_engine.py ..                                         [ 51%]
+tests/test_decision_safety.py .                                          [ 51%]
+tests/test_decision_traceability.py .                                    [ 52%]
+tests/test_domain_shift.py ..                                            [ 52%]
+tests/test_drift_adversarial_stress.py ................................. [ 57%]
+.........                                                                [ 58%]
+tests/test_drift_determinism.py ......                                   [ 59%]
+tests/test_drift_temporal_safety.py EEE..                                [ 60%]
+tests/test_e10_adversarial_leakage.py ...........................FFFF... [ 65%]
+.....................FF                                                  [ 69%]
+tests/test_e10_adversarial_oracle_stress.py .............                [ 71%]
+tests/test_e10_budget_allocation.py ..                                   [ 71%]
+tests/test_e10_evaluator.py FFF                                          [ 71%]
+tests/test_e10_holdout_evaluation.py FEEF.                               [ 72%]
+tests/test_e10_oracle_isolation.py ...                                   [ 73%]
+tests/test_e10_policies.py ....                                          [ 73%]
+tests/test_e10_provenance_and_immutability.py ...F                       [ 74%]
+tests/test_e10_sensitivity.py ..                                         [ 74%]
+tests/test_e10_state_transitions.py ........                             [ 75%]
+tests/test_e8_backtester.py ..FF.F                                       [ 76%]
+tests/test_e8_budgeting.py ......F                                       [ 77%]
+tests/test_e8_cost_engine.py ....................EEEE..E                 [ 81%]
+tests/test_e8_holdout_eval.py FFF..F...F                                 [ 83%]
+tests/test_e8_models.py ..........                                       [ 84%]
+tests/test_e8_policy_freeze.py ....F                                     [ 85%]
+tests/test_e8_sensitivity.py ...F                                        [ 86%]
+tests/test_e9_digital_twin.py .......                                    [ 87%]
+tests/test_end_to_end.py .                                               [ 87%]
+tests/test_environment.py .....                                          [ 88%]
+tests/test_feature_engineering.py EEEE                                   [ 88%]
+tests/test_feature_leakage.py EE                                         [ 89%]
+tests/test_final_artifact_integrity.py ..                                [ 89%]
+tests/test_final_end_to_end.py .                                         [ 89%]
+tests/test_final_reproducibility.py ..                                   [ 89%]
+tests/test_model_training.py ..F                                         [ 90%]
+tests/test_olist_adapter.py ss                                           [ 90%]
+tests/test_point_in_time_features.py EEF                                 [ 91%]
+tests/test_prediction_contract.py .............                          [ 93%]
+tests/test_rolling_origin.py EEEEEE.                                     [ 94%]
+tests/test_scms_audit.py ........                                        [ 95%]
+tests/test_scms_ingestion.py ........FF                                  [ 96%]
+tests/test_scms_validation.py ...............                            [ 99%]
+tests/test_shap_explainability.py ..                                     [ 99%]
+tests/test_threshold_governance.py .                                     [ 99%]
+tests/test_uncertainty.py ...                                            [100%]
+
+=========================== short test summary info ============================
+FAILED tests/test_adaptive_adversarial_stress.py::test_adversarial_recalibration_temporal_embargo_invariance - ImportError: Unable to find a usable engine; tried using: 'pyarrow', 'fastparquet'.
+A suitable version of pyarrow or fastparquet is required for parquet support.
+Trying to import the above resulted in these errors:
+ - Missing optional dependency 'pyarrow'. pyarrow is required for parquet support. Use pip or conda to install pyarrow.
+ - Missing optional dependency 'fastparquet'. fastparquet is required for parquet support. Use pip or conda to install fastparquet.
+FAILED tests/test_adaptive_adversarial_stress.py::test_adversarial_holdout_bitwise_determinism_10_passes - ImportError: Unable to find a usable engine; tried using: 'pyarrow', 'fastparquet'.
+A suitable version of pyarrow or fastparquet is required for parquet support.
+Trying to import the above resulted in these errors:
+ - Missing optional dependency 'pyarrow'. pyarrow is required for parquet support. Use pip or conda to install pyarrow.
+ - Missing optional dependency 'fastparquet'. fastparquet is required for parquet support. Use pip or conda to install fastparquet.
+FAILED tests/test_adaptive_adversarial_stress.py::test_adversarial_artifact_manifest_and_report_reconciliation - AssertionError: assert False
+ +  where False = <function exists at 0x7f9765aaaa20>('phase2_part1_final_report.md')
+ +    where <function exists at 0x7f9765aaaa20> = <module 'posixpath' (frozen)>.exists
+ +      where <module 'posixpath' (frozen)> = os.path
+FAILED tests/test_adaptive_holdout_isolation.py::test_holdout_evaluation_determinism - ImportError: Unable to find a usable engine; tried using: 'pyarrow', 'fastparquet'.
+A suitable version of pyarrow or fastparquet is required for parquet support.
+Trying to import the above resulted in these errors:
+ - Missing optional dependency 'pyarrow'. pyarrow is required for parquet support. Use pip or conda to install pyarrow.
+ - Missing optional dependency 'fastparquet'. fastparquet is required for parquet support. Use pip or conda to install fastparquet.
+FAILED tests/test_adversarial_e8_m4_challenger.py::TestAdversarialCostLeakageAndIsolation::test_dev_backtest_results_contain_zero_holdout_records - ImportError: Unable to find a usable engine; tried using: 'pyarrow', 'fastparquet'.
+A suitable version of pyarrow or fastparquet is required for parquet support.
+Trying to import the above resulted in these errors:
+ - Missing optional dependency 'pyarrow'. pyarrow is required for parquet support. Use pip or conda to install pyarrow.
+ - Missing optional dependency 'fastparquet'. fastparquet is required for parquet support. Use pip or conda to install fastparquet.
+FAILED tests/test_adversarial_e8_m5_holdout.py::TestAdversarialHoldoutIsolation::test_exact_holdout_partition_counts_and_dates - ImportError: Unable to find a usable engine; tried using: 'pyarrow', 'fastparquet'.
+A suitable version of pyarrow or fastparquet is required for parquet support.
+Trying to import the above resulted in these errors:
+ - Missing optional dependency 'pyarrow'. pyarrow is required for parquet support. Use pip or conda to install pyarrow.
+ - Missing optional dependency 'fastparquet'. fastparquet is required for parquet support. Use pip or conda to install fastparquet.
+FAILED tests/test_adversarial_e8_m5_holdout.py::TestAdversarialHoldoutIsolation::test_dev_isolation_verification_raises_no_error - ImportError: Unable to find a usable engine; tried using: 'pyarrow', 'fastparquet'.
+A suitable version of pyarrow or fastparquet is required for parquet support.
+Trying to import the above resulted in these errors:
+ - Missing optional dependency 'pyarrow'. pyarrow is required for parquet support. Use pip or conda to install pyarrow.
+ - Missing optional dependency 'fastparquet'. fastparquet is required for parquet support. Use pip or conda to install fastparquet.
+FAILED tests/test_adversarial_e8_m5_holdout.py::TestAdversarialHoldoutIsolation::test_dev_inner_train_val_embargo_integrity - ImportError: Unable to find a usable engine; tried using: 'pyarrow', 'fastparquet'.
+A suitable version of pyarrow or fastparquet is required for parquet support.
+Trying to import the above resulted in these errors:
+ - Missing optional dependency 'pyarrow'. pyarrow is required for parquet support. Use pip or conda to install pyarrow.
+ - Missing optional dependency 'fastparquet'. fastparquet is required for parquet support. Use pip or conda to install fastparquet.
+FAILED tests/test_adversarial_temporal_embargo.py::test_adversarial_strict_90_day_embargo_gap_all_folds - ImportError: Unable to find a usable engine; tried using: 'pyarrow', 'fastparquet'.
+A suitable version of pyarrow or fastparquet is required for parquet support.
+Trying to import the above resulted in these errors:
+ - Missing optional dependency 'pyarrow'. pyarrow is required for parquet support. Use pip or conda to install pyarrow.
+ - Missing optional dependency 'fastparquet'. fastparquet is required for parquet support. Use pip or conda to install fastparquet.
+FAILED tests/test_adversarial_temporal_embargo.py::test_adversarial_expanding_window_containment_and_disjointness - ImportError: Unable to find a usable engine; tried using: 'pyarrow', 'fastparquet'.
+A suitable version of pyarrow or fastparquet is required for parquet support.
+Trying to import the above resulted in these errors:
+ - Missing optional dependency 'pyarrow'. pyarrow is required for parquet support. Use pip or conda to install pyarrow.
+ - Missing optional dependency 'fastparquet'. fastparquet is required for parquet support. Use pip or conda to install fastparquet.
+FAILED tests/test_adversarial_temporal_embargo.py::test_adversarial_inner_train_val_containment_and_embargo - ImportError: Unable to find a usable engine; tried using: 'pyarrow', 'fastparquet'.
+A suitable version of pyarrow or fastparquet is required for parquet support.
+Trying to import the above resulted in these errors:
+ - Missing optional dependency 'pyarrow'. pyarrow is required for parquet support. Use pip or conda to install pyarrow.
+ - Missing optional dependency 'fastparquet'. fastparquet is required for parquet support. Use pip or conda to install fastparquet.
+FAILED tests/test_adversarial_temporal_embargo.py::test_adversarial_final_holdout_strict_isolation - ImportError: Unable to find a usable engine; tried using: 'pyarrow', 'fastparquet'.
+A suitable version of pyarrow or fastparquet is required for parquet support.
+Trying to import the above resulted in these errors:
+ - Missing optional dependency 'pyarrow'. pyarrow is required for parquet support. Use pip or conda to install pyarrow.
+ - Missing optional dependency 'fastparquet'. fastparquet is required for parquet support. Use pip or conda to install fastparquet.
+FAILED tests/test_adversarial_temporal_embargo.py::test_adversarial_canary_future_labels_have_zero_impact_on_model_fit - ImportError: Unable to find a usable engine; tried using: 'pyarrow', 'fastparquet'.
+A suitable version of pyarrow or fastparquet is required for parquet support.
+Trying to import the above resulted in these errors:
+ - Missing optional dependency 'pyarrow'. pyarrow is required for parquet support. Use pip or conda to install pyarrow.
+ - Missing optional dependency 'fastparquet'. fastparquet is required for parquet support. Use pip or conda to install fastparquet.
+FAILED tests/test_adversarial_temporal_embargo.py::test_adversarial_shuffled_input_dataframe_sorting_invariance - ImportError: Unable to find a usable engine; tried using: 'pyarrow', 'fastparquet'.
+A suitable version of pyarrow or fastparquet is required for parquet support.
+Trying to import the above resulted in these errors:
+ - Missing optional dependency 'pyarrow'. pyarrow is required for parquet support. Use pip or conda to install pyarrow.
+ - Missing optional dependency 'fastparquet'. fastparquet is required for parquet support. Use pip or conda to install fastparquet.
+FAILED tests/test_adversarial_temporal_embargo.py::test_adversarial_inference_threshold_independence_from_labels - ImportError: Unable to find a usable engine; tried using: 'pyarrow', 'fastparquet'.
+A suitable version of pyarrow or fastparquet is required for parquet support.
+Trying to import the above resulted in these errors:
+ - Missing optional dependency 'pyarrow'. pyarrow is required for parquet support. Use pip or conda to install pyarrow.
+ - Missing optional dependency 'fastparquet'. fastparquet is required for parquet support. Use pip or conda to install fastparquet.
+FAILED tests/test_adversarial_temporal_embargo.py::test_adversarial_feature_schema_and_preprocessor_exclude_all_forbidden_columns - ImportError: Unable to find a usable engine; tried using: 'pyarrow', 'fastparquet'.
+A suitable version of pyarrow or fastparquet is required for parquet support.
+Trying to import the above resulted in these errors:
+ - Missing optional dependency 'pyarrow'. pyarrow is required for parquet support. Use pip or conda to install pyarrow.
+ - Missing optional dependency 'fastparquet'. fastparquet is required for parquet support. Use pip or conda to install fastparquet.
+FAILED tests/test_adversarial_temporal_embargo.py::test_adversarial_backtest_spy_zero_future_access_during_fit - ImportError: Unable to find a usable engine; tried using: 'pyarrow', 'fastparquet'.
+A suitable version of pyarrow or fastparquet is required for parquet support.
+Trying to import the above resulted in these errors:
+ - Missing optional dependency 'pyarrow'. pyarrow is required for parquet support. Use pip or conda to install pyarrow.
+ - Missing optional dependency 'fastparquet'. fastparquet is required for parquet support. Use pip or conda to install fastparquet.
+FAILED tests/test_e10_adversarial_leakage.py::TestTemporalBoundaryAndHoldoutSeparation::test_dev_data_strictly_quarantined - ImportError: Unable to find a usable engine; tried using: 'pyarrow', 'fastparquet'.
+A suitable version of pyarrow or fastparquet is required for parquet support.
+Trying to import the above resulted in these errors:
+ - Missing optional dependency 'pyarrow'. pyarrow is required for parquet support. Use pip or conda to install pyarrow.
+ - Missing optional dependency 'fastparquet'. fastparquet is required for parquet support. Use pip or conda to install fastparquet.
+FAILED tests/test_e10_adversarial_leakage.py::TestTemporalBoundaryAndHoldoutSeparation::test_holdout_quarantine_integrity - ImportError: Unable to find a usable engine; tried using: 'pyarrow', 'fastparquet'.
+A suitable version of pyarrow or fastparquet is required for parquet support.
+Trying to import the above resulted in these errors:
+ - Missing optional dependency 'pyarrow'. pyarrow is required for parquet support. Use pip or conda to install pyarrow.
+ - Missing optional dependency 'fastparquet'. fastparquet is required for parquet support. Use pip or conda to install fastparquet.
+FAILED tests/test_e10_adversarial_leakage.py::TestTemporalBoundaryAndHoldoutSeparation::test_rolling_origin_folds_embargo_gap_and_precedence - ImportError: Unable to find a usable engine; tried using: 'pyarrow', 'fastparquet'.
+A suitable version of pyarrow or fastparquet is required for parquet support.
+Trying to import the above resulted in these errors:
+ - Missing optional dependency 'pyarrow'. pyarrow is required for parquet support. Use pip or conda to install pyarrow.
+ - Missing optional dependency 'fastparquet'. fastparquet is required for parquet support. Use pip or conda to install fastparquet.
+FAILED tests/test_e10_adversarial_leakage.py::TestTemporalBoundaryAndHoldoutSeparation::test_splitter_order_invariance - ImportError: Unable to find a usable engine; tried using: 'pyarrow', 'fastparquet'.
+A suitable version of pyarrow or fastparquet is required for parquet support.
+Trying to import the above resulted in these errors:
+ - Missing optional dependency 'pyarrow'. pyarrow is required for parquet support. Use pip or conda to install pyarrow.
+ - Missing optional dependency 'fastparquet'. fastparquet is required for parquet support. Use pip or conda to install fastparquet.
+FAILED tests/test_e10_adversarial_leakage.py::TestEvaluatorEndToEndArtifactIntegrity::test_full_dev_evaluation_execution_and_quarantine - ImportError: Unable to find a usable engine; tried using: 'pyarrow', 'fastparquet'.
+A suitable version of pyarrow or fastparquet is required for parquet support.
+Trying to import the above resulted in these errors:
+ - Missing optional dependency 'pyarrow'. pyarrow is required for parquet support. Use pip or conda to install pyarrow.
+ - Missing optional dependency 'fastparquet'. fastparquet is required for parquet support. Use pip or conda to install fastparquet.
+FAILED tests/test_e10_adversarial_leakage.py::TestInferenceResilienceAndNoise::test_generate_predictions_deterministic_and_feature_isolation - ImportError: Unable to find a usable engine; tried using: 'pyarrow', 'fastparquet'.
+A suitable version of pyarrow or fastparquet is required for parquet support.
+Trying to import the above resulted in these errors:
+ - Missing optional dependency 'pyarrow'. pyarrow is required for parquet support. Use pip or conda to install pyarrow.
+ - Missing optional dependency 'fastparquet'. fastparquet is required for parquet support. Use pip or conda to install fastparquet.
+FAILED tests/test_e10_evaluator.py::test_dev_cohort_loading_and_quarantine - ImportError: Unable to find a usable engine; tried using: 'pyarrow', 'fastparquet'.
+A suitable version of pyarrow or fastparquet is required for parquet support.
+Trying to import the above resulted in these errors:
+ - Missing optional dependency 'pyarrow'. pyarrow is required for parquet support. Use pip or conda to install pyarrow.
+ - Missing optional dependency 'fastparquet'. fastparquet is required for parquet support. Use pip or conda to install fastparquet.
+FAILED tests/test_e10_evaluator.py::test_predictions_generation - ImportError: Unable to find a usable engine; tried using: 'pyarrow', 'fastparquet'.
+A suitable version of pyarrow or fastparquet is required for parquet support.
+Trying to import the above resulted in these errors:
+ - Missing optional dependency 'pyarrow'. pyarrow is required for parquet support. Use pip or conda to install pyarrow.
+ - Missing optional dependency 'fastparquet'. fastparquet is required for parquet support. Use pip or conda to install fastparquet.
+FAILED tests/test_e10_evaluator.py::test_cohort_evaluation_structure - ImportError: Unable to find a usable engine; tried using: 'pyarrow', 'fastparquet'.
+A suitable version of pyarrow or fastparquet is required for parquet support.
+Trying to import the above resulted in these errors:
+ - Missing optional dependency 'pyarrow'. pyarrow is required for parquet support. Use pip or conda to install pyarrow.
+ - Missing optional dependency 'fastparquet'. fastparquet is required for parquet support. Use pip or conda to install fastparquet.
+FAILED tests/test_e10_holdout_evaluation.py::test_holdout_cohort_loading_and_quarantine - ImportError: Unable to find a usable engine; tried using: 'pyarrow', 'fastparquet'.
+A suitable version of pyarrow or fastparquet is required for parquet support.
+Trying to import the above resulted in these errors:
+ - Missing optional dependency 'pyarrow'. pyarrow is required for parquet support. Use pip or conda to install pyarrow.
+ - Missing optional dependency 'fastparquet'. fastparquet is required for parquet support. Use pip or conda to install fastparquet.
+FAILED tests/test_e10_holdout_evaluation.py::test_holdout_budget_allocation_constraints - ImportError: Unable to find a usable engine; tried using: 'pyarrow', 'fastparquet'.
+A suitable version of pyarrow or fastparquet is required for parquet support.
+Trying to import the above resulted in these errors:
+ - Missing optional dependency 'pyarrow'. pyarrow is required for parquet support. Use pip or conda to install pyarrow.
+ - Missing optional dependency 'fastparquet'. fastparquet is required for parquet support. Use pip or conda to install fastparquet.
+FAILED tests/test_e10_provenance_and_immutability.py::test_baseline_pre_freeze_manifest_hashes - AssertionError: Baseline invariance violation in artifacts/model_registry/v1/metadata.json!
+assert 'c63a5c2094df...49860f71f68a6' == '2bb8dd35aa94...79f50e8610f3c'
+  
+  - 2bb8dd35aa94bf30497f1804d3135352c3e2e47ee9329b1504679f50e8610f3c
+  + c63a5c2094dfa63ce0ae6c792f11b10ac64c418ef370f91da9149860f71f68a6
+FAILED tests/test_e8_backtester.py::test_backtester_development_folds_and_embargo - ImportError: Unable to find a usable engine; tried using: 'pyarrow', 'fastparquet'.
+A suitable version of pyarrow or fastparquet is required for parquet support.
+Trying to import the above resulted in these errors:
+ - Missing optional dependency 'pyarrow'. pyarrow is required for parquet support. Use pip or conda to install pyarrow.
+ - Missing optional dependency 'fastparquet'. fastparquet is required for parquet support. Use pip or conda to install fastparquet.
+FAILED tests/test_e8_backtester.py::test_inner_train_val_split_integrity - ImportError: Unable to find a usable engine; tried using: 'pyarrow', 'fastparquet'.
+A suitable version of pyarrow or fastparquet is required for parquet support.
+Trying to import the above resulted in these errors:
+ - Missing optional dependency 'pyarrow'. pyarrow is required for parquet support. Use pip or conda to install pyarrow.
+ - Missing optional dependency 'fastparquet'. fastparquet is required for parquet support. Use pip or conda to install fastparquet.
+FAILED tests/test_e8_backtester.py::test_quick_development_backtest_execution - ImportError: Unable to find a usable engine; tried using: 'pyarrow', 'fastparquet'.
+A suitable version of pyarrow or fastparquet is required for parquet support.
+Trying to import the above resulted in these errors:
+ - Missing optional dependency 'pyarrow'. pyarrow is required for parquet support. Use pip or conda to install pyarrow.
+ - Missing optional dependency 'fastparquet'. fastparquet is required for parquet support. Use pip or conda to install fastparquet.
+FAILED tests/test_e8_budgeting.py::test_run_e8_dev_budget_simulation_e2e - ImportError: Unable to find a usable engine; tried using: 'pyarrow', 'fastparquet'.
+A suitable version of pyarrow or fastparquet is required for parquet support.
+Trying to import the above resulted in these errors:
+ - Missing optional dependency 'pyarrow'. pyarrow is required for parquet support. Use pip or conda to install pyarrow.
+ - Missing optional dependency 'fastparquet'. fastparquet is required for parquet support. Use pip or conda to install fastparquet.
+FAILED tests/test_e8_holdout_eval.py::TestE8HoldoutTemporalIsolationAndDataPartition::test_dataset_partition_row_counts_and_dates - ImportError: Unable to find a usable engine; tried using: 'pyarrow', 'fastparquet'.
+A suitable version of pyarrow or fastparquet is required for parquet support.
+Trying to import the above resulted in these errors:
+ - Missing optional dependency 'pyarrow'. pyarrow is required for parquet support. Use pip or conda to install pyarrow.
+ - Missing optional dependency 'fastparquet'. fastparquet is required for parquet support. Use pip or conda to install fastparquet.
+FAILED tests/test_e8_holdout_eval.py::TestE8HoldoutTemporalIsolationAndDataPartition::test_dev_temporal_holdout_isolation_verification - ImportError: Unable to find a usable engine; tried using: 'pyarrow', 'fastparquet'.
+A suitable version of pyarrow or fastparquet is required for parquet support.
+Trying to import the above resulted in these errors:
+ - Missing optional dependency 'pyarrow'. pyarrow is required for parquet support. Use pip or conda to install pyarrow.
+ - Missing optional dependency 'fastparquet'. fastparquet is required for parquet support. Use pip or conda to install fastparquet.
+FAILED tests/test_e8_holdout_eval.py::TestE8HoldoutTemporalIsolationAndDataPartition::test_inner_train_val_split_strictly_preserves_embargo - ImportError: Unable to find a usable engine; tried using: 'pyarrow', 'fastparquet'.
+A suitable version of pyarrow or fastparquet is required for parquet support.
+Trying to import the above resulted in these errors:
+ - Missing optional dependency 'pyarrow'. pyarrow is required for parquet support. Use pip or conda to install pyarrow.
+ - Missing optional dependency 'fastparquet'. fastparquet is required for parquet support. Use pip or conda to install fastparquet.
+FAILED tests/test_e8_holdout_eval.py::TestE8HoldoutArtifactIntegrity::test_holdout_parquet_artifact_schema_and_rows - ImportError: Unable to find a usable engine; tried using: 'pyarrow', 'fastparquet'.
+A suitable version of pyarrow or fastparquet is required for parquet support.
+Trying to import the above resulted in these errors:
+ - Missing optional dependency 'pyarrow'. pyarrow is required for parquet support. Use pip or conda to install pyarrow.
+ - Missing optional dependency 'fastparquet'. fastparquet is required for parquet support. Use pip or conda to install fastparquet.
+FAILED tests/test_e8_holdout_eval.py::TestE8HoldoutEconomicPerformanceAndRationality::test_budget_capacity_enforcement_on_holdout - ImportError: Unable to find a usable engine; tried using: 'pyarrow', 'fastparquet'.
+A suitable version of pyarrow or fastparquet is required for parquet support.
+Trying to import the above resulted in these errors:
+ - Missing optional dependency 'pyarrow'. pyarrow is required for parquet support. Use pip or conda to install pyarrow.
+ - Missing optional dependency 'fastparquet'. fastparquet is required for parquet support. Use pip or conda to install fastparquet.
+FAILED tests/test_e8_policy_freeze.py::test_freeze_e8_policy_e2e - ImportError: Unable to find a usable engine; tried using: 'pyarrow', 'fastparquet'.
+A suitable version of pyarrow or fastparquet is required for parquet support.
+Trying to import the above resulted in these errors:
+ - Missing optional dependency 'pyarrow'. pyarrow is required for parquet support. Use pip or conda to install pyarrow.
+ - Missing optional dependency 'fastparquet'. fastparquet is required for parquet support. Use pip or conda to install fastparquet.
+FAILED tests/test_e8_sensitivity.py::test_run_e8_dev_sensitivity_analysis_e2e - ImportError: Unable to find a usable engine; tried using: 'pyarrow', 'fastparquet'.
+A suitable version of pyarrow or fastparquet is required for parquet support.
+Trying to import the above resulted in these errors:
+ - Missing optional dependency 'pyarrow'. pyarrow is required for parquet support. Use pip or conda to install pyarrow.
+ - Missing optional dependency 'fastparquet'. fastparquet is required for parquet support. Use pip or conda to install fastparquet.
+FAILED tests/test_model_training.py::test_no_target_leakage - ImportError: Unable to find a usable engine; tried using: 'pyarrow', 'fastparquet'.
+A suitable version of pyarrow or fastparquet is required for parquet support.
+Trying to import the above resulted in these errors:
+ - Missing optional dependency 'pyarrow'. pyarrow is required for parquet support. Use pip or conda to install pyarrow.
+ - Missing optional dependency 'fastparquet'. fastparquet is required for parquet support. Use pip or conda to install fastparquet.
+FAILED tests/test_point_in_time_features.py::test_reproducibility - ImportError: Unable to find a usable engine; tried using: 'pyarrow', 'fastparquet'.
+A suitable version of pyarrow or fastparquet is required for parquet support.
+Trying to import the above resulted in these errors:
+ - Missing optional dependency 'pyarrow'. pyarrow is required for parquet support. Use pip or conda to install pyarrow.
+ - Missing optional dependency 'fastparquet'. fastparquet is required for parquet support. Use pip or conda to install fastparquet.
+FAILED tests/test_scms_ingestion.py::test_scms_dataloader_and_parquet_serialization - ImportError: Missing optional dependency 'pyarrow'. pyarrow is required for parquet support. Use pip or conda to install pyarrow.
+FAILED tests/test_scms_ingestion.py::test_scms_ingest_pipeline_end_to_end - ImportError: Missing optional dependency 'pyarrow'. pyarrow is required for parquet support. Use pip or conda to install pyarrow.
+ERROR tests/test_adaptive_temporal_safety.py::test_calibration_strictly_precedes_evaluation_with_embargo - ImportError: Unable to find a usable engine; tried using: 'pyarrow', 'fastparquet'.
+A suitable version of pyarrow or fastparquet is required for parquet support.
+Trying to import the above resulted in these errors:
+ - Missing optional dependency 'pyarrow'. pyarrow is required for parquet support. Use pip or conda to install pyarrow.
+ - Missing optional dependency 'fastparquet'. fastparquet is required for parquet support. Use pip or conda to install fastparquet.
+ERROR tests/test_adversarial_e8_m5_holdout.py::TestAdversarialParquetAndJsonSchema::test_holdout_parquet_shape_and_no_nulls - ImportError: Unable to find a usable engine; tried using: 'pyarrow', 'fastparquet'.
+A suitable version of pyarrow or fastparquet is required for parquet support.
+Trying to import the above resulted in these errors:
+ - Missing optional dependency 'pyarrow'. pyarrow is required for parquet support. Use pip or conda to install pyarrow.
+ - Missing optional dependency 'fastparquet'. fastparquet is required for parquet support. Use pip or conda to install fastparquet.
+ERROR tests/test_adversarial_e8_m5_holdout.py::TestAdversarialParquetAndJsonSchema::test_holdout_parquet_datatypes_and_ranges - ImportError: Unable to find a usable engine; tried using: 'pyarrow', 'fastparquet'.
+A suitable version of pyarrow or fastparquet is required for parquet support.
+Trying to import the above resulted in these errors:
+ - Missing optional dependency 'pyarrow'. pyarrow is required for parquet support. Use pip or conda to install pyarrow.
+ - Missing optional dependency 'fastparquet'. fastparquet is required for parquet support. Use pip or conda to install fastparquet.
+ERROR tests/test_adversarial_e8_m5_holdout.py::TestAdversarialMathematicalIdentities::test_bayes_and_champion_threshold_identities - ImportError: Unable to find a usable engine; tried using: 'pyarrow', 'fastparquet'.
+A suitable version of pyarrow or fastparquet is required for parquet support.
+Trying to import the above resulted in these errors:
+ - Missing optional dependency 'pyarrow'. pyarrow is required for parquet support. Use pip or conda to install pyarrow.
+ - Missing optional dependency 'fastparquet'. fastparquet is required for parquet support. Use pip or conda to install fastparquet.
+ERROR tests/test_adversarial_e8_m5_holdout.py::TestAdversarialMathematicalIdentities::test_strategy_decision_rule_and_cost_accounting - ImportError: Unable to find a usable engine; tried using: 'pyarrow', 'fastparquet'.
+A suitable version of pyarrow or fastparquet is required for parquet support.
+Trying to import the above resulted in these errors:
+ - Missing optional dependency 'pyarrow'. pyarrow is required for parquet support. Use pip or conda to install pyarrow.
+ - Missing optional dependency 'fastparquet'. fastparquet is required for parquet support. Use pip or conda to install fastparquet.
+ERROR tests/test_adversarial_e8_m5_holdout.py::TestAdversarialMathematicalIdentities::test_do_nothing_cost_identity - ImportError: Unable to find a usable engine; tried using: 'pyarrow', 'fastparquet'.
+A suitable version of pyarrow or fastparquet is required for parquet support.
+Trying to import the above resulted in these errors:
+ - Missing optional dependency 'pyarrow'. pyarrow is required for parquet support. Use pip or conda to install pyarrow.
+ - Missing optional dependency 'fastparquet'. fastparquet is required for parquet support. Use pip or conda to install fastparquet.
+ERROR tests/test_adversarial_e8_m5_holdout.py::TestAdversarialPriorityMonotonicityAndBudgeting::test_budget_capacity_counts - ImportError: Unable to find a usable engine; tried using: 'pyarrow', 'fastparquet'.
+A suitable version of pyarrow or fastparquet is required for parquet support.
+Trying to import the above resulted in these errors:
+ - Missing optional dependency 'pyarrow'. pyarrow is required for parquet support. Use pip or conda to install pyarrow.
+ - Missing optional dependency 'fastparquet'. fastparquet is required for parquet support. Use pip or conda to install fastparquet.
+ERROR tests/test_adversarial_e8_m5_holdout.py::TestAdversarialPriorityMonotonicityAndBudgeting::test_priority_ranking_strict_monotonicity - ImportError: Unable to find a usable engine; tried using: 'pyarrow', 'fastparquet'.
+A suitable version of pyarrow or fastparquet is required for parquet support.
+Trying to import the above resulted in these errors:
+ - Missing optional dependency 'pyarrow'. pyarrow is required for parquet support. Use pip or conda to install pyarrow.
+ - Missing optional dependency 'fastparquet'. fastparquet is required for parquet support. Use pip or conda to install fastparquet.
+ERROR tests/test_adversarial_e8_m5_holdout.py::TestAdversarialPriorityMonotonicityAndBudgeting::test_budget_hierarchical_nesting - ImportError: Unable to find a usable engine; tried using: 'pyarrow', 'fastparquet'.
+A suitable version of pyarrow or fastparquet is required for parquet support.
+Trying to import the above resulted in these errors:
+ - Missing optional dependency 'pyarrow'. pyarrow is required for parquet support. Use pip or conda to install pyarrow.
+ - Missing optional dependency 'fastparquet'. fastparquet is required for parquet support. Use pip or conda to install fastparquet.
+ERROR tests/test_adversarial_e8_m5_holdout.py::TestAdversarialCrossMetricReconciliation::test_unconstrained_metrics_reconciliation - ImportError: Unable to find a usable engine; tried using: 'pyarrow', 'fastparquet'.
+A suitable version of pyarrow or fastparquet is required for parquet support.
+Trying to import the above resulted in these errors:
+ - Missing optional dependency 'pyarrow'. pyarrow is required for parquet support. Use pip or conda to install pyarrow.
+ - Missing optional dependency 'fastparquet'. fastparquet is required for parquet support. Use pip or conda to install fastparquet.
+ERROR tests/test_drift_temporal_safety.py::test_holdout_isolation_in_threshold_calibration - ImportError: Unable to find a usable engine; tried using: 'pyarrow', 'fastparquet'.
+A suitable version of pyarrow or fastparquet is required for parquet support.
+Trying to import the above resulted in these errors:
+ - Missing optional dependency 'pyarrow'. pyarrow is required for parquet support. Use pip or conda to install pyarrow.
+ - Missing optional dependency 'fastparquet'. fastparquet is required for parquet support. Use pip or conda to install fastparquet.
+ERROR tests/test_drift_temporal_safety.py::test_strict_chronological_ordering_of_windows - ImportError: Unable to find a usable engine; tried using: 'pyarrow', 'fastparquet'.
+A suitable version of pyarrow or fastparquet is required for parquet support.
+Trying to import the above resulted in these errors:
+ - Missing optional dependency 'pyarrow'. pyarrow is required for parquet support. Use pip or conda to install pyarrow.
+ - Missing optional dependency 'fastparquet'. fastparquet is required for parquet support. Use pip or conda to install fastparquet.
+ERROR tests/test_drift_temporal_safety.py::test_label_lag_embargo_compliance - ImportError: Unable to find a usable engine; tried using: 'pyarrow', 'fastparquet'.
+A suitable version of pyarrow or fastparquet is required for parquet support.
+Trying to import the above resulted in these errors:
+ - Missing optional dependency 'pyarrow'. pyarrow is required for parquet support. Use pip or conda to install pyarrow.
+ - Missing optional dependency 'fastparquet'. fastparquet is required for parquet support. Use pip or conda to install fastparquet.
+ERROR tests/test_e10_holdout_evaluation.py::test_holdout_evaluation_parquet_structure - ImportError: Unable to find a usable engine; tried using: 'pyarrow', 'fastparquet'.
+A suitable version of pyarrow or fastparquet is required for parquet support.
+Trying to import the above resulted in these errors:
+ - Missing optional dependency 'pyarrow'. pyarrow is required for parquet support. Use pip or conda to install pyarrow.
+ - Missing optional dependency 'fastparquet'. fastparquet is required for parquet support. Use pip or conda to install fastparquet.
+ERROR tests/test_e10_holdout_evaluation.py::test_holdout_oracle_properties - ImportError: Unable to find a usable engine; tried using: 'pyarrow', 'fastparquet'.
+A suitable version of pyarrow or fastparquet is required for parquet support.
+Trying to import the above resulted in these errors:
+ - Missing optional dependency 'pyarrow'. pyarrow is required for parquet support. Use pip or conda to install pyarrow.
+ - Missing optional dependency 'fastparquet'. fastparquet is required for parquet support. Use pip or conda to install fastparquet.
+ERROR tests/test_e8_cost_engine.py::test_positive_asymmetry_across_real_scms_modeling_data[low] - ImportError: Unable to find a usable engine; tried using: 'pyarrow', 'fastparquet'.
+A suitable version of pyarrow or fastparquet is required for parquet support.
+Trying to import the above resulted in these errors:
+ - Missing optional dependency 'pyarrow'. pyarrow is required for parquet support. Use pip or conda to install pyarrow.
+ - Missing optional dependency 'fastparquet'. fastparquet is required for parquet support. Use pip or conda to install fastparquet.
+ERROR tests/test_e8_cost_engine.py::test_positive_asymmetry_across_real_scms_modeling_data[base] - ImportError: Unable to find a usable engine; tried using: 'pyarrow', 'fastparquet'.
+A suitable version of pyarrow or fastparquet is required for parquet support.
+Trying to import the above resulted in these errors:
+ - Missing optional dependency 'pyarrow'. pyarrow is required for parquet support. Use pip or conda to install pyarrow.
+ - Missing optional dependency 'fastparquet'. fastparquet is required for parquet support. Use pip or conda to install fastparquet.
+ERROR tests/test_e8_cost_engine.py::test_positive_asymmetry_across_real_scms_modeling_data[high] - ImportError: Unable to find a usable engine; tried using: 'pyarrow', 'fastparquet'.
+A suitable version of pyarrow or fastparquet is required for parquet support.
+Trying to import the above resulted in these errors:
+ - Missing optional dependency 'pyarrow'. pyarrow is required for parquet support. Use pip or conda to install pyarrow.
+ - Missing optional dependency 'fastparquet'. fastparquet is required for parquet support. Use pip or conda to install fastparquet.
+ERROR tests/test_e8_cost_engine.py::test_sample_weights_computation - ImportError: Unable to find a usable engine; tried using: 'pyarrow', 'fastparquet'.
+A suitable version of pyarrow or fastparquet is required for parquet support.
+Trying to import the above resulted in these errors:
+ - Missing optional dependency 'pyarrow'. pyarrow is required for parquet support. Use pip or conda to install pyarrow.
+ - Missing optional dependency 'fastparquet'. fastparquet is required for parquet support. Use pip or conda to install fastparquet.
+ERROR tests/test_e8_cost_engine.py::test_vectorization_performance_benchmark - ImportError: Unable to find a usable engine; tried using: 'pyarrow', 'fastparquet'.
+A suitable version of pyarrow or fastparquet is required for parquet support.
+Trying to import the above resulted in these errors:
+ - Missing optional dependency 'pyarrow'. pyarrow is required for parquet support. Use pip or conda to install pyarrow.
+ - Missing optional dependency 'fastparquet'. fastparquet is required for parquet support. Use pip or conda to install fastparquet.
+ERROR tests/test_feature_engineering.py::test_prediction_boundary - ImportError: Unable to find a usable engine; tried using: 'pyarrow', 'fastparquet'.
+A suitable version of pyarrow or fastparquet is required for parquet support.
+Trying to import the above resulted in these errors:
+ - Missing optional dependency 'pyarrow'. pyarrow is required for parquet support. Use pip or conda to install pyarrow.
+ - Missing optional dependency 'fastparquet'. fastparquet is required for parquet support. Use pip or conda to install fastparquet.
+ERROR tests/test_feature_engineering.py::test_row_integrity - ImportError: Unable to find a usable engine; tried using: 'pyarrow', 'fastparquet'.
+A suitable version of pyarrow or fastparquet is required for parquet support.
+Trying to import the above resulted in these errors:
+ - Missing optional dependency 'pyarrow'. pyarrow is required for parquet support. Use pip or conda to install pyarrow.
+ - Missing optional dependency 'fastparquet'. fastparquet is required for parquet support. Use pip or conda to install fastparquet.
+ERROR tests/test_feature_engineering.py::test_structural_missingness - ImportError: Unable to find a usable engine; tried using: 'pyarrow', 'fastparquet'.
+A suitable version of pyarrow or fastparquet is required for parquet support.
+Trying to import the above resulted in these errors:
+ - Missing optional dependency 'pyarrow'. pyarrow is required for parquet support. Use pip or conda to install pyarrow.
+ - Missing optional dependency 'fastparquet'. fastparquet is required for parquet support. Use pip or conda to install fastparquet.
+ERROR tests/test_feature_engineering.py::test_feature_transformations - ImportError: Unable to find a usable engine; tried using: 'pyarrow', 'fastparquet'.
+A suitable version of pyarrow or fastparquet is required for parquet support.
+Trying to import the above resulted in these errors:
+ - Missing optional dependency 'pyarrow'. pyarrow is required for parquet support. Use pip or conda to install pyarrow.
+ - Missing optional dependency 'fastparquet'. fastparquet is required for parquet support. Use pip or conda to install fastparquet.
+ERROR tests/test_feature_leakage.py::test_target_exclusion - ImportError: Unable to find a usable engine; tried using: 'pyarrow', 'fastparquet'.
+A suitable version of pyarrow or fastparquet is required for parquet support.
+Trying to import the above resulted in these errors:
+ - Missing optional dependency 'pyarrow'. pyarrow is required for parquet support. Use pip or conda to install pyarrow.
+ - Missing optional dependency 'fastparquet'. fastparquet is required for parquet support. Use pip or conda to install fastparquet.
+ERROR tests/test_feature_leakage.py::test_leakage_specification_adherence - ImportError: Unable to find a usable engine; tried using: 'pyarrow', 'fastparquet'.
+A suitable version of pyarrow or fastparquet is required for parquet support.
+Trying to import the above resulted in these errors:
+ - Missing optional dependency 'pyarrow'. pyarrow is required for parquet support. Use pip or conda to install pyarrow.
+ - Missing optional dependency 'fastparquet'. fastparquet is required for parquet support. Use pip or conda to install fastparquet.
+ERROR tests/test_point_in_time_features.py::test_point_in_time_historical_aggregates - ImportError: Unable to find a usable engine; tried using: 'pyarrow', 'fastparquet'.
+A suitable version of pyarrow or fastparquet is required for parquet support.
+Trying to import the above resulted in these errors:
+ - Missing optional dependency 'pyarrow'. pyarrow is required for parquet support. Use pip or conda to install pyarrow.
+ - Missing optional dependency 'fastparquet'. fastparquet is required for parquet support. Use pip or conda to install fastparquet.
+ERROR tests/test_point_in_time_features.py::test_cold_start_behavior - ImportError: Unable to find a usable engine; tried using: 'pyarrow', 'fastparquet'.
+A suitable version of pyarrow or fastparquet is required for parquet support.
+Trying to import the above resulted in these errors:
+ - Missing optional dependency 'pyarrow'. pyarrow is required for parquet support. Use pip or conda to install pyarrow.
+ - Missing optional dependency 'fastparquet'. fastparquet is required for parquet support. Use pip or conda to install fastparquet.
+ERROR tests/test_rolling_origin.py::test_train_strictly_precedes_eval - ImportError: Unable to find a usable engine; tried using: 'pyarrow', 'fastparquet'.
+A suitable version of pyarrow or fastparquet is required for parquet support.
+Trying to import the above resulted in these errors:
+ - Missing optional dependency 'pyarrow'. pyarrow is required for parquet support. Use pip or conda to install pyarrow.
+ - Missing optional dependency 'fastparquet'. fastparquet is required for parquet support. Use pip or conda to install fastparquet.
+ERROR tests/test_rolling_origin.py::test_configured_gap - ImportError: Unable to find a usable engine; tried using: 'pyarrow', 'fastparquet'.
+A suitable version of pyarrow or fastparquet is required for parquet support.
+Trying to import the above resulted in these errors:
+ - Missing optional dependency 'pyarrow'. pyarrow is required for parquet support. Use pip or conda to install pyarrow.
+ - Missing optional dependency 'fastparquet'. fastparquet is required for parquet support. Use pip or conda to install fastparquet.
+ERROR tests/test_rolling_origin.py::test_no_overlap - ImportError: Unable to find a usable engine; tried using: 'pyarrow', 'fastparquet'.
+A suitable version of pyarrow or fastparquet is required for parquet support.
+Trying to import the above resulted in these errors:
+ - Missing optional dependency 'pyarrow'. pyarrow is required for parquet support. Use pip or conda to install pyarrow.
+ - Missing optional dependency 'fastparquet'. fastparquet is required for parquet support. Use pip or conda to install fastparquet.
+ERROR tests/test_rolling_origin.py::test_final_holdout_isolation - ImportError: Unable to find a usable engine; tried using: 'pyarrow', 'fastparquet'.
+A suitable version of pyarrow or fastparquet is required for parquet support.
+Trying to import the above resulted in these errors:
+ - Missing optional dependency 'pyarrow'. pyarrow is required for parquet support. Use pip or conda to install pyarrow.
+ - Missing optional dependency 'fastparquet'. fastparquet is required for parquet support. Use pip or conda to install fastparquet.
+ERROR tests/test_rolling_origin.py::test_deterministic_folds - ImportError: Unable to find a usable engine; tried using: 'pyarrow', 'fastparquet'.
+A suitable version of pyarrow or fastparquet is required for parquet support.
+Trying to import the above resulted in these errors:
+ - Missing optional dependency 'pyarrow'. pyarrow is required for parquet support. Use pip or conda to install pyarrow.
+ - Missing optional dependency 'fastparquet'. fastparquet is required for parquet support. Use pip or conda to install fastparquet.
+ERROR tests/test_rolling_origin.py::test_insufficient_folds_raises_error - ImportError: Unable to find a usable engine; tried using: 'pyarrow', 'fastparquet'.
+A suitable version of pyarrow or fastparquet is required for parquet support.
+Trying to import the above resulted in these errors:
+ - Missing optional dependency 'pyarrow'. pyarrow is required for parquet support. Use pip or conda to install pyarrow.
+ - Missing optional dependency 'fastparquet'. fastparquet is required for parquet support. Use pip or conda to install fastparquet.
+============ 44 failed, 576 passed, 6 skipped, 34 errors in 14.72s =============
