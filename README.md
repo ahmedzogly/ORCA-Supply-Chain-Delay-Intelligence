@@ -32,40 +32,33 @@ Traditional supply chain systems rely on static threshold alerts or point-estima
 
 ---
 
-## 📸 Interactive Control Tower Gallery
+## 📸 Interactive Control Tower Windows
 
-### 1. 🌐 3D Live Fleet & Geospatial Digital Twin
+### 1. 🌐 Live Fleet & Geospatial Digital Twin
 *Real-time great-circle transit tracking, geodesic position interpolation ($\text{Slerp}$), risk-reactive arc coloring, and telemetry anomaly offsets ($S_1 \dots S_6$).*
 
-![3D Live Fleet & Geospatial Digital Twin](docs/images/01_live_fleet_digital_twin.png)
+![Live Fleet & Geospatial Digital Twin](docs/images/01_live_fleet_digital_twin.png)
 
 ---
 
-### 2. 📊 Executive Control Tower & Portfolio Risk Distribution
+### 2. 📊 Executive Control Tower
 *Dynamic portfolio overview, calibrated late-risk histograms, risk-tier allocations, and prioritized intervention queues.*
 
 ![Executive Control Tower](docs/images/02_executive_control_tower.png)
 
 ---
 
-### 3. 🔍 Shipment Risk Explorer & Local TreeSHAP Waterfall
-*Deep-dive shipment inspection, calibrated probability, 90% conditional delay prediction intervals, and point-in-time feature attribution.*
+### 3. 🔍 Shipment Risk Explorer
+*Deep-dive shipment inspection, calibrated probability, 90% conditional delay prediction intervals, and local TreeSHAP attribution waterfall.*
 
-![Shipment Risk Explorer](docs/images/04_shipment_risk_explorer.png)
-
----
-
-### 4. ⚖️ Decision & Action Center (What-If Economics)
-*Prescriptive policy recommendation, avoidable delay cost calculations, intervention cost-benefit tradeoffs, and human-in-the-loop governance.*
-
-![Decision & Action Center](docs/images/03_decision_action_center.png)
+![Shipment Risk Explorer](docs/images/03_shipment_risk_explorer.png)
 
 ---
 
-### 5. 🛰️ Injected Disruption & Telemetry Perturbation Tracking
-*Interactive simulation of carrier capacity shocks, route deviations ($25\text{km}$), and cold-chain temperature spikes ($>8.5^\circ\text{C}$).*
+### 4. ⚖️ Decision & Action Center
+*Prescriptive policy recommendations, avoidable delay cost calculations, intervention cost-benefit tradeoffs, and human-in-the-loop governance.*
 
-![Telemetry Disruption Map](docs/images/05_telemetry_disruption_map.png)
+![Decision & Action Center](docs/images/04_decision_action_center.png)
 
 ---
 
