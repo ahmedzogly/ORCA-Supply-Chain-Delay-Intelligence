@@ -12,5 +12,8 @@ pydantic>=2.0
 httpx>=0.24
 streamlit>=1.25
 plotly>=5.15
+pydeck>=0.8.0
+scipy>=1.10
 pytest>=7.4
 pyarrow>=12.0
+
