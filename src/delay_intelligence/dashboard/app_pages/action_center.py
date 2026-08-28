@@ -124,26 +124,28 @@ st.divider()
 # ── D. Policy recommendation ────────────────────────────────────────────────
 section_header("Policy recommendation", "SIMULATED SCENARIO")
 
-recommendation = rec["recommendation"].replace("_", " ")
+recommendation_raw = rec.get("recommendation", "MONITOR")
+recommendation = str(recommendation_raw).replace("_", " ")
 
 # Visual recommendation with appropriate emphasis
-if rec["recommendation"] in {"EXPEDITE", "SUPPLIER_ESCALATION", "TRANSPORT_MODE_REVIEW"}:
+if recommendation_raw in {"EXPEDITE", "SUPPLIER_ESCALATION", "TRANSPORT_MODE_REVIEW"}:
     st.warning(f":material/priority_high: **{recommendation}**")
-elif rec["recommendation"] == "HUMAN_REVIEW":
+elif recommendation_raw == "HUMAN_REVIEW":
     st.info(f":material/person_search: **{recommendation}**")
-elif rec["recommendation"] == "NO_ACTION":
+elif recommendation_raw == "NO_ACTION":
     st.success(f":material/check_circle: **{recommendation}**")
 else:
     st.info(f":material/info: **{recommendation}**")
 
-for reason in rec["decision_reason"]:
+for reason in rec.get("decision_reason", []):
     st.markdown(f"- {reason}")
 
 col1, col2 = st.columns(2)
-col1.markdown(f"**Robustness:** {rec['robustness']}")
-col2.markdown(f"**Human review required:** {'Yes' if rec['human_approval_required'] else 'No'}")
+col1.markdown(f"**Robustness:** {rec.get('robustness', 'ROBUST')}")
+col2.markdown(f"**Human review required:** {'Yes' if rec.get('human_approval_required', False) else 'No'}")
 
-st.caption(rec["impact_disclaimer"])
+st.caption(rec.get("impact_disclaimer", "Scenario estimate based on configurable assumptions; not realized financial savings."))
+
 
 st.divider()
 

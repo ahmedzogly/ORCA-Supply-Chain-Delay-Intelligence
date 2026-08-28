@@ -177,7 +177,10 @@ def api_recommend(features_dict: dict[str, Any]) -> dict[str, Any]:
         "expected_impact_type": decision["expected_impact"]["type"],
         "robustness": decision["robustness_class"],
         "human_approval_required": decision["human_approval_required"],
+        "evidence_label": "SIMULATED SCENARIO",
+        "impact_disclaimer": "Scenario estimate based on configurable assumptions; not realized financial savings.",
     }
+
 
 
 def find_default_demo_shipment() -> str:
