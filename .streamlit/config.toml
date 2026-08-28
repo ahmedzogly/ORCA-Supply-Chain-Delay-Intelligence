@@ -49,3 +49,9 @@ secondaryBackgroundColor = "#1F2937"
 textColor = "#E2E8F0"
 borderColor = "#2D3748"
 primaryColor = "#60A5FA"
+
+[server]
+headless = true
+enableCORS = false
+enableXsrfProtection = false
+
