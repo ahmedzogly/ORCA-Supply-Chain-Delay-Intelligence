@@ -183,7 +183,9 @@ if target_record:
         st.markdown(f"**Action:** `{target_record['recommendation']}`")
         if st.button("🔍 Investigate in Explorer", type="primary", use_container_width=True):
             st.session_state.selected_shipment_id = inspect_id
-            st.switch_page("app_pages/explorer.py")
+            target_page = str(Path(__file__).resolve().parent / "explorer.py")
+            st.switch_page(target_page)
+
 
 disclaimer_box(
     "Great-circle arcs and interpolated coordinates are spatial representations "

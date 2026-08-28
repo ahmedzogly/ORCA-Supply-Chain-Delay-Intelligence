@@ -45,4 +45,6 @@ if st.button(
     ":material/monitoring: Open Executive Control Tower",
     type="primary",
 ):
-    st.switch_page("app_pages/executive.py")
+    target_page = str(Path(__file__).resolve().parent / "executive.py")
+    st.switch_page(target_page)
+

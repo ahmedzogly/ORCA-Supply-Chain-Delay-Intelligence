@@ -117,17 +117,21 @@ with st.sidebar:
     st.divider()
 
 # ── Navigation ───────────────────────────────────────────────────────────────
+DASHBOARD_DIR = Path(__file__).resolve().parent
+APP_PAGES = DASHBOARD_DIR / "app_pages"
+
 page = st.navigation(
     [
-        st.Page("app_pages/landing.py", title="Delay Intelligence", icon=":material/package_2:", default=True),
-        st.Page("app_pages/executive.py", title="Executive Control Tower", icon=":material/monitoring:"),
-        st.Page("app_pages/fleet_map.py", title="Live Fleet & Digital Twin", icon=":material/public:"),
-        st.Page("app_pages/explorer.py", title="Shipment Risk Explorer", icon=":material/search:"),
-        st.Page("app_pages/action_center.py", title="Decision & Action Center", icon=":material/gavel:"),
-        st.Page("app_pages/portfolio.py", title="Portfolio Intelligence", icon=":material/analytics:"),
-        st.Page("app_pages/evidence.py", title="Model Evidence", icon=":material/science:"),
+        st.Page(str(APP_PAGES / "landing.py"), title="Delay Intelligence", icon=":material/package_2:", default=True),
+        st.Page(str(APP_PAGES / "executive.py"), title="Executive Control Tower", icon=":material/monitoring:"),
+        st.Page(str(APP_PAGES / "fleet_map.py"), title="Live Fleet & Digital Twin", icon=":material/public:"),
+        st.Page(str(APP_PAGES / "explorer.py"), title="Shipment Risk Explorer", icon=":material/search:"),
+        st.Page(str(APP_PAGES / "action_center.py"), title="Decision & Action Center", icon=":material/gavel:"),
+        st.Page(str(APP_PAGES / "portfolio.py"), title="Portfolio Intelligence", icon=":material/analytics:"),
+        st.Page(str(APP_PAGES / "evidence.py"), title="Model Evidence", icon=":material/science:"),
     ],
     position="sidebar",
 )
 
 page.run()
+

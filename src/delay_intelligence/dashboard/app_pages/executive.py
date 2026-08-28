@@ -118,7 +118,9 @@ if st.button(
     type="primary",
 ):
     st.session_state.selected_shipment_id = highest_risk_id
-    st.switch_page("app_pages/explorer.py")
+    target_page = str(Path(__file__).resolve().parent / "explorer.py")
+    st.switch_page(target_page)
+
 
 disclaimer_box(
     "No realized ROI is claimed. Recommendations use modeled cost/efficacy "
